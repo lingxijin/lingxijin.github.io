@@ -12,9 +12,9 @@ google_scholar_stats_use_cdn : true
 
 # Site Author
 author:
-  name             : "Lingxi Jin"
+  name             : "Lingxi Jin（Ph.D. Candidate）"
   avatar           : "images/jinlingxi_사진.jpg"
-  bio              : "Ph.D. Candidate at Ewha Womans University | Interaction Design for Learning Lab"
+  bio              : "Ewha Womans University | Department of Educational Technology | Interaction Design for Learning Lab"
   location         : "Seoul, South Korea" 
   googlescholar    : "https://scholar.google.com/citations?user=00XArpMAAAAJ&hl=ko"
   email            : "jinlingxi@ewha.ac.kr"
