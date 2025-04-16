@@ -17,11 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lingxi Jin (玲僖) is a Ph.D. candidate in Educational Technology at Ewha Womans University, supervised by Professor Hyo-Jeong So. Her research lies at the intersection of artificial intelligence in education (AIED), human-AI interaction, and learning analytics. Her research explores how large language models (LLMs) can mediate human-AI collaboration for knowledge co-construction and support self-directed learning in AI mediated environments. Building on her interest in AI-enhanced education, she is currently designing intelligent tutoring systems and teachable agents, both powered by large language models (LLMs), to improve learning experiences through advanced AI technologies. She employs learning analytics methods such as Lag Sequential Analysis (LSA) and Epistemic Network Analysis (ENA) to analyze learner-AI interactions and uncover patterns of cognitive and metacognitive engagement.
-Lingxi holds a Master’s degree in Educational Technology from Ewha Womans University and has contributed to multiple national research projects on AI-based recommendation systems and engineering education reform. Her recent research has been accepted at leading conferences, including CHI 2025, AIED 2025 (CORE A), and ICLS 2025.
+**Lingxi Jin (玲僖)** is a Ph.D. candidate in Educational Technology at Ewha Womans University, supervised by Professor Hyo-Jeong So. Her research lies at the intersection of artificial intelligence in education (AIED), human-AI interaction, and learning analytics. Her research explores how large language models (LLMs) can mediate human-AI collaboration for knowledge co-construction and support self-directed learning in AI mediated environments. Building on her interest in AI-enhanced education, she is currently designing intelligent tutoring systems and teachable agents, both powered by large language models (LLMs), to improve learning experiences through advanced AI technologies. She employs learning analytics methods such as Lag Sequential Analysis (LSA) and Epistemic Network Analysis (ENA) to analyze learner-AI interactions and uncover patterns of cognitive and metacognitive engagement.
+Lingxi holds a Master’s degree in Educational Technology from Ewha Womans University and has contributed to multiple national research projects on AI-based recommendation systems and engineering education reform. Her recent research has been accepted at leading conferences, including CHI 2025, AIED 2025, and ICLS 2025.
 Driven by a passion to design equitable and reflective learning environments, she aspires to bridge research and practice by building AI-augmented educational systems that empower diverse learners across disciplines.
  
-If you are seeking any form of academic cooperation, please feel free to email me at jinlingxi@ewha.ac.kr.
+If you are seeking any form of academic cooperation, please feel free to email me at **jinlingxi@ewha.ac.kr**.
 
 
 # 🔥 News
@@ -35,7 +35,7 @@ If you are seeking any form of academic cooperation, please feel free to email m
 <div class='paper-box-text' markdown="1">
 
 [Learning by Teaching: Enhancing Music Learning Through LLM-Based Teachable Agents]  
-**Lingxi Jin**, Baicheng Lin, Mengze Hong, Hyo-Jeong So and Kun Zhang  
+Autors: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Hyo-Jeong So and Kun Zhang  
 International Conference on Artificial Intelligence in Education, Short Paper, 2025, Italy
 
 </div></div>
@@ -44,7 +44,7 @@ International Conference on Artificial Intelligence in Education, Short Paper, 2
 <div class='paper-box-text' markdown="1">
 
 [WIP: LLMs Reliably Assess Musical Form Analysis? A Study on Few-Shot Learning and Teacher Ratings]  
-Baicheng Lin, **Lingxi Jin**, Kyung-Seok Min  
+Autors: Baicheng Lin, **Lingxi Jin**, Kyung-Seok Min  
 ACM Conference on Learning @ Scale, Poster, 2025 (in press), Italy
 
 </div></div>
@@ -53,7 +53,7 @@ ACM Conference on Learning @ Scale, Poster, 2025 (in press), Italy
 <div class='paper-box-text' markdown="1">
 
 [What Do University Students Say About ChatGPT? A Topic Modeling of Perception on GenAI in Academic Writing](https://library.apsce.net/index.php/ICCE/article/view/5029)  
-**Lingxi Jin**, Kyuwon Kim, Hyo-Jeong So, GaYeong Lee  
+Autors: **Lingxi Jin**, Kyuwon Kim, Hyo-Jeong So, GaYeong Lee  
 *(Best Poster Design 🏆)* International Conference on Computers in Education, Poster, 2024, Manila
 
 </div></div>
@@ -62,7 +62,7 @@ ACM Conference on Learning @ Scale, Poster, 2025 (in press), Italy
 <div class='paper-box-text' markdown="1">
 
 [Exploring the Impact of an LLM-Powered Teachable Agent on Learning Gains and Cognitive Load in Music Education](https://arxiv.org/pdf/2504.00636)  
-**Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So  
+Autors: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So  
 CHI 2025 Workshop on Augmented Educators and AI: Shaping the Future of Human and AI Cooperation in Learning, 2025, Yokohama
 
 </div></div>
@@ -71,7 +71,7 @@ CHI 2025 Workshop on Augmented Educators and AI: Shaping the Future of Human and
 <div class='paper-box-text' markdown="1">
 
 [Analyzing L2 Learner-ChatGPT Interaction in English Essay Writing with Epistemic Network Analysis](https://www.researchgate.net/profile/Lingxi-Jin/publication/383436958)  
-Hyeji Jang, **Lingxi Jin**, Hyo-Jeong So  
+Autors: Hyeji Jang, **Lingxi Jin**, Hyo-Jeong So  
 14th International Conference on Learning Analytics and Knowledge (LAK), Poster, 2024, Kyoto
 
 </div></div>
@@ -80,7 +80,7 @@ Hyeji Jang, **Lingxi Jin**, Hyo-Jeong So
 <div class='paper-box-text' markdown="1">
 
 [Predictive Modelling with the Open University Learning Analytics Dataset (OULAD): A Systematic Literature Review](https://link.springer.com/chapter/10.1007/978-3-031-64315-6_46)  
-**Lingxi Jin**, Yao Wang, Huiying Song, Hyo-Jeong So  
+Autors: **Lingxi Jin**, Yao Wang, Huiying Song, Hyo-Jeong So  
 International Conference on Artificial Intelligence in Education, Late Breaking Results, 2024, Brazil
 
 </div></div>
@@ -89,17 +89,8 @@ International Conference on Artificial Intelligence in Education, Late Breaking 
 <div class='paper-box-text' markdown="1">
 
 [Recommendation System Design for AI-Integrated Educational Applications: Focusing on Learning Styles](https://www.researchgate.net/publication/383290665)  
-**Lingxi Jin**, Hyo-Jeong So, Juyeong Song, Woorin Hwang  
+Autors: **Lingxi Jin**, Hyo-Jeong So, Juyeong Song, Woorin Hwang  
 ICoME 2021: International Conference for Media in Education, 2021, South Korea
-
-</div></div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KCI </div><img src='images/The Journal of Educational Information and Media2020.png' alt="KSET 2020" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Analysis of the Characteristics and Design Level of Educational Artificial Intelligence Applications](https://kiss.kstudy.com/Detail/Ar?key=3824469)  
-이혜란, 소효정, **Lingxi Jin**  
-Journal of Educational Information and Media, 2020
 
 </div></div>
 
@@ -107,10 +98,20 @@ Journal of Educational Information and Media, 2020
 <div class='paper-box-text' markdown="1">
 
 [학습양식 기반 개별화 추천시스템 설계: AI 어학용 앱을 중심으로](http://apjcriweb.org/content/vol9no3/41.pdf)  
-**Lingxi Jin**, Hyo-Jeong So  
+Autors: **Lingxi Jin**, Hyo-Jeong So  
 Asia-Pacific Journal of Convergent Research Interchange, 2022
 
 </div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KCI </div><img src='images/The Journal of Educational Information and Media2020.png' alt="KSET 2020" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Analysis of the Characteristics and Design Level of Educational Artificial Intelligence Applications](https://kiss.kstudy.com/Detail/Ar?key=3824469)  
+Autors: 이혜란, 소효정, **Lingxi Jin**  
+Journal of Educational Information and Media, 2020
+
+</div></div>
+
 
 
 # 🎖 Honors and Awards
