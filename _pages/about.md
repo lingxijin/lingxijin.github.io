@@ -31,12 +31,25 @@ If you are seeking any form of academic cooperation, please feel free to email m
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AIED 2025</div><img src='images/AIED2025.png' alt="AIED 2025" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Learning by Teaching: Enhancing Music Learning Through LLM-Based Teachable Agents]
+**Lingxi Jin**, Baicheng Lin, Mengze Hong, Hyo-Jeong So and Kun Zhang
+International Conference on Artificial Intelligence in Education, short Paper, 2025, Italy
+  
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">L@S 2025</div><img src='images/L@S2025.png' alt="L@S 2025" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[WIP: LLMs Reliably Assess Musical Form Analysis? A Study on Few-Shot Learning and Teacher Ratings]
+Baicheng Lin, **Lingxi Jin**, Kyung-Seok Min
+ACM Conference on Learning @ Scale, Poster, 2025(in press), 2025, Italy
+
+  
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCE 2024</div><img src='images/ICCE2024.png' alt="ICCE 2024" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [What Do University Students Say About ChatGPT? A Topic Modeling of Perception on GenAI in Academic Writing](https://library.apsce.net/index.php/ICCE/article/view/5029)  
-**L Jin**, K Kim, HJ So, GY Lee  
-*(Best Poster Design 🏆)* International Conference on Computers in Education, 2024
+**Lingxi Jin**, Kyuwon Kim, Hyo-Jeong So, GaYeong Lee  
+*(Best Poster Design 🏆)* International Conference on Computers in Education, Poster, 2024, Manila
 
 </div></div>
 
@@ -44,8 +57,8 @@ If you are seeking any form of academic cooperation, please feel free to email m
 <div class='paper-box-text' markdown="1">
 
 [Exploring the Impact of an LLM-Powered Teachable Agent on Learning Gains and Cognitive Load in Music Education](https://arxiv.org/pdf/2504.00636)  
-**L Jin**, B Lin, M Hong, K Zhang, HJ So  
-CHI 2025 Workshop on Augmented Educators and AI, 2025
+**Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So  
+CHI 2025 Workshop on Augmented Educators and AI: Shaping the Future of Human and AI Cooperation in Learning, 2025, Yokohama
 
 </div></div>
 
@@ -53,8 +66,8 @@ CHI 2025 Workshop on Augmented Educators and AI, 2025
 <div class='paper-box-text' markdown="1">
 
 [Analyzing L2 Learner-ChatGPT Interaction in English Essay Writing with Epistemic Network Analysis](https://www.researchgate.net/profile/Lingxi-Jin/publication/383436958)  
-H Jang, **L Jin**, HJ So  
-14th International Conference on Learning Analytics and Knowledge (LAK), 2024
+Hyeji Jang, **Lingxi Jin**, Hyo-Jeong So  
+14th International Conference on Learning Analytics and Knowledge (LAK), Poster, 2024, Kyoto
 
 </div></div>
 
@@ -62,8 +75,8 @@ H Jang, **L Jin**, HJ So
 <div class='paper-box-text' markdown="1">
 
 [Predictive Modelling with the Open University Learning Analytics Dataset (OULAD): A Systematic Literature Review](https://link.springer.com/chapter/10.1007/978-3-031-64315-6_46)  
-**L Jin**, Y Wang, H Song, HJ So  
-International Conference on Artificial Intelligence in Education, 2024
+**Lingxi Jin**, Yao Wang, Huiying Song, Hyo-Jeong So  
+International Conference on Artificial Intelligence in Education, Late Breaking Results, 2024, Brazil
 
 </div></div>
 
@@ -71,8 +84,8 @@ International Conference on Artificial Intelligence in Education, 2024
 <div class='paper-box-text' markdown="1">
 
 [Recommendation System Design for AI-Integrated Educational Applications: Focusing on Learning Styles](https://www.researchgate.net/publication/383290665)  
-**L Jin**, HJ So, J Song, W Hwang  
-ICoME 2021: International Conference for Media in Education, 2021
+**Lingxi Jin**, Hyo-Jeong So, Juyeong Song, Woorin Hwang  
+ICoME 2021: International Conference for Media in Education, 2021, South Korea
 
 </div></div>
 
@@ -80,7 +93,7 @@ ICoME 2021: International Conference for Media in Education, 2021
 <div class='paper-box-text' markdown="1">
 
 [Analysis of the Characteristics and Design Level of Educational Artificial Intelligence Applications](https://kiss.kstudy.com/Detail/Ar?key=3824469)  
-이혜란, 소효정, **L Jin**  
+이혜란, 소효정, **Lingxi Jin**  
 Journal of Educational Information and Media, 2020
 
 </div></div>
@@ -89,7 +102,7 @@ Journal of Educational Information and Media, 2020
 <div class='paper-box-text' markdown="1">
 
 [학습양식 기반 개별화 추천시스템 설계: AI 어학용 앱을 중심으로](http://apjcriweb.org/content/vol9no3/41.pdf)  
-**L Jin**, Hyo-Jeong So  
+**Lingxi Jin**, Hyo-Jeong So  
 Asia-Pacific Journal of Convergent Research Interchange, 2022
 
 </div></div>
@@ -130,7 +143,7 @@ The goal of this project is to explore how learners engage in knowledge co-const
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-    <img src='images/d65603b0-cc3c-44b8-af00-17713a124e7c.png' alt="Creative Convergence Engineering Talent Development" width="100%">
+    <img src='images/Inhaproject.png' alt="Creative Convergence Engineering Talent Development" width="100%">
   </div>
   <div class='paper-box-text' markdown="1">
 
@@ -148,7 +161,7 @@ This project was conducted as part of the 2022 *Creative Convergence Engineering
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <img src='images/662e615f-5efe-437e-a6e5-e6966ca3c368.png' alt="AI Recommender System Project" width="100%">
+      <img src='images/apjri2022.png' alt="AI Recommender System Project" width="100%">
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
