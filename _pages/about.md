@@ -107,11 +107,11 @@ Asia-Pacific Journal of Convergent Research Interchange, 2022
 - *2015 – 2019*: Bachelor of Management Sciences，Jilin International Studies University
 
 
-# 💻Project
+# 💻Projects
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">Exploring the Impact of an LLM-Powered Teachable Agent</div>
+      <div class="badge">
       <img src='images/CHIwrkshop2025.png' alt="Chat Melody Project" width="100%">
     </div>
   </div>
@@ -129,7 +129,7 @@ The goal of this project is to explore how learners engage in knowledge co-const
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class="badge">Korea Institute for Advancement of Technology</div>
+    <div class="badge">
     <img src='images/d65603b0-cc3c-44b8-af00-17713a124e7c.png' alt="Creative Convergence Engineering Talent Development" width="100%">
   </div>
   <div class='paper-box-text' markdown="1">
@@ -148,14 +148,13 @@ This project was conducted as part of the 2022 *Creative Convergence Engineering
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">National Research Foundation</div>
+      <div class="badge">
       <img src='images/662e615f-5efe-437e-a6e5-e6966ca3c368.png' alt="AI Recommender System Project" width="100%">
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
 
-**Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms:  
-Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods**
+**Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms:Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods**
 
 🔹 **Project Period**: 2020.06 – 2022.08  
 🔹 **Funding**: Korea Research Foundation  
@@ -169,8 +168,8 @@ Recently, the rapid expansion of artificial intelligence (AI)-based educational 
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">National Research Foundation Project</div>
-      <img src='images/b3319723-c887-4af0-ac57-3ad2dc7d7b64.png' alt="NRF AI Evaluation Tools" width="100%">
+      <div class="badge">
+      <img src='images/evaluation.png' alt="NRF AI Evaluation Tools" width="100%">
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
@@ -182,3 +181,7 @@ Recently, the rapid expansion of artificial intelligence (AI)-based educational 
 🔹 **Role**: Research Assistant  
 
 The project aimed to evaluate the design complexity and instructional features of AI-integrated mobile learning applications. By analyzing 51 apps, we assessed design layers and identified dominant learning mechanisms to inform future educational AI development.
+
+# 💻Experience
+
+
