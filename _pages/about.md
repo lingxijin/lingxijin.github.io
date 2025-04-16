@@ -33,17 +33,22 @@ If you are seeking any form of academic cooperation, please feel free to email m
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AIED 2025</div><img src='images/AIED2025.png' alt="AIED 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Learning by Teaching: Enhancing Music Learning Through LLM-Based Teachable Agents]
-**Lingxi Jin**, Baicheng Lin, Mengze Hong, Hyo-Jeong So and Kun Zhang
-International Conference on Artificial Intelligence in Education, short Paper, 2025, Italy
-  
+
+[Learning by Teaching: Enhancing Music Learning Through LLM-Based Teachable Agents]  
+**Lingxi Jin**, Baicheng Lin, Mengze Hong, Hyo-Jeong So and Kun Zhang  
+International Conference on Artificial Intelligence in Education, Short Paper, 2025, Italy
+
+</div></div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">L@S 2025</div><img src='images/L@S2025.png' alt="L@S 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[WIP: LLMs Reliably Assess Musical Form Analysis? A Study on Few-Shot Learning and Teacher Ratings]
-Baicheng Lin, **Lingxi Jin**, Kyung-Seok Min
-ACM Conference on Learning @ Scale, Poster, 2025(in press), 2025, Italy
 
-  
+[WIP: LLMs Reliably Assess Musical Form Analysis? A Study on Few-Shot Learning and Teacher Ratings]  
+Baicheng Lin, **Lingxi Jin**, Kyung-Seok Min  
+ACM Conference on Learning @ Scale, Poster, 2025 (in press), Italy
+
+</div></div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCE 2024</div><img src='images/ICCE2024.png' alt="ICCE 2024" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -124,11 +129,11 @@ Asia-Pacific Journal of Convergent Research Interchange, 2022
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div>
+      <div class="badge">Current Project</div>
       <img src='images/CHIwrkshop2025.png' alt="Chat Melody Project" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
+  <div class='paper-box-text' markdown="1"
 
 **Exploring the Impact of an LLM-Powered Teachable Agent**
 
@@ -143,10 +148,12 @@ The goal of this project is to explore how learners engage in knowledge co-const
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-    <img src='images/Inhaproject.png' alt="Creative Convergence Engineering Talent Development" width="100%">
+      <div class="badge">Past Project</div>
+      <img src='images/Inhaproject.png' alt="Creative Convergence Engineering Talent Development" width="100%">
+    </div>
   </div>
   <div class='paper-box-text' markdown="1">
-
+    
 **Creative Convergence Engineering Talent Development**  
 🔹 **Project Period**: 2022.06 – 2022.10  
 🔹 **Affiliation**: Inha University  
@@ -161,10 +168,11 @@ This project was conducted as part of the 2022 *Creative Convergence Engineering
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
+      <div class="badge">Past Project</div>
       <img src='images/apjri2022.png' alt="AI Recommender System Project" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
+  <div class='paper-box-text' markdown="1"
 
 **Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms:Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods**
 
@@ -177,10 +185,11 @@ Recently, the rapid expansion of artificial intelligence (AI)-based educational 
 
   </div>
 </div>
+
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div>
+      <div class="badge">Past Project</div>
       <img src='images/evaluation.png' alt="NRF AI Evaluation Tools" width="100%">
     </div>
   </div>
@@ -193,6 +202,9 @@ Recently, the rapid expansion of artificial intelligence (AI)-based educational 
 🔹 **Role**: Research Assistant  
 
 The project aimed to evaluate the design complexity and instructional features of AI-integrated mobile learning applications. By analyzing 51 apps, we assessed design layers and identified dominant learning mechanisms to inform future educational AI development.
+
+ </div>
+</div>
 
 # 💻Experience
 
