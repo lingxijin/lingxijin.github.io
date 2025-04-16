@@ -25,7 +25,7 @@ If you are seeking any form of academic cooperation, please feel free to email m
 
 
 # 🔥 News
-- *2025.04*: &nbsp;🎉 Three of my papers accepted to CHI 2025 Workshop, AIED 2025, and ICLS 2025!
+- *2025.04*: &nbsp;🎉 Three of my papers accepted to **CHI 2025 Workshop**, **AIED 2025 Short Paper**, and **ICLS 2025 Short Paper**!
 - *2024.11*: &nbsp;🏆 Received **Best Poster Design Award** at ICCE 2024 for our work on GenAI in academic writing.<a href='https://scholar.google.com/citations?user=00XArpMAAAAJ&hl=ko'>
 
 
@@ -127,10 +127,8 @@ Asia-Pacific Journal of Convergent Research Interchange, 2022
 
 # 💻 Projects
 
- </div>
-</div>
 
-  <div class='paper-box'>
+<div class='paper-box'>
   <div class='paper-box-image'>
     <div>
       <div class="badge">Current Project</div>
@@ -140,9 +138,10 @@ Asia-Pacific Journal of Convergent Research Interchange, 2022
   <div class='paper-box-text' markdown="1">
 
 **Exploring the Impact of an LLM-Powered Teachable Agent**
-🔹 **Project Period**: 2024.01 – Present 
-🔹 **Team**: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So
-🔹 **Role**: Project Manager
+
+🔹 **Project Period**: 2024.01 – Present  
+🔹 **Team**: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So  
+🔹 **Role**: Project Manager  
 
 The goal of this project is to explore how learners engage in knowledge co-construction when teaching an LLM-powered agent (Chat Melody) to solve music theory problems. This project draws upon the Learning-by-Teaching (LBT) paradigm and leverages large language models to simulate a curious novice agent. By teaching the agent, learners engage in deeper reflection, strategic problem-solving, and more effective knowledge organization. Chat Melody provides multimodal interaction, including visual sheet music, auditory cues, and dialogic support. It has been evaluated in the context of harmonic analysis and musical form identification. The project also investigates cognitive load, motivation, and sequential learning behaviors using Lag Sequential Analysis (LSA) and Epistemic Network Analysis (ENA).
 
