@@ -21,7 +21,7 @@ redirect_from:
 Lingxi holds a Master’s degree in Educational Technology from Ewha Womans University and has contributed to multiple national research projects on AI-based recommendation systems and engineering education reform. Her recent research has been accepted at leading conferences, including CHI 2025, AIED 2025, and ICLS 2025.
 Driven by a passion to design equitable and reflective learning environments, she aspires to bridge research and practice by building AI-augmented educational systems that empower diverse learners across disciplines.
  
-If you are seeking any form of academic cooperation, please feel free to email me at **jinlingxi@ewha.ac.kr**.
+If you are seeking any form of academic cooperation, please feel free to contact me at **jinlingxi@ewha.ac.kr**.
 
 
 # 🔥 News
