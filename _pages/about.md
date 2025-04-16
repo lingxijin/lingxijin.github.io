@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Lingxi Jin"
 excerpt: ""
 author_profile: true
 redirect_from: 
