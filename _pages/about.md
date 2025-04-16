@@ -21,7 +21,7 @@ redirect_from:
 
 Motivated by a commitment to improving learning experiences through advanced technologies, Lingxi is currently designing intelligent tutoring systems and teachable agents powered by LLMs. To analyze the dynamics of learner–AI interaction, she employs learning analytics methods such as Lag Sequential Analysis (LSA) and Epistemic Network Analysis (ENA).
 
-She received her Master’s degree in Educational Technology from Ewha Womans University, where she built a strong foundation in instructional design, learning analytics, and AI-enhanced education. She has since contributed to several national research projects on AI-driven recommendation systems and engineering education reform. Her recent work has been accepted at leading international conferences, including CHI 2025, AIED 2025, and ICLS 2025.
+She received her Master’s degree in Educational Technology from Ewha Womans University, where she built a strong foundation in instructional design, learning analytics, and AI-enhanced education. She has since contributed to several national research projects on Recommendation Systems for Education and engineering education reform. Her recent work has been accepted at leading international conferences, including CHI 2025, AIED 2025, and ICLS 2025.
 
 If you are interested in academic collaboration, please feel free to contact me at **jinlingxi@ewha.ac.kr**.
 
