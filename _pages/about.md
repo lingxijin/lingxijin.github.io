@@ -127,6 +127,9 @@ Asia-Pacific Journal of Convergent Research Interchange, 2022
 
 # 💻 Projects
 
+ </div>
+</div>
+
   <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
@@ -136,9 +139,7 @@ Asia-Pacific Journal of Convergent Research Interchange, 2022
   </div>
   <div class='paper-box-text' markdown="1">
 
-
 **Exploring the Impact of an LLM-Powered Teachable Agent**
-
 🔹 **Project Period**: 2024.01 – Present 
 🔹 **Team**: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So
 🔹 **Role**: Project Manager
