@@ -125,27 +125,30 @@ Asia-Pacific Journal of Convergent Research Interchange, 2022
 - *2015 – 2019*: Bachelor of Management Sciences，Jilin International Studies University
 
 
-# 💻Projects
-<div class='paper-box'>
+# 💻 Projects
+
+  <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
       <div class="badge">Current Project</div>
       <img src='images/CHIwrkshop2025.png' alt="Chat Melody Project" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1"
+  <div class='paper-box-text' markdown="1">
+
 
 **Exploring the Impact of an LLM-Powered Teachable Agent**
 
-🔹 **Project Period**: 2024.01 – Present  
-🔹 **Team**: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So  
+🔹 **Project Period**: 2024.01 – Present 
+🔹 **Team**: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So
+🔹 **Role**: Project Manager
 
 The goal of this project is to explore how learners engage in knowledge co-construction when teaching an LLM-powered agent (Chat Melody) to solve music theory problems. This project draws upon the Learning-by-Teaching (LBT) paradigm and leverages large language models to simulate a curious novice agent. By teaching the agent, learners engage in deeper reflection, strategic problem-solving, and more effective knowledge organization. Chat Melody provides multimodal interaction, including visual sheet music, auditory cues, and dialogic support. It has been evaluated in the context of harmonic analysis and musical form identification. The project also investigates cognitive load, motivation, and sequential learning behaviors using Lag Sequential Analysis (LSA) and Epistemic Network Analysis (ENA).
 
  </div>
 </div>
 
-<div class='paper-box'>
+  <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
       <div class="badge">Past Project</div>
@@ -153,10 +156,11 @@ The goal of this project is to explore how learners engage in knowledge co-const
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
+  
     
 **Creative Convergence Engineering Talent Development**  
 🔹 **Project Period**: 2022.06 – 2022.10  
-🔹 **Affiliation**: Inha University  
+🔹 **Affiliation**: Inha University, Department of Inha Engineering Education Innovation Center  
 🔹 **Role**: Research Engineer  
 
 This project was conducted as part of the 2022 *Creative Convergence Engineering Talent Development* initiative funded by the Korea Institute for Advancement of Technology (KIAT) under the Ministry of Trade, Industry and Energy. The research focused on the strategic development of next-generation semiconductor talent. Our team at the Inha Engineering Education Innovation Center aimed to promote industry-academia collaboration and foster innovation in semiconductor-related education through engineering practice and curriculum reform.
@@ -164,21 +168,21 @@ This project was conducted as part of the 2022 *Creative Convergence Engineering
   </div>
 </div>
 
-
-<div class='paper-box'>
+ <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
       <div class="badge">Past Project</div>
       <img src='images/apjri2022.png' alt="AI Recommender System Project" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1"
+  <div class='paper-box-text' markdown="1">
 
 **Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms:Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods**
 
 🔹 **Project Period**: 2020.06 – 2022.08  
-🔹 **Funding**: Korea Research Foundation  
+🔹 **Funding**: National Research Foundation  
 🔹 **Team**: Hyo-Jeong So, Hye-ran Lee, **Lingxi Jin**, Joo-Young Song, Woo-Rin Hwang, Hye-Ji Jang  
+🔹 **Role**: Project Researcher   
 
 Recently, the rapid expansion of artificial intelligence (AI)-based educational platforms has diversified the ways in which learners understand AI technologies. However, many of these platforms fail to provide accurate information about the technologies they use, often describing features in abstract or overly promotional terms. As a result, users face difficulties in selecting appropriate learning tools.  To address this issue, it is essential to develop a system that can recommend content tailored to individual learners’ characteristics and needs. This study aims to propose a participatory recommendation mechanism in which learners are not merely passive users of the system but also act as information providers. In addition, it applies both *preference-consistent* and *preference-inconsistent* recommendation strategies—those that reflect learners’ existing preferences and those that introduce new learning opportunities, respectively—to examine how each type of recommendation affects the learning experience.
 
@@ -186,7 +190,7 @@ Recently, the rapid expansion of artificial intelligence (AI)-based educational 
   </div>
 </div>
 
-<div class='paper-box'>
+ <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
       <div class="badge">Past Project</div>
@@ -206,6 +210,6 @@ The project aimed to evaluate the design complexity and instructional features o
  </div>
 </div>
 
-# 💻Experience
+# 💻 Experience
 
 
