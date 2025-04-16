@@ -7,7 +7,6 @@
 
 # Site Settings
 title                    : "Lingxi(玲僖) Jin"
-description              : "Ph.D. Candidate | AI in Education | Learning Analytics | Human-Centered Interaction"
 repository               : "lingxijin/lingxijin.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -15,7 +14,7 @@ google_scholar_stats_use_cdn : true
 author:
   name             : "Lingxi Jin"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Ph.D. Candidate at Ewha Womans University | AI in Education | Learning Analytics"
+  bio              : "Ph.D. Candidate at Ewha Womans University，Interaction Design for Learning Lab"
   location         : "Seoul, South Korea"
   employer         :
   pubmed           : 
