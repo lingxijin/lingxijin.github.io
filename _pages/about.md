@@ -129,7 +129,6 @@ Journal of Educational Information and Media, 2020
 
 # 💻 Projects
 
-
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
@@ -139,6 +138,11 @@ Journal of Educational Information and Media, 2020
   </div>
   <div class='paper-box-text' markdown="1">
 
+<video width="100%" height="auto" controls>
+  <source src="/files/chatmelody-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 **Exploring the Impact of an LLM-Powered Teachable Agent**
 
 🔹 **Project Period**: 2024.01 – Present  
@@ -146,6 +150,10 @@ Journal of Educational Information and Media, 2020
 🔹 **Role**: Project Manager  
 
 The goal of this project is to explore how learners engage in knowledge co-construction when teaching an LLM-powered agent (Chat Melody) to solve music theory problems. This project draws upon the Learning-by-Teaching (LBT) paradigm and leverages large language models to simulate a curious novice agent. By teaching the agent, learners engage in deeper reflection, strategic problem-solving, and more effective knowledge organization. Chat Melody provides multimodal interaction, including visual sheet music, auditory cues, and dialogic support. It has been evaluated in the context of harmonic analysis and musical form identification. The project also investigates cognitive load, motivation, and sequential learning behaviors using Lag Sequential Analysis (LSA) and Epistemic Network Analysis (ENA).
+
+  </div>
+</div>
+
 
  </div>
 </div>
