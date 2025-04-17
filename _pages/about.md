@@ -138,11 +138,6 @@ Journal of Educational Information and Media, 2020
   </div>
   <div class='paper-box-text' markdown="1">
 
-<video width="100%" height="auto" controls>
-  <source src="/files/chatmelody-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 **Exploring the Impact of an LLM-Powered Teachable Agent**
 
 🔹 **Project Period**: 2024.01 – Present  
