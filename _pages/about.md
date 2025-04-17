@@ -29,7 +29,7 @@ If you are interested in academic collaboration, please feel free to contact me 
 
 # 🔥 News
 - *2025.04*: &nbsp;🎉 Three of my papers accepted to **CHI 2025 Workshop**, **AIED 2025 Short Paper**, and **ICLS 2025 Short Paper**!
-- *2024.12*  &nbsp;🎉 Achieved **PADI Advanced Open Water Diver** certification!
+- *2024.12*: &nbsp;🎉 Achieved **PADI Advanced Open Water Diver** certification!!
 - *2024.11*: &nbsp;🏆 Received **Best Poster Design Award** at ICCE 2024 for our work on GenAI in academic writing.<a href='https://scholar.google.com/citations?user=00XArpMAAAAJ&hl=ko'>
 
 
