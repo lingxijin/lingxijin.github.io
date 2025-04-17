@@ -150,9 +150,6 @@ The goal of this project is to explore how learners engage in knowledge co-const
 </div>
 
 
- </div>
-</div>
-
   <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
