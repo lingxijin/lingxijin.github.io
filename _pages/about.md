@@ -23,10 +23,13 @@ Motivated by a commitment to improving learning experiences through advanced tec
 
 She received her Master’s degree in Educational Technology from Ewha Womans University, where she built a strong foundation in instructional design, learning analytics, and AI-enhanced education. She has since contributed to several national research projects on Recommendation Systems for Education and engineering education reform. Her recent work has been accepted at leading international conferences, including CHI 2025, AIED 2025, and ICLS 2025.
 
+Outside of research, she enjoys scuba diving, traveling, and discovering new places and perspectives.
+
 If you are interested in academic collaboration, please feel free to contact me at **jinlingxi@ewha.ac.kr**.
 
 # 🔥 News
 - *2025.04*: &nbsp;🎉 Three of my papers accepted to **CHI 2025 Workshop**, **AIED 2025 Short Paper**, and **ICLS 2025 Short Paper**!
+- *2024.12*  &nbsp;🎉 Achieved **PADI Advanced Open Water Diver** certification!
 - *2024.11*: &nbsp;🏆 Received **Best Poster Design Award** at ICCE 2024 for our work on GenAI in academic writing.<a href='https://scholar.google.com/citations?user=00XArpMAAAAJ&hl=ko'>
 
 
