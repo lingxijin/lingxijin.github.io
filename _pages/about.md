@@ -28,10 +28,10 @@ Outside of research, she enjoys scuba diving, traveling, and discovering new pla
 If you are interested in academic collaboration, please feel free to contact me at **jinlingxi@ewha.ac.kr**.
 
 # 🔥 News
+- *2025.04*: &nbsp;🎉 I'm thrilled to present my research on LLM-powered Teachable Agents at the **CHI 2025 Workshop** in Pacifico Yokohama. See you in Japan!
 - *2025.04*: &nbsp;🎉 My short paper was accepted at the **26th International Conference on Artificial Intelligence in Education (AIED 2025)**.
 Among over 800 initial submissions, the acceptance rate was under 19% for full papers and under 16% for short papers, making this an especially competitive selection.
 - *2025.03*  &nbsp;🎉 I’m excited to share that my short paper was accepted at the **International Conference of the Learning Sciences (ICLS 2025)**, one of the top conferences in the Learning Sciences field, with 1,049 submissions this year!
-- *2025.04*: &nbsp;🎉 I'm thrilled to present my research on LLM-powered Teachable Agents at the **CHI 2025 Workshop** in Pacifico Yokohama. See you in Japan!
 - *2024.12*: &nbsp;🎉 Achieved **PADI Advanced Open Water Diver** certification!!
 - *2024.11*: &nbsp;🏆 Received **Best Poster Design Award** at ICCE 2024 for our work on GenAI in academic writing.<a href='https://scholar.google.com/citations?user=00XArpMAAAAJ&hl=ko'>
 
