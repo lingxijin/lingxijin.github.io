@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Lingxi(玲僖) Jin"
+title                    : "Lingxi(金玲僖) Jin"
 repository               : "lingxijin/lingxijin.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -14,7 +14,7 @@ google_scholar_stats_use_cdn : true
 author:
   name             : "Lingxi Jin（Ph.D. Candidate）"
   avatar           : "images/PROFILE.jpg"
-  bio              : "Ewha Womans University | Department of Educational Technology | Interaction Design for Learning Lab"
+  bio              : "Ewha Womans University | Department of Educational Technology | Interaction Design for Learning Lab"https://www.idlearning.org/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=162206209&t=board"
   location         : "Seoul, South Korea" 
   googlescholar    : "https://scholar.google.com/citations?user=00XArpMAAAAJ&hl=ko"
   email            : "jinlingxi@ewha.ac.kr"
