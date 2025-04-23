@@ -52,7 +52,7 @@ International Conference on Artificial Intelligence in Education, Short Paper, 2
 
 [WIP: LLMs Reliably Assess Musical Form Analysis? A Study on Few-Shot Learning and Teacher Ratings]  
 Autors: Baicheng Lin, **Lingxi Jin**, Kyung-Seok Min  
-ACM Conference on Learning @ Scale, Poster, 2025 (in press), Italy
+ACM Conference on Learning @ Scale, Poster, 2025 (Under Review), Italy
 
 </div></div>
 
