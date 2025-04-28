@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-**Lingxi Jin (金玲僖)** is a Ph.D. candidate in Educational Technology at Ewha Womans University, supervised by Professor Hyo-Jeong So. Her research sits at the intersection of Artificial Intelligence in Education (AIED), human–centred interaction, and learning analytics. Her research integrates large language models (LLMs) into AI-enhanced learning environments, drawing on principles of learning design to scaffold meaningful learner–AI interactions and promote cognitive engagement. She investigates how LLMs can mediate human–AI collaboration to foster knowledge co-construction and support self-directed learning in AI-augmented contexts.
+**Lingxi Jin (金玲僖)** is a Ph.D. candidate in Educational Technology at Ewha Womans University, supervised by Professor Hyo-Jeong So. Her research sits at the intersection of Artificial Intelligence in Education (AIED), Human-Computer Interaction(HCI), and Learning Analytics. Her research integrates large language models (LLMs) into AI-enhanced learning environments, drawing on principles of learning design to scaffold meaningful learner–AI interactions and promote cognitive engagement. She investigates how LLMs can mediate human–AI collaboration to foster knowledge co-construction and support self-directed learning in AI-augmented contexts.
 
 Motivated by a commitment to improving learning experiences through advanced technologies, Lingxi is currently designing intelligent tutoring systems and teachable agents powered by LLMs. To analyze the dynamics of learner–AI interaction, she employs learning analytics methods such as Lag Sequential Analysis (LSA) and Epistemic Network Analysis (ENA).
 
