@@ -28,6 +28,7 @@ Outside of research, she enjoys scuba diving, traveling, and discovering new pla
 If you are interested in academic collaboration, please feel free to contact me at **jinlingxi@ewha.ac.kr**.
 
 # 🔥 News
+- *2025.05*: &nbsp;🎉 Thrilled to receive the **AIED 2025 Scholarship Award (~€1500)** to attend and volunteer at the AIED 2025 Conference — see you in Palermo！
 - *2025.04*: &nbsp;🎉 I'm thrilled to present my research on LLM-powered Teachable Agents at the **CHI 2025 Workshop** in Pacifico Yokohama. See you in Japan!
 - *2025.04*: &nbsp;🎉 My short paper was accepted at the **26th International Conference on Artificial Intelligence in Education (AIED 2025)**.
 Among over 800 initial submissions, the acceptance rate was under 19% for full papers and under 16% for short papers, making this an especially competitive selection.
