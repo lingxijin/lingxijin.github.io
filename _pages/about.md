@@ -39,6 +39,15 @@ Among over 800 initial submissions, the acceptance rate was under 19% for full p
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICoME 2025</div> width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[What determines higher education students’ adoption of ChatGPT for academic writing? An analysis based on the UTAUT-2 framework]  
+Autors: **Lingxi Jin**, Eunyeong Kim, Yubin Jeong, Hyo-Jeong So  
+International Conference for Media in Education, Full Paper, 2025, South Korea
+
+What determines higher education students’ adoption of ChatGPT for academic writing? An analysis based on the UTAUT-2 framework
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AIED 2025</div><img src='images/AIED2025.png' alt="AIED 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
