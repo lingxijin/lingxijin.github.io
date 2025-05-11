@@ -48,6 +48,15 @@ International Conference on Artificial Intelligence in Education, Short Paper, 2
 
 </div></div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CHI 2025</div><img src='images/CHIwrkshop2025.png' alt="CHI 2025" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Exploring the Impact of an LLM-Powered Teachable Agent on Learning Gains and Cognitive Load in Music Education](https://arxiv.org/pdf/2504.00636)  
+Autors: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So  
+CHI 2025 Workshop on Augmented Educators and AI: Shaping the Future of Human and AI Cooperation in Learning, 2025, Yokohama
+
+</div></div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">L@S 2025</div><img src='images/L@S2025.png' alt="L@S 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -63,15 +72,6 @@ ACM Conference on Learning @ Scale, Poster, 2025 (Under Review), Italy
 [What Do University Students Say About ChatGPT? A Topic Modeling of Perception on GenAI in Academic Writing](https://library.apsce.net/index.php/ICCE/article/view/5029)  
 Autors: **Lingxi Jin**, Kyuwon Kim, Hyo-Jeong So, GaYeong Lee  
 *(Best Poster Design 🏆)* International Conference on Computers in Education, Poster, 2024, Manila
-
-</div></div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CHI 2025</div><img src='images/CHIwrkshop2025.png' alt="CHI 2025" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Exploring the Impact of an LLM-Powered Teachable Agent on Learning Gains and Cognitive Load in Music Education](https://arxiv.org/pdf/2504.00636)  
-Autors: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So  
-CHI 2025 Workshop on Augmented Educators and AI: Shaping the Future of Human and AI Cooperation in Learning, 2025, Yokohama
 
 </div></div>
 
