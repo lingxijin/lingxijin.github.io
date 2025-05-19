@@ -57,6 +57,8 @@ AACE E-Learn, 2025 (Under Review), Thailand
 Autors: Baicheng Lin, **Lingxi Jin**, Kyung-Seok Min  
 AACE E-Learn, 2025 (Under Review), Thailand
 
+</div></div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AIED 2025</div><img src='images/AIED2025.png' alt="AIED 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
