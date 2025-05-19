@@ -39,6 +39,24 @@ Among over 800 initial submissions, the acceptance rate was under 19% for full p
 
 # 📝 Publications 
 
+</div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">L@S 2025</div><img src='images/L@S2025.png' alt="L@S 2025" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[What determines higher education students’ adoption of ChatGPT for academic writing? An analysis based on the UTAUT-2 framework]  
+Autors:**Lingxi Jin**, Eunyeong Kim, Yubin Jung, Hyo-Jeong So  
+AACE E-Learn, 2025 (Under Review), Thailand
+
+</div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">L@S 2025</div><img src='images/L@S2025.png' alt="L@S 2025" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[WIP: LLMs Reliably Assess Musical Form Analysis? A Study on Few-Shot Learning and Teacher Ratings]  
+Autors: Baicheng Lin, **Lingxi Jin**, Kyung-Seok Min  
+AACE E-Learn, 2025 (Under Review), Thailand
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AIED 2025</div><img src='images/AIED2025.png' alt="AIED 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -55,14 +73,6 @@ International Conference on Artificial Intelligence in Education, Short Paper, 2
 Autors: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So  
 CHI 2025 Workshop on Augmented Educators and AI: Shaping the Future of Human and AI Cooperation in Learning, 2025, Yokohama
 
-</div></div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">L@S 2025</div><img src='images/L@S2025.png' alt="L@S 2025" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[WIP: LLMs Reliably Assess Musical Form Analysis? A Study on Few-Shot Learning and Teacher Ratings]  
-Autors: Baicheng Lin, **Lingxi Jin**, Kyung-Seok Min  
-ACM Conference on Learning @ Scale, Poster, 2025 (Under Review), Italy
 
 </div></div>
 
