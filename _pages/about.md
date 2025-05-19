@@ -39,7 +39,7 @@ Among over 800 initial submissions, the acceptance rate was under 19% for full p
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SSCI</div><img src='images/SSCI.png' alt="SSCI" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SSCI</div><img src='images/ssci.png' alt="SSCI" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Examining University Students’ Engagement with ChatGPT in English Essay Writing: Interaction Patterns and Perceptions]  
