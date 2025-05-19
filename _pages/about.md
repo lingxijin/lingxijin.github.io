@@ -39,6 +39,14 @@ Among over 800 initial submissions, the acceptance rate was under 19% for full p
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SSCI</div><img src='images/SSCI.png' alt="SSCI" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Examining University Students’ Engagement with ChatGPT in English Essay Writing: Interaction Patterns and Perceptions]  
+Autors: Hyeji Jang, **Lingxi Jin**, Hyo-Jeong So  
+The Asia Pacific Education Researcher, 2025 (Under Revison), SSCI
+
+</div></div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">E-Learn 2025</div><img src='images/AACE.png' alt="L@S 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
