@@ -41,11 +41,11 @@ Among over 800 initial submissions, the acceptance rate was under 19% for full p
 
 </div></div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">L@S 2025</div><img src='images/L@S2025.png' alt="L@S 2025" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">L@S 2025</div><img src='images/AACE.png' alt="L@S 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [What determines higher education students’ adoption of ChatGPT for academic writing? An analysis based on the UTAUT-2 framework]  
-Autors:**Lingxi Jin**, Eunyeong Kim, Yubin Jung, Hyo-Jeong So  
+Autors: **Lingxi Jin**, Eunyeong Kim, Yubin Jung, Hyo-Jeong So  
 AACE E-Learn, 2025 (Under Review), Thailand
 
 </div></div>
