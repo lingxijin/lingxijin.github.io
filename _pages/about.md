@@ -44,7 +44,7 @@ Among over 800 initial submissions, the acceptance rate was under 19% for full p
 
 [Examining University Students’ Engagement with ChatGPT in English Essay Writing: Interaction Patterns and Perceptions]  
 Autors: Hyeji Jang, **Lingxi Jin**, Hyo-Jeong So  
-The Asia Pacific Education Researcher, 2025 (Under Revison), SSCI
+Asia Pacific Journal of Education, 2025 (Under Revison), SSCI
 
 </div></div>
 
