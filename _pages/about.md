@@ -39,7 +39,6 @@ Among over 800 initial submissions, the acceptance rate was under 19% for full p
 
 # 📝 Publications 
 
-</div></div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">E-Learn 2025</div><img src='images/AACE.png' alt="L@S 2025" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -74,7 +73,6 @@ International Conference on Artificial Intelligence in Education, Short Paper, 2
 [Exploring the Impact of an LLM-Powered Teachable Agent on Learning Gains and Cognitive Load in Music Education](https://arxiv.org/pdf/2504.00636)  
 Autors: **Lingxi Jin**, Baicheng Lin, Mengze Hong, Kun Zhang, Hyo-Jeong So  
 CHI 2025 Workshop on Augmented Educators and AI: Shaping the Future of Human and AI Cooperation in Learning, 2025, Yokohama
-
 
 </div></div>
 
