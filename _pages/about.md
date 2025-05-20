@@ -52,7 +52,7 @@ Asia Pacific Journal of Education, 2025 (Under Revison), SSCI
 <div class='paper-box-text' markdown="1">
 
 [What determines higher education students’ adoption of ChatGPT for academic writing? An analysis based on the UTAUT-2 framework]  
-Autors: **Lingxi Jin**, Eunyeong Kim, Yubin Jung, Hyo-Jeong So  
+Autors: **Lingxi Jin**, Eunyoung Kim, Yubin Jung, Hyo-Jeong So  
 AACE E-Learn, 2025 (Under Review), Thailand
 
 </div></div>
