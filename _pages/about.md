@@ -141,7 +141,8 @@ Journal of Educational Information and Media, 2020
 
 
 # 🎖 Honors and Awards
-- *2024.11* – Best Poster Design Award, 32nd International Conference on Computers in Education, Manila.
+- *2025.07* – AIED2025 Conference Scholarship Award, 26th International Conference on Artificial Intelligence in Education, Italy.
+- *2024.11* – Best Poster Design Award, 32nd International Conference on Computers in Education, philippines.
 - *2023.03* – ISS F2 Full Tuition Scholarship, Ewha Womans University, South Korea
 - *2020.07* – Graduate Research Assistant Scholarship, Ewha Womans University, South Korea
 - *2020.07* – ISS-V (International Students Scholarship – Volunteer-based), Ewha Womans University, South Korea
