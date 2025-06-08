@@ -23,9 +23,9 @@ Motivated by a commitment to improving learning experiences through advanced tec
 
 She received her Master’s degree in Educational Technology from Ewha Womans University, where she built a strong foundation in instructional design, learning analytics, and AI-enhanced education. She has since contributed to several national research projects on Recommendation Systems for Education and engineering education reform. Her recent work has been accepted at leading international conferences, including CHI 2025, AIED 2025, and ICLS 2025.
 
-Outside of research, she enjoys scuba diving, traveling, and discovering new places and perspectives.
+Outside of research, she enjoys scuba diving, traveling, and discovering new places and perspectives. 
 
-If you are interested in academic collaboration, please feel free to contact me at **jinlingxi@ewha.ac.kr**.
+If you are interested in any academic collaboration, grant or community service are welcome. Please feel free to contact me at **jinlingxi@ewha.ac.kr**.
 
 # 🔥 News
 - *2025.05*: &nbsp;🎉 Thrilled to receive the **AIED 2025 Scholarship Award (~€1500)** to attend and volunteer at the AIED 2025 Conference — see you in Palermo！
