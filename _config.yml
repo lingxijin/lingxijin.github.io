@@ -8,13 +8,30 @@ last_name: Jin
 contact_note: > Ph.D. candidate in Educational Technology at Ewha Womans University
 
 description: >
-description: > Lingxi Jin is a Ph.D. candidate in <a href="https://cms.ewha.ac.kr/user/indexMain.action?siteId=et" target="_blank">Educational Technology</a> at 
-  <a href="https://www.ewha.ac.kr/ewha/index.do" target="_blank">Ewha Womans University</a>, and a Visiting Scholar at the <a href="https://www.deib.polimi.it/eng/home-page" target="_blank">Department of Electronics, Information and Bioengineering (DEIB)</a>, 
-  <a href="https://www.polimi.it/" target="_blank">Politecnico di Milano</a> (2025–2026). 
-  Her research interests include Artificial Intelligence in Education (AIED), 
-  Human–Computer Interaction (HCI), Learning Experience Design, and Learning Analytics.
+description: > description: >
+  Hi! I’m Lingxi Jin, a Ph.D. candidate in
+  <a href="https://cms.ewha.ac.kr/user/indexMain.action?siteId=et" target="_blank">Educational Technology</a>
+  at <a href="https://www.ewha.ac.kr/ewha/index.do" target="_blank">Ewha Womans University</a>,
+  working with <a href="https://sites.google.com/view/hyojeongso" target="_blank">Prof. Hyo-Jeong So</a>
+  as part of the <a href="https://sites.google.com/view/idll" target="_blank">Interaction Design for Learning Lab (IDLL)</a>.
 
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  My research lies at the intersection of
+  <a href="https://iaied.org/" target="_blank">AI in Education (AIED)</a>,
+  <a href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank">Human–Computer Interaction (HCI)</a>,
+  and <a href="https://learning-analytics.info/" target="_blank">Learning Analytics</a>,
+  with a particular focus on <strong>LLM-enhanced learning environments</strong>.
+  I draw on learning-design principles to scaffold meaningful learner–AI interactions, foster cognitive engagement,
+  and explore how large language models (LLMs) can mediate human–AI collaboration for knowledge co-construction
+  and self-directed learning.
+
+  I earned my M.A. in Educational Technology at Ewha and have contributed to national projects on
+  <a href="https://eric.ed.gov/?id=ED626413" target="_blank">educational recommender systems</a>
+  and <a href="https://link.springer.com/chapter/10.1007/978-3-031-49790-2_27" target="_blank">engineering education reform</a>.
+
+  Outside the lab, I enjoy scuba diving, traveling, and tennis.
+  If you’re interested in academic collaboration, grant work, or community initiatives, feel free to reach out at
+  <a href="mailto:jinlingxi@ewha.ac.kr">jinlingxi@ewha.ac.kr</a>.
+
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
