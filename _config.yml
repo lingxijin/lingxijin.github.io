@@ -8,7 +8,6 @@ last_name: Jin
 contact_note: > Ph.D. candidate in Educational Technology at Ewha Womans University
 
 description: >
-description: > description: >
   Hi! I’m Lingxi Jin, a Ph.D. candidate in
   <a href="https://cms.ewha.ac.kr/user/indexMain.action?siteId=et" target="_blank">Educational Technology</a>
   at <a href="https://www.ewha.ac.kr/ewha/index.do" target="_blank">Ewha Womans University</a>,
@@ -36,11 +35,12 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://lingxi.github.io # the base hostname & protocol for your site
+url: https://lingxijin.github.io # the base hostname & protocol for your site
 baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -286,8 +286,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Jin]
+  first_name: [Lingxi]
 
   style: apa
   locale: en
