@@ -31,28 +31,24 @@ jobs:
       - name: Create .prettierignore (if missing)
         run: |
           if [ ! -f .prettierignore ]; then
-            cat > .prettierignore << 'EOF'
-node_modules/
-_site/
-vendor/
-assets/jupyter/
-*.ipynb
-# 如果以后恢复博客，再移除这行
-_posts/
-EOF
+            printf "%s\n" \
+              "node_modules/" \
+              "_site/" \
+              "vendor/" \
+              "assets/jupyter/" \
+              "*.ipynb" \
+              "# 如果以后恢复博客，再移除这行" \
+              "_posts/" > .prettierignore
           fi
 
-      # 先检查
       - name: Prettier Check 🔎
         id: check
         run: npx prettier . --check
 
-      # 失败就自动修复
       - name: Auto-fix with Prettier ✨
         if: ${{ failure() }}
         run: npx prettier . --write
 
-      # 提交 check 失败时的修复（或日常 push 的自动格式化）
       - name: Commit fixes (if any) 📝
         if: ${{ failure() || github.event_name == 'push' }}
         uses: stefanzweifel/git-auto-commit-action@v5
