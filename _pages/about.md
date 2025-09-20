@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Ph.D. Candidate in Educational Technology</a> | Interaction Design for Learning Lab
+subtitle: <a href='#'>Ph.D. Candidate in Educational Technology</a> 
 
 profile:
   align: right
