@@ -1,48 +1,60 @@
-name: Prettier code formatter
+name: Prettier (check & auto-fix)
 
 on:
   pull_request:
-    branches:
-      - master
-      - main
+    branches: [ master, main ]
   push:
-    branches:
-      - master
-      - main
+    branches: [ master, main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
-  check:
-    # available images: https://github.com/actions/runner-images#available-images
+  prettier:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Install Prettier 💾
-        run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
-      - name: Prettier Check 🔎
-        id: prettier
-        run: npx prettier . --check
-      - name: Create diff 📝
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
-        if: ${{ failure() }}
+        run: npm i -g prettier @shopify/prettier-plugin-liquid
+
+      - name: Create .prettierignore (if missing)
         run: |
-          npx prettier . --write
-          git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
-          npm install -g diff2html-cli
-          diff2html -i file -s side -F diff.html -- diff.txt
-      - name: Upload html diff ⬆️
-        id: artifact-upload
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
-        uses: actions/upload-artifact@v4
+          if [ ! -f .prettierignore ]; then
+            cat > .prettierignore << 'EOF'
+node_modules/
+_site/
+vendor/
+assets/jupyter/
+*.ipynb
+# 如果以后恢复博客，再移除这行
+_posts/
+EOF
+          fi
+
+      # 先检查
+      - name: Prettier Check 🔎
+        id: check
+        run: npx prettier . --check
+
+      # 失败就自动修复
+      - name: Auto-fix with Prettier ✨
+        if: ${{ failure() }}
+        run: npx prettier . --write
+
+      # 提交 check 失败时的修复（或日常 push 的自动格式化）
+      - name: Commit fixes (if any) 📝
+        if: ${{ failure() || github.event_name == 'push' }}
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          name: HTML Diff
-          path: diff.html
-          retention-days: 7
-      - name: Dispatch information to repository 🗣️
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
-        uses: peter-evans/repository-dispatch@v2
-        with:
-          event-type: prettier-failed-on-pr
-          client-payload: '{"pr_number": "${{ github.event.number }}", "artifact_url": "${{ steps.artifact-upload.outputs.artifact-url }}", "run_id": "${{ github.run_id }}"}'
+          commit_message: "chore: format with Prettier"
