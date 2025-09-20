@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Honored to receive the Italian Government Scholarship - **MAECI Grant** (€9000)
+title: Honored to receive the Italian Government Scholarship - MAECI Grant (€9000)
 date: 2025-08-14 16:11:00-0400
 inline: false
 related_posts: false
