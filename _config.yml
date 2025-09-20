@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Lingxi Jin, 金玲僖 # the website title (if blank, full name will be used instead)
+title: Lingxi Jin, 金玲僖
 first_name: Lingxi
 last_name: Jin
 contact_note: >
@@ -10,40 +10,31 @@ contact_note: >
 
 description: "Ph.D. Candidate in Educational Technology at Ewha Womans University"
 
-
-
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+keywords: jekyll, jekyll-theme, academic-website, portfolio-website
+lang: en
+icon: ⚛️
 
 url: "https://lingxijin.github.io"
 baseurl: ""
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: false
 impressum_path:
-back_to_top: true # set to false to disable the back to top button
+back_to_top: true
 
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
 
-# repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: default
+repo_theme_dark: dark
 repo_trophies:
   enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
-
-# -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-# will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+  theme_light: flat
+  theme_dark: gitdimmed
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -59,27 +50,22 @@ bib_search: true
 # Dimensions
 max_width: 930px
 
-# TODO: add layout settings (single page vs. multi-page)
-
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
-# Display links to the page with a preview object on social media.
-# see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+
+serve_og_meta: false
+serve_schema_org: false
+og_image:
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
-cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
-pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
-openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
-
-# For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
+google_analytics:
+cronitor_analytics:
+pirsch_analytics:
+openpanel_analytics:
 google_site_verification:
 bing_site_verification:
 
@@ -87,21 +73,21 @@ bing_site_verification:
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
+blog_name: al-folio
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
+lsi: false
 
-# Pagination
+# 关闭分页（没有博客页就不需要分页）
 pagination:
-  enabled: true
+  enabled: false
 
+# 关闭“相关博文”
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
-# Giscus comments (RECOMMENDED)
-# Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
+# Giscus comments
 giscus:
   repo:
   repo_id:
@@ -116,7 +102,7 @@ giscus:
   emit_metadata: 0
   lang: en
 
-# Disqus comments (DEPRECATED)
+# Disqus comments (deprecated)
 disqus_shortname: al-folio
 
 # External sources.
@@ -148,7 +134,6 @@ collections:
 # Jekyll settings
 # -----------------------------------------------------------------------------
 
-# Markdown and syntax highlight
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -161,7 +146,6 @@ kramdown:
       line_numbers: false
       start_line: 1
 
-# Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
   - bin/
@@ -183,11 +167,10 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - assets/jupyter       # ← 新加的第一行
-  - "*.ipynb"            # ← 新加的第二行
-  - _posts
+  - assets/jupyter
+  - "*.ipynb"
+  - _posts   # 没有博客文章也无妨保留排除
 
-  
 keep_files:
   - CNAME
   - .nojekyll
@@ -227,7 +210,7 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  compress_javascript: false # set to false since we are using terser as the js minifier
+  compress_javascript: false
   exclude:
     - "robots.txt"
     - "assets/js/search/*.js"
@@ -243,14 +226,14 @@ terser:
 # -----------------------------------------------------------------------------
 # Jekyll Archives
 # -----------------------------------------------------------------------------
+# 修正缩进：与 terser 同级，且关闭 posts 归档
 
-    jekyll-archives:
+jekyll-archives:
   posts:
-    enabled: []        # 关键：清空
+    enabled: []      # 关闭帖子归档以配合关闭博客
     permalinks: {}
   books:
     enabled: [year, tags, categories]
-
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"]
 display_categories: ["external-services"]
@@ -267,9 +250,6 @@ scholar:
   source: /_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocessing may conflict with MathJAX if the latter is enabled.
-  # See https://github.com/alshedivat/al-folio/issues/357.
   bibtex_filters: [latex, smallcaps, superscript]
   replace_strings: true
   join_strings: true
@@ -279,15 +259,12 @@ scholar:
   group_by: year
   group_order: descending
 
-# Display different badges withs stats for your publications
-# Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
   altmetric: true
   dimensions: true
   google_scholar: true
   inspirehep: true
 
-# Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
   [
     abbr,
@@ -314,11 +291,8 @@ filtered_bibtex_keywords:
     website,
   ]
 
-# Maximum number of authors to be shown for each publication (more authors are visible on click)
 max_author_limit: 3
 more_authors_animation_delay: 10
-
-# Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
 enable_publication_thumbnails: true
 
 # -----------------------------------------------------------------------------
@@ -337,22 +311,13 @@ external_links:
 
 imagemagick:
   enabled: true
-  widths:
-    - 480
-    - 800
-    - 1400
+  widths: [480, 800, 1400]
   input_directories:
     - assets/img/
-  input_formats:
-    - ".jpg"
-    - ".jpeg"
-    - ".png"
-    - ".tiff"
-    - ".gif"
+  input_formats: [".jpg", ".jpeg", ".png", ".tiff", ".gif"]
   output_formats:
     webp: "-quality 85"
 
-# Lazy loading images
 lazy_loading_images: true
 
 # -----------------------------------------------------------------------------
