@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Thrilled to received the AIED 2025 Scholarshhip Award(~€1500) 
+Thrilled to received the AIED 2025 Scholarship Award(~€1500) 
