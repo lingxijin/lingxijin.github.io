@@ -22,8 +22,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Prettier
-        run: npm i -g prettier
+      # 关键：本地安装 Prettier + Liquid 插件（不用 -g）
+      - name: Install Prettier + Liquid plugin
+        run: npm i --no-save prettier @shopify/prettier-plugin-liquid
 
       - name: Create .prettierignore (if missing)
         run: |
@@ -38,8 +39,9 @@ jobs:
               "_posts/" > .prettierignore
           fi
 
+      # 显式传入插件；用 . 根目录递归，避免 shell 对 ** 的兼容问题
       - name: Run Prettier (write)
-        run: npx prettier "**/*.{md,markdown,mdx,html,css,js,json,yml,yaml}" --write
+        run: npx prettier . --write --plugin=@shopify/prettier-plugin-liquid --log-level=warn
 
       - name: Commit changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v5
