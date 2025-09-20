@@ -250,15 +250,13 @@ terser:
 # Jekyll Archives
 # -----------------------------------------------------------------------------
 
-jekyll-archives:
+    jekyll-archives:
   posts:
-    enabled: [year, tags, categories]
-    permalinks:
-      year: "/blog/:year/"
-      tags: "/blog/:type/:name/"
-      categories: "/blog/:type/:name/"
+    enabled: []        # 关键：清空
+    permalinks: {}
   books:
     enabled: [year, tags, categories]
+
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"]
 display_categories: ["external-services"]
