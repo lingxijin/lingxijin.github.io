@@ -209,6 +209,9 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - assets/jupyter       # ← 新加的第一行
+  - "*.ipynb"            # ← 新加的第二行
+  
 keep_files:
   - CNAME
   - .nojekyll
