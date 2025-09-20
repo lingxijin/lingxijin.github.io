@@ -2,33 +2,44 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>Ph.D. Candidate in Educational Technology</a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>📍 Seoul, South Korea</p>
+    <p>Ph.D. Candidate @ Ewha Womans University</p>
+    <p>🎓 Interaction Design for Learning Lab (Advisor: Prof. Hyo-Jeong So)</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! I’m **Lingxi Jin (金玲僖)**, a Ph.D. candidate in  
+[Educational Technology](https://cms.ewha.ac.kr/user/indexMain.action?siteId=et)  
+at [Ewha Womans University](https://www.ewha.ac.kr/ewha/index.do), working with [Prof. Hyo-Jeong So](https://sites.google.com/view/hyojeongso)  
+as part of the [Interaction Design for Learning Lab (IDLL)](https://sites.google.com/view/idll).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research focuses on the intersection of **AI in Education (AIED)**,  
+**Human–Computer Interaction (HCI)**, and **Learning Analytics**, with a particular emphasis on  
+**LLM-enhanced learning environments**. I design and study how conversational agents and teachable agents  
+can scaffold meaningful learner–AI interactions, foster cognitive engagement, and support knowledge co-construction.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I earned my M.A. in Educational Technology at Ewha and contributed to national projects on  
+[educational recommender systems](https://eric.ed.gov/?id=ED626413) and  
+[engineering education reform](https://link.springer.com/chapter/10.1007/978-3-031-49790-2_27).
+
+Outside the lab, I enjoy 🎵 music, 🎾 tennis, and 🌊 scuba diving.  
+If you’re interested in collaboration, feel free to contact me at [jinlingxi@ewha.ac.kr](mailto:jinlingxi@ewha.ac.kr).
