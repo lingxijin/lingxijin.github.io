@@ -1,33 +1,16 @@
 ---
 layout: post
 title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+date: 2025-08-14 16:11:00-0400
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+Honored to receive the Italian Government **MAECI Grant** (€9000)。Lookinf forward to my research stay in Politecnico di Milano(Milan)
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+Lingxi Jin, a Ph.D. student at IDL Lab, has been awarded the MAECI Grant funded by the Ministry of Foreign Affairs and International Cooperation of Italy. Her research project, titled “Designing an LLM-Powered Video Annotation System for Adaptive Learning Feedback in HyFlex Learning Environments,” will be conducted over a nine-month period from November 2025 to July 2026 at the Hypermedia Open Center Laboratory, Department of Electronics, Information and Bioengineering, Polytechnic University of Milan, where she will serve as a Visiting Scholar.
 
-#### Hipster list
+Jin’s research aims to integrate Large Language Models into the EVOLI video annotation system to analyze learner-generated annotations in real time and provide adaptive, personalized feedback. While existing video-based annotation systems primarily focus on visualizing or quantifying annotation data, they often lack the capability to adjust for learners’ misunderstandings or conceptual difficulties in a timely manner. This study aims to address this gap and is expected to offer new directions for applying AI in education by supporting self-directed learning and enhancing learning outcomes, even in asynchronous environments.
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
-
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
-
----
-
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
