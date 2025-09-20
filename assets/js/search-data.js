@@ -440,10 +440,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-thrilled-to-received-the-aied-2025-scholarshhip-award-1500",
+            },},{id: "news-thrilled-to-received-the-aied-2025-scholarshhip-award-1500",
           title: 'Thrilled to received the AIED 2025 Scholarshhip Award(~€1500)',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
@@ -451,7 +448,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "projects-project-1",
+            },},{id: "news-i-ll-be-giving-a-talk-at-the-first-global-east-west-forum-on-teacher-education-2025-changchun-china-oct-10-12-sparkles-smile",
+          title: 'I’ll be giving a talk at the First Global East-West Forum on Teacher...',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
