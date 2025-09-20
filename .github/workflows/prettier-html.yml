@@ -1,4 +1,4 @@
-name: Prettier (auto-fix)
+name: Prettier (auto-fix main)
 
 on:
   push:
@@ -34,14 +34,13 @@ _site/
 vendor/
 assets/jupyter/
 *.ipynb
-# 如果将来恢复博客，再移除这行
+# 如果以后恢复博客，再移除这行
 _posts/
 EOF
           fi
 
       - name: Run Prettier (write)
-        run: |
-          npx prettier "**/*.{md,markdown,mdx,html,css,js,json,yml,yaml}" --write
+        run: npx prettier "**/*.{md,markdown,mdx,html,css,js,json,yml,yaml}" --write
 
       - name: Commit changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v5
