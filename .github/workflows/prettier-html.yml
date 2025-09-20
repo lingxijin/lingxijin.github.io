@@ -28,15 +28,14 @@ jobs:
       - name: Create .prettierignore (if missing)
         run: |
           if [ ! -f .prettierignore ]; then
-            cat > .prettierignore << 'EOF'
-node_modules/
-_site/
-vendor/
-assets/jupyter/
-*.ipynb
-# 如果以后恢复博客，再移除这行
-_posts/
-EOF
+            printf "%s\n" \
+              "node_modules/" \
+              "_site/" \
+              "vendor/" \
+              "assets/jupyter/" \
+              "*.ipynb" \
+              "# 如果以后恢复博客，再移除这行" \
+              "_posts/" > .prettierignore
           fi
 
       - name: Run Prettier (write)
