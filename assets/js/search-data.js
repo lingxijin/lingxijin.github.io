@@ -443,8 +443,8 @@ ninja.data = [{
             },},{id: "news-thrilled-to-received-the-aied-2025-scholarshhip-award-1500",
           title: 'Thrilled to received the AIED 2025 Scholarshhip Award(~€1500)',
           description: "",
-          section: "News",},{id: "news-honored-to-receive-the-italian-government-maeci-grant-9000",
-          title: 'Honored to receive the Italian Government **MAECI Grant** (€9000)',
+          section: "News",},{id: "news-honored-to-receive-the-italian-government-scholarship-maeci-grant-9000",
+          title: 'Honored to receive the Italian Government Scholarship - **MAECI Grant** (€9000)',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
