@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2015-05-07 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Thrilled to received the AIED 2025 Scholarshhip Award(~€1500) 
