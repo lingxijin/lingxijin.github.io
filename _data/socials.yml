@@ -1,3 +1,20 @@
+email: "jinlingxi@ewha.ac.kr"
+
+# 只写用户名，不要URL
+linkedin_username: "lingxi-jin-lenghee"
+
+# 只写ID，不要https://orcid.org/ 前缀
+orcid_id: "0009-0006-3653-4524"
+
+# 只写用户名，不要带 ?ev=... 这种query
+research_gate_profile: "Lingxi Jin"
+
+# 没有博客就关掉；要保留就写 true
+rss_icon: false
+
+# Scholar 这个字段你现在就是对的
+scholar_userid: "00XArpMAAAAJ"
+
 # this file contains the social media links and usernames of the author
 # the commented lines are the default social media links supported by the template
 # the socials will be displayed in the order they are defined here
@@ -10,7 +27,7 @@
 # bluesky_url: # your bluesky URL
 # dblp_url: # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
-email: jinlingxi@ewha.ac.kr # your email address
+
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
 # github_username: # your GitHub user name
@@ -24,17 +41,14 @@ email: jinlingxi@ewha.ac.kr # your email address
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-linkedin_username: www.linkedin.com/in/lingxi-jin-lenghee
+
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
-orcid_id: https://orcid.org/0009-0006-3653-4524
+
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
-research_gate_profile: https://www.researchgate.net/profile/Lingxi-Jin?ev=hdr_xprf
-rss_icon: true # comment this line to hide the RSS icon
-scholar_userid: 00XArpMAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
