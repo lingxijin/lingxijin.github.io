@@ -20,17 +20,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 安装 ImageMagick（给 jekyll-imagemagick 用）
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'      # 关键：用 3.3
+          ruby-version: '3.3'
           bundler-cache: true
 
       - name: Install dependencies
-        run: bundle install
+        run: bundle install --jobs 4 --retry 3
 
       - name: Build site with Jekyll
-        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
