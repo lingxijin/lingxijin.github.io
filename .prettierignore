@@ -12,3 +12,11 @@ _sass/tabler-icons/*.scss
 _scripts/*
 _config.yml
 .github/workflows/jekyll.yml
+node_modules/
+_site/
+vendor/
+assets/jupyter/
+*.ipynb
+_posts/
+.github/workflows/
+
