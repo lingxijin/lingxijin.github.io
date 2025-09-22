@@ -3,6 +3,8 @@ layout: page
 permalink: /service/
 title: Academic Services
 description: Academic Services
+nav: true
+nav_order: 5
 ---
 
 **Student Volunteer**  
