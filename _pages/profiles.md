@@ -3,7 +3,7 @@ layout: profiles
 permalink: /service/
 title: Academic Services
 description: Academic Services
-nav: true
+nav: false
 nav_order: 4
 
 ## Student Volunteer
