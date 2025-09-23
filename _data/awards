@@ -1,0 +1,46 @@
+# _data/awards.yml
+- title: "MAECI Grant (€9,000)"
+  badge: "Grant"
+  issuer: "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)"
+  date: "2025-08"
+  date_text: "Aug 2025"
+  link:
+
+- title: "AIED 2025 Conference Scholarship"
+  badge: "Scholarship"
+  issuer: "26th International Conference on Artificial Intelligence in Education (AIED 2025)"
+  date: "2025-05"
+  date_text: "May 2025"
+  link:
+
+- title: "Best Poster Design Award Winner"
+  badge: "Award"
+  issuer: "32nd International Conference on Computers in Education (ICCE 2024)"
+  date: "2024-11"
+  date_text: "Nov 2024"
+  link:
+
+- title: "ISS F2 Scholarship — Full Tuition"
+  badge: "Scholarship"
+  issuer: "Ewha Womans University"
+  date: "2023-03"
+  date_text: "Mar 2023"
+
+
+- title: "Graduate Research Assistant Scholarship"
+  badge: "Scholarship"
+  issuer: "Ewha Womans University"
+  date: "2020-07"
+  date_text: "Jul 2020"
+
+- title: "ISS-V (International Students Scholarship — Volunteer-based)"
+  badge: "Scholarship"
+  issuer: "Ewha Womans University"
+  date: "2020-01"
+  date_text: "Jan 2020"
+
+- title: "Korean Language Excellence Scholarship for International Students (HH1)"
+  badge: "Scholarship"
+  issuer: "Ewha Womans University"
+  date: "2019-09"
+  date_text: "Sep 2019"
