@@ -16,20 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-awards",
-          title: "awards",
-          description: "Awards &amp; Scholarships",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/awards/";
-          },
-        },{id: "nav-services",
-          title: "services",
-          description: "Academic Services，",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/services/";
-          },
         },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
