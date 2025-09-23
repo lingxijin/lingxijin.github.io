@@ -3,7 +3,7 @@ layout: page
 permalink: /services/
 title: services
 description: Academic Services，
-nav: true
+nav: false
 nav_order: 4
 ---
 
