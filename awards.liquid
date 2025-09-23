@@ -1,0 +1,22 @@
+{%- comment -%} _includes/awards.liquid {%- endcomment -%}
+<div class="publications">
+  <ul class="bibliography">
+    {%- assign items = site.data.awards | sort: "date" | reverse -%}
+    {%- for a in items -%}
+    <li class="award-item">
+      <span class="badge">{{ a.badge }}</span>
+      <span class="title">
+        {%- if a.link -%}
+          <a href="{{ a.link }}">{{ a.title }}</a>
+        {%- else -%}
+          {{ a.title }}
+        {%- endif -%}
+        <span class="award-cup">🏆</span>
+      </span>
+      <div class="award-meta">
+        <em>Issuer:</em> {{ a.issuer }} &nbsp;·&nbsp; <em>Date:</em> {{ a.date_text }}
+      </div>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
