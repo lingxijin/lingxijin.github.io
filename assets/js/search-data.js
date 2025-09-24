@@ -23,12 +23,25 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
+        },{id: "nav-services",
+          title: "services",
+          description: "Academic Services",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/services/";
+          },
         },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-m-thrilled-to-present-my-research-on-llm-powered-teachable-agents-at-the-chi-2025-workshop-in-pacifico-yokohama-see-you-in-japan",
+            },},{id: "news-excited-to-received-best-poster-design-award-at-icce-2024-for-our-work-on-genai-in-academic-writing",
+          title: 'Excited to received Best Poster Design Award at ICCE 2024 for our work...',
+          description: "",
+          section: "News",},{id: "news-i-m-excited-to-share-that-my-short-paper-was-accepted-at-the-international-conference-of-the-learning-sciences-icls-2025-one-of-the-top-conferences-in-the-learning-sciences-field-with-1-049-submissions-this-year",
+          title: 'I’m excited to share that my short paper was accepted at the International...',
+          description: "",
+          section: "News",},{id: "news-i-m-thrilled-to-present-my-research-on-llm-powered-teachable-agents-at-the-chi-2025-workshop-in-pacifico-yokohama-see-you-in-japan",
           title: 'I’m thrilled to present my research on LLM-powered Teachable Agents at the CHI...',
           description: "",
           section: "News",},{id: "news-my-short-paper-was-accepted-at-the-26th-international-conference-on-artificial-intelligence-in-education-aied-2025-among-over-800-initial-submissions-the-acceptance-rate-was-under-19-for-full-papers-and-under-16-for-short-papers-making-this-an-especially-competitive-selection",
@@ -43,7 +56,7 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
             },},{id: "news-i-39-ll-be-giving-an-invited-talk-at-the-first-global-east-west-forum-on-teacher-education-2025-changchun-china-october-10-12",
-          title: 'I&amp;#39;ll be giving an invited talk at the **First Global East–West Forum on...',
+          title: 'I&amp;#39;ll be giving an invited talk at the First Global East–West Forum on...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
