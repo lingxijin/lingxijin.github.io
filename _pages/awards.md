@@ -10,29 +10,30 @@ nav_order: 5
 <!-- 年份分组版（去掉 badge 简化版） -->
 <div class="awards">
 
+  <!-- 2025 -->
   <div class="award-group">
-  <h3 class="award-year">2025</h3>
-  <ul class="award-list">
-    <li class="award-item">
-      <div class="award-main">
-        <span class="award-title">MAECI Grant Award (€9,000)</span>
-      </div>
-      <div class="award-sub">
-        <span class="award-date">Aug 2025</span> · 
-        <span class="award-meta">Italian Ministry of Foreign Affairs and International Cooperation (MAECI)</span>
-      </div>
-    <li class="award-item">
-      <div class="award-main">
-        <span class="award-title">AIED 2025 Conference Scholarship</span>
-      </div>
-      <div class="award-sub">
-        <span class="award-date">May 2025</span> · 
-        <span class="award-meta">26th International Conference on Artificial Intelligence in Education (AIED 2025)</span>
-      </div>
-    </li>
-  </ul>
-</div>
-
+    <h3 class="award-year">2025</h3>
+    <ul class="award-list">
+      <li class="award-item">
+        <div class="award-main">
+          <span class="award-title">MAECI Grant Award (€9,000)</span>
+        </div>
+        <div class="award-sub">
+          <span class="award-date">Aug 2025</span> · 
+          <span class="award-meta">Italian Ministry of Foreign Affairs and International Cooperation (MAECI)</span>
+        </div>
+      </li>
+      <li class="award-item">
+        <div class="award-main">
+          <span class="award-title">AIED 2025 Conference Scholarship</span>
+        </div>
+        <div class="award-sub">
+          <span class="award-date">May 2025</span> · 
+          <span class="award-meta">26th International Conference on Artificial Intelligence in Education (AIED 2025)</span>
+        </div>
+      </li>
+    </ul>
+  </div>
 
   <!-- 2024 -->
   <div class="award-group">
