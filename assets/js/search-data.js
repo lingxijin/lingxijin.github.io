@@ -28,7 +28,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-thrilled-to-received-the-aied-2025-scholarship-award-1500",
+            },},{id: "news-i-m-thrilled-to-present-my-research-on-llm-powered-teachable-agents-at-the-chi-2025-workshop-in-pacifico-yokohama-see-you-in-japan",
+          title: 'I’m thrilled to present my research on LLM-powered Teachable Agents at the CHI...',
+          description: "",
+          section: "News",},{id: "news-thrilled-to-received-the-aied-2025-scholarship-award-1500",
           title: 'Thrilled to received the AIED 2025 Scholarship Award(~€1500)',
           description: "",
           section: "News",},{id: "news-honored-to-receive-the-italian-government-scholarship-maeci-grant-9000",
