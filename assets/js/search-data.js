@@ -46,7 +46,7 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
             },},{id: "news-i-39-ll-be-giving-an-invited-talk-at-the-first-global-east-west-forum-on-teacher-education-2025-changchun-china-october-10-12",
-          title: 'I&amp;#39;ll be giving an invited talk at the **First Global East–West Forum on...',
+          title: 'I&amp;#39;ll be giving an invited talk at the First Global East–West Forum on...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
