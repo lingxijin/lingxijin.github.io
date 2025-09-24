@@ -28,7 +28,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-m-excited-to-share-that-my-short-paper-was-accepted-at-the-international-conference-of-the-learning-sciences-icls-2025-one-of-the-top-conferences-in-the-learning-sciences-field-with-1-049-submissions-this-year",
+            },},{id: "news-excited-to-received-best-poster-design-award-at-icce-2024-for-our-work-on-genai-in-academic-writing",
+          title: 'Excited to received Best Poster Design Award at ICCE 2024 for our work...',
+          description: "",
+          section: "News",},{id: "news-i-m-excited-to-share-that-my-short-paper-was-accepted-at-the-international-conference-of-the-learning-sciences-icls-2025-one-of-the-top-conferences-in-the-learning-sciences-field-with-1-049-submissions-this-year",
           title: 'I’m excited to share that my short paper was accepted at the International...',
           description: "",
           section: "News",},{id: "news-i-m-thrilled-to-present-my-research-on-llm-powered-teachable-agents-at-the-chi-2025-workshop-in-pacifico-yokohama-see-you-in-japan",
