@@ -36,8 +36,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-i-ll-be-giving-a-talk-at-the-first-global-east-west-forum-on-teacher-education-2025-changchun-china-oct-10-12-sparkles-smile",
-          title: 'I’ll be giving a talk at the First Global East-West Forum on Teacher...',
+            },},{id: "news-i-ll-be-giving-a-invited-talk-at-the-first-global-east-west-forum-on-teacher-education-2025-changchun-china-october-10-12-sparkles-smile-this-international-forum-is-co-hosted-by-northeast-normal-university-and-the-global-institute-for-teacher-development-bringing-together-scholars-and-practitioners-worldwide-to-explore-the-theme-enhancing-teacher-education-competence-in-the-context-of-educational-digital-transformation-key-topics-include-building-teacher-education-knowledge-systems-intelligent-technologies-empowering-teacher-education-innovation-policies-and-sustainable-professional-development-core-teacher-competencies-and-professional-standards-data-driven-teacher-education-evaluation-and-reflection-comparative-and-global-perspectives-on-teacher-education-i-look-forward-to-exchanging-ideas-with-colleagues-from-east-and-west-on-the-future-of-teacher-education-in-the-digital-era",
+          title: 'I’ll be giving a invited talk at the First Global East–West Forum on...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
