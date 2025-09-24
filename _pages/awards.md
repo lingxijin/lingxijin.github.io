@@ -11,45 +11,46 @@ nav_order: 5
 <div class="awards">
 
   <div class="award-group">
-    <h3 class="award-year">2025</h3>
-    <ul class="award-list">
-      <li class="award-item">
-        <div class="award-main">
-          <span class="award-title">MAECI Grant Award (€9,000) 
-        </div>
-        <div class="award-sub">
-          <span class="award-date">Aug 2025</span> · 
-          <span class="award-meta">Issuer: Italian Ministry of Foreign Affairs and International Cooperation (MAECI)</span>
-        </div>
-      </li>
+  <h3 class="award-year">2025</h3>
+  <ul class="award-list">
+    <li class="award-item">
+      <div class="award-main">
+        <span class="award-title">MAECI Grant Award (€9,000)</span>
+      </div>
+      <div class="award-sub">
+        <span class="award-date">Aug 2025</span> · 
+        <span class="award-meta">Italian Ministry of Foreign Affairs and International Cooperation (MAECI)</span>
+      </div>
+    <li class="award-item">
+      <div class="award-main">
+        <span class="award-title">AIED 2025 Conference Scholarship</span>
+      </div>
+      <div class="award-sub">
+        <span class="award-date">May 2025</span> · 
+        <span class="award-meta">26th International Conference on Artificial Intelligence in Education (AIED 2025)</span>
+      </div>
+    </li>
+  </ul>
+</div>
 
-      <li class="award-item">
-        <div class="award-main">
-          <span class="award-title">AIED 2025 Conference Scholarship
-        </div>
-        <div class="award-sub">
-          <span class="award-date">May 2025</span> · 
-          <span class="award-meta">Issuer: 26th International Conference on Artificial Intelligence in Education (AIED 2025)</span>
-        </div>
-      </li>
-    </ul>
-  </div>
 
+  <!-- 2024 -->
   <div class="award-group">
     <h3 class="award-year">2024</h3>
     <ul class="award-list">
       <li class="award-item">
         <div class="award-main">
-          <span class="award-title">Best Poster Design Award Winner 
+          <span class="award-title">Best Poster Design Award Winner</span>
         </div>
         <div class="award-sub">
           <span class="award-date">Nov 2024</span> · 
-          <span class="award-meta">Issuer: 32nd International Conference on Computers in Education (ICCE 2024)</span>
+          <span class="award-meta">32nd International Conference on Computers in Education (ICCE 2024)</span>
         </div>
       </li>
     </ul>
   </div>
 
+  <!-- 2023 -->
   <div class="award-group">
     <h3 class="award-year">2023</h3>
     <ul class="award-list">
@@ -59,12 +60,13 @@ nav_order: 5
         </div>
         <div class="award-sub">
           <span class="award-date">Mar 2023</span> · 
-          <span class="award-meta">Issuer: Ewha Womans University</span>
+          <span class="award-meta">Ewha Womans University</span>
         </div>
       </li>
     </ul>
   </div>
 
+  <!-- 2020 -->
   <div class="award-group">
     <h3 class="award-year">2020</h3>
     <ul class="award-list">
@@ -74,7 +76,7 @@ nav_order: 5
         </div>
         <div class="award-sub">
           <span class="award-date">Jul 2020</span> · 
-          <span class="award-meta">Issuer: Ewha Womans University</span>
+          <span class="award-meta">Ewha Womans University</span>
         </div>
       </li>
       <li class="award-item">
@@ -83,12 +85,13 @@ nav_order: 5
         </div>
         <div class="award-sub">
           <span class="award-date">Jan 2020</span> · 
-          <span class="award-meta">Issuer: Ewha Womans University</span>
+          <span class="award-meta">Ewha Womans University</span>
         </div>
       </li>
     </ul>
   </div>
 
+  <!-- 2019 -->
   <div class="award-group">
     <h3 class="award-year">2019</h3>
     <ul class="award-list">
@@ -98,7 +101,7 @@ nav_order: 5
         </div>
         <div class="award-sub">
           <span class="award-date">Sep 2019</span> · 
-          <span class="award-meta">Issuer: Ewha Womans University</span>
+          <span class="award-meta">Ewha Womans University</span>
         </div>
       </li>
     </ul>
