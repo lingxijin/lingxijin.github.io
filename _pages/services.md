@@ -1,10 +1,10 @@
 ---
 layout: page
 title: services
+permalink: /services/
 description: Academic Services
 nav: true
 nav_order: 4
-permalink: /services/
 ---
 
 - **Student Volunteer**, AIED 2025  
