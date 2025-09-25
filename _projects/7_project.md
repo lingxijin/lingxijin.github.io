@@ -2,7 +2,7 @@
 layout: page
 title: Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms: Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods
 description: Recommender system
-img: assets/img/4.jpg  # 避免与正文重复；若想用正文那张，这里可改回 project7.png 或删掉本行
+img: assets/img/project7.png 
 importance: 1
 category: work
 ---
