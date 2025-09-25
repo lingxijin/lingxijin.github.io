@@ -15,7 +15,7 @@ With the rapid introduction of AI technologies, there are increasing interest an
   <div class="col-sm-10 mt-3 mt-md-0">
     {% include figure.liquid
       loading="eager"
-      path="assets/img/project1.jpg"  # <-- 替换成你的封面图路径
+      path="assets/img/project1.png"
       title="Project 1"
       class="img-fluid rounded z-depth-1" %}
   </div>
@@ -28,7 +28,7 @@ With the rapid introduction of AI technologies, there are increasing interest an
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
     {% include figure.liquid
-      path="assets/img/project1.1.png"  # <-- 替换成你的机制图路径
+      path="assets/img/project1.1.png"
       title="Learning Mechanism"
       caption="Most dominant mechanism of learning at level 1"
       class="img-fluid rounded z-depth-1" %}
