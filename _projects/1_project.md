@@ -38,5 +38,6 @@ With the rapid introduction of AI technologies, there are increasing interest an
 ---
 
 ## References
-{% bibliography --query @article{lee2020analysis} %}
+{% bibliography --query @*[key=lee2020analysis] %}
+
 
