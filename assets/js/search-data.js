@@ -104,9 +104,9 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-design-and-evaluation-of-recommender-systems-for-educational-artificial-intelligence-platforms-focusing-on-preference-consistent-and-preference-inconsistent-recommendation-methods",
-          title: 'Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms: Focusing on...',
-          description: "Recommender system",
+            },},{id: "projects-design-and-evaluation-of-recommender-systems-for-educational-artificial-intelligence-platforms",
+          title: 'Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms',
+          description: "Design and Evaluation of Recommender systems for Educational Artificial Intelligence Platforms: Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-project-8",
