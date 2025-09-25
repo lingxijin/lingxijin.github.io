@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Apr 2020 - Feb 2021 Development of evaluation tools for artificial intelligence educational AI platform"
+title: "Development of evaluation tools for artificial intelligence educational AI platform"
 description: "Funded by National Research Foundation of Korea (NRF)"
 img: assets/img/project1.png
 importance: 1
-category: work
+category: 2020-2021
 date_range: "Apr 2020 - Feb 2021"
 start_date: 2020-04-01
 end_date: 2021-02-20
