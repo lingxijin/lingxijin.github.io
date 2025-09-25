@@ -76,7 +76,7 @@ ninja.data = [{
               window.location.href = "/news/announcement_3/";
             },},{id: "projects-development-of-evaluation-tools-for-artificial-intelligence-educational-ai-platform",
           title: 'Development of evaluation tools for artificial intelligence educational AI platform',
-          description: "Funded by National Research Foundation of Korea (NRF)",
+          description: "Analysis of AIED applications and design complexity levels",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-the-creative-convergence-engineering-talent-development",
