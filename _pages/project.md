@@ -5,7 +5,7 @@ permalink: /projects/
 description: Research projects.
 nav: true
 nav_order: 6
-display_categories: [work, fun]
+display_categories: [2020, 2022，2024，2025]
 horizontal: false
 ---
 
