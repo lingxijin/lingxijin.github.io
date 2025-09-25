@@ -22,8 +22,6 @@ horizontal: false
   </a>
 
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  {# 如果希望 importance 越大越靠前，改用下面这行并注释掉上一行 #}
-  {# {% assign sorted_projects = categorized_projects | sort: "importance" | reverse %} #}
 
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
