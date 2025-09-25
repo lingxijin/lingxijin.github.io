@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms: Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods"
-description: "Recommender system"
+title: "Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms"
+description: "Design and Evaluation of Recommender systems for Educational Artificial Intelligence Platforms: Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods"
 img: assets/img/project7.png
 importance: 1
 category: work
