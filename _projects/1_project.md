@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Development of evaluation tools for artificial intelligence educational AI platform"
+title: "Apr 2020 - Feb 2021 Development of evaluation tools for artificial intelligence educational AI platform"
 description: "Funded by National Research Foundation of Korea (NRF)"
 img: assets/img/project1.png
 importance: 1
