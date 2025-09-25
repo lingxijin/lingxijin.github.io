@@ -81,7 +81,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-the-creative-convergence-engineering-talent-development",
           title: 'The Creative Convergence Engineering Talent Development',
-          description: "Korea Institute for Advancement of Technology",
+          description: "Funded by Korea Institute for Advancement of Technology",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
