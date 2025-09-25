@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Development of evaluation tools for artificial intelligence educational AI platform"
-description: "Analysis of AIED applications and design complexity levels"
+description: "Funded by National Research Foundation of Korea (NRF)"
 img: assets/img/project1.png
 importance: 1
 category: work
