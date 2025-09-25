@@ -4,7 +4,7 @@ title: The Creative Convergence Engineering Talent Development
 description: Funded by Korea Institute for Advancement of Technology
 img: assets/img/project2.png
 importance: 2
-category: work
+category: 2022
 date_range: "Jun 2022 - Oct 2022"
 start_date: 2022-06-01
 end_date: 2022-10-01
