@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/awards/";
           },
+        },{id: "nav-project",
+          title: "project",
+          description: "project",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/project/";
+          },
         },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
@@ -67,9 +74,9 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+            },},{id: "projects-development-of-evaluation-tools-for-artificial-intelligence-educational-ai-platform",
+          title: 'Development of evaluation tools for artificial intelligence educational AI platform',
+          description: "Analysis of AIED applications and design complexity levels",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
