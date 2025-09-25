@@ -76,7 +76,7 @@ ninja.data = [{
               window.location.href = "/news/announcement_3/";
             },},{id: "projects-development-of-evaluation-tools-for-artificial-intelligence-educational-ai-platform",
           title: 'Development of evaluation tools for artificial intelligence educational AI platform',
-          description: "Analysis of AIED applications and design complexity levels",
+          description: "Funded by National Research Foundation of Korea (NRF)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-the-creative-convergence-engineering-talent-development",
@@ -106,7 +106,7 @@ ninja.data = [{
               window.location.href = "/projects/6_project/";
             },},{id: "projects-design-and-evaluation-of-recommender-systems-for-educational-artificial-intelligence-platforms",
           title: 'Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms',
-          description: "Design and Evaluation of Recommender systems for Educational Artificial Intelligence Platforms: Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods",
+          description: "Funded by National Research Foundation of Korea (NRF)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-project-8",
