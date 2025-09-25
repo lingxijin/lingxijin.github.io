@@ -4,7 +4,7 @@ title: "Design and Evaluation of Recommender Systems for Educational Artificial 
 description: "Funded by National Research Foundation of Korea (NRF)"
 img: assets/img/project7.png
 importance: 1
-category: work
+category: 2020
 date_range: "Jul 2020 - Aug 2021"
 start_date: 2020-07-01
 end_date: 2021-08-31
