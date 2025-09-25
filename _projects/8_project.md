@@ -6,21 +6,6 @@ img: assets/img/project8.png
 importance: 2
 category: 2025
 ---
-## MAECI Grant
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.liquid
-      loading="eager"
-      path="assets/img/project8.png"
-      title="MAECI Grant"
-      class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  MAECI Grant 
-</div>
----
-
 IDL Lab 박사과정생 **Lingxi Jin**이 *“Designing an LLM-Powered Video Annotation System for Adaptive Learning Feedback in HyFlex Learning Environments”*를 주제로 이탈리아 외무부(Ministry of Foreign Affairs and International Cooperation, MAECI)가 주관하는 **MAECI Grant**에 최종 선정되었습니다.  
 
 본 장학금은 해외 연구자의 이탈리아 내 학술·연구 활동을 지원하는 국제 프로그램으로, Lingxi Jin은 **2025년 11월부터 2026년 7월까지** 9개월간 **밀라노공과대학교(Politecnico di Milano) 전자·정보·생명공학과 소속 Hypermedia Open Center Laboratory**의 방문 연구원으로서 연구를 수행할 예정입니다.  
@@ -41,7 +26,6 @@ Jin’s research aims to integrate **Large Language Models (LLMs)** into the **E
     {% include figure.liquid
       loading="eager"
       path="assets/img/project8.png"
-      title="MAECI Grant"
       class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
