@@ -111,7 +111,7 @@ ninja.data = [{
               window.location.href = "/projects/7_project/";
             },},{id: "projects-designing-an-llm-powered-video-annotation-system-for-adaptive-learning-feedback-in-hyflex-learning-environments",
           title: 'Designing an LLM-Powered Video Annotation System for Adaptive Learning Feedback in HyFlex Learning...',
-          description: "Funnded by the Italy Ministry of Foreign Affairs and International Cooperation",
+          description: "Funded by the Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
             },},{id: "projects-project-9",
