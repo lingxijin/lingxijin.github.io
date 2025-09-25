@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms: Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods
-description: Recommender system
-img: assets/img/project7.png 
+title: "Design and Evaluation of Recommender Systems for Educational Artificial Intelligence Platforms: Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods"
+description: "Recommender system"
+img: assets/img/project7.png
 importance: 1
 category: work
 ---
@@ -24,7 +24,7 @@ category: work
 ---
 
 ## References
-{% assign refs = "lee2020analysis,jin2025learning" | split: "," %}
+{% assign refs = "김령희2023학습양식,jin2023recommendation" | split: "," %}
 <h2 class="mt-4">References</h2>
 {% for r in refs %}
   {% bibliography --query @*[key={{ r }}] %}
