@@ -1,12 +1,10 @@
-
-
 ---
 layout: page
-permalink: /awards/
-title: awards
-description: Awards & Scholarships
+permalink: /projects/
+title: project
+description:project
 nav: true
-nav_order: 4
+nav_order: 6
 ---
 
 {% include awards.liquid %}
