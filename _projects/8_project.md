@@ -36,4 +36,20 @@ Jin’s research aims to integrate **Large Language Models (LLMs)** into the **E
   MAECI Grant 
 </div>
 
+EVOLI is a video-annotation tool to support the hybrid and flexible instructional model. It allows students to insert feedback linked to a specific time instant in the video and teachers to analyze the progress of the lesson through customized dashboards to maximize the educational process.
+
+## Evoli
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.liquid
+      loading="eager"
+      path="assets/img/project8.2.png"
+      title="MAECI Grant"
+      class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  EVOLI is a video-annotation tool to support the hybrid and flexible instructional model.
+</div>
+
 ---
