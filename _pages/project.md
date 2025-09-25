@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /project/
-title: project
-description:project
+title: projects
+description: Research Projects
 nav: true
 nav_order: 6
 ---
 
-{% include awards.liquid %}
+{% include project.liquid %}
