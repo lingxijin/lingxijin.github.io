@@ -74,8 +74,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
-            },},{id: "projects-apr-2020-feb-2021-development-of-evaluation-tools-for-artificial-intelligence-educational-ai-platform",
-          title: 'Apr 2020 - Feb 2021 Development of evaluation tools for artificial intelligence educational...',
+            },},{id: "projects-development-of-evaluation-tools-for-artificial-intelligence-educational-ai-platform",
+          title: 'Development of evaluation tools for artificial intelligence educational AI platform',
           description: "Funded by National Research Foundation of Korea (NRF)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
