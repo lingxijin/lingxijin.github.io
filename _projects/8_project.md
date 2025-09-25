@@ -1,81 +1,16 @@
 ---
 layout: page
-title: project 8
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
+title: Designing an LLM-Powered Video Annotation System for Adaptive Learning Feedback in HyFlex Learning Environments
+description: Funnded by the Italy Ministry of Foreign Affairs and International Cooperation
+img: assets/project8.png
 importance: 2
-category: work
+category: 2025
 giscus_comments: true
 ---
+IDL Lab 박사과정생 Lingxi Jin이 “Designing an LLM-Powered Video Annotation System for Adaptive Learning Feedback in HyFlex Learning Environments”를 주제로 이탈리아 외무부(Ministry of Foreign Affairs and International Cooperation)가 주관하는 MAECI Grant에 최종 선정되었습니다. 본 장학금은 해외 연구자의 이탈리아 내 학술·연구 활동을 지원하는 국제 프로그램으로, Lingxi Jin은 2025년 11월부터 2026년 7월까지 9개월간 밀라노공과대학교(Polytechnic University of Milan) 전자·정보·생명공학과 소속 Hypermedia Open Center Laboratory의 방문 연구원으로서 연구를 수행할 예정입니다.
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+이번 연구는 하이플렉스(HyFlex) 학습 환경을 지원하는 동영상 주석 시스템 EVOLI에 대규모 언어 모델을 통합하여, 학습자의 주석 데이터를 실시간 분석하고 적응형·개인화 피드백을 제공하는 확장 모듈을 설계·개발하며, 이를 실제 학습 환경에서 검증하는 것을 목표로 합니다. 기존 동영상 기반 학습 주석 시스템은 주석 데이터를 단순 시각화·정량화하는 수준에 머물러, 학습자의 이해 부족이나 개념 혼란을 즉시 조정하기 어려운 한계가 있었습니다. 이번 연구는 이러한 한계를 극복해, 비실시간 환경에서도 학습자의 자기주도 학습을 지원하고 학습효과를 극대화할 수 있는 교육분야에 새로운 AI 활용 방향을 제시할 것으로 기대됩니다.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Lingxi Jin, a Ph.D. student at IDL Lab, has been awarded the MAECI Grant funded by the Ministry of Foreign Affairs and International Cooperation of Italy. Her research project, titled “Designing an LLM-Powered Video Annotation System for Adaptive Learning Feedback in HyFlex Learning Environments,” will be conducted over a nine-month period from November 2025 to July 2026 at the Hypermedia Open Center Laboratory, Department of Electronics, Information and Bioengineering, Polytechnic University of Milan, where she will serve as a Visiting Scholar.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+Jin’s research aims to integrate Large Language Models into the EVOLI video annotation system to analyze learner-generated annotations in real time and provide adaptive, personalized feedback. While existing video-based annotation systems primarily focus on visualizing or quantifying annotation data, they often lack the capability to adjust for learners’ misunderstandings or conceptual difficulties in a timely manner. This study aims to address this gap and is expected to offer new directions for applying AI in education by supporting self-directed learning and enhancing learning outcomes, even in asynchronous environments.
