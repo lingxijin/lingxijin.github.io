@@ -1,81 +1,16 @@
 ---
 layout: page
-title: project 7
-description: with background image
+title: Design and Evaluation of Recommender systems for Educational Artificial Intelligence Platforms: Focusing on Preference-consistent and Preference-inconsistent Recommendation Methods
+description: Recommender system
 img: assets/img/4.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+최근 인공지능(AI) 기반 교육 플랫폼이 급격히 확대되면서 학습자들이 AI 기술을 이해하는 방식도 다양해지고 있다. 그러나 많은 AI 기반 플랫폼이 기술에 대한 정확한 정보를 제공하지 않거나, 기능을 추상적으로 서술하거나 과대포장하는 경향이 있어, 사용자들이 적절한 학습 도구를 선택하는 데 어려움을 겪고 있다. 이러한 문제를 해결하기 위해, 학습자의 개별적인 학습 특성과 필요에 맞는 콘텐츠를 추천할 수 있는 시스템이 필요하다. 본 연구는 학습자가 단순한 추천 시스템의 사용자가 아니라 정보 제공자의 역할도 수행하는 참여적 추천 매커니즘을 제안하는 것을 목표로 한다. 또한, 학습자의 기존 선호도를 반영한 ‘선호 일치(preference-consistent)’ 추천 방식과, 새로운 학습 기회를 제공할 수 있는 ‘선호 불일치(preference-inconsistent)’ 추천 방식을 적용하여 각 유형의 추천 방식이 학습 경험에 미치는 영향을 검증하고자 하였다.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
 ```
 
 {% endraw %}
