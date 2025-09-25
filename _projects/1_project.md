@@ -4,7 +4,7 @@ title: "Development of evaluation tools for artificial intelligence educational 
 description: "Funded by National Research Foundation of Korea (NRF)"
 img: assets/img/project1.png
 importance: 1
-category: 2020-2021
+category: 2020
 date_range: "Apr 2020 - Feb 2021"
 start_date: 2020-04-01
 end_date: 2021-02-20
