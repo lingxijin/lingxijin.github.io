@@ -36,8 +36,7 @@ With the rapid introduction of AI technologies, there are increasing interest an
 </div>
 
 ---
-
-## References
+<h2 class="mt-4">References</h2>
 {% bibliography --query @*[key=lee2020analysis] %}
 
 
