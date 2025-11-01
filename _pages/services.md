@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-## 🎓 Academic & Conference Services
+## Academic Services
 
 <style>
 .timeline {
@@ -30,7 +30,7 @@ nav_order: 4
 
 ---
 
-### 🧑‍💼 Volunteer
+### Volunteer
 
 <div class="timeline">
   <time>Oct 2025</time>
@@ -42,7 +42,7 @@ nav_order: 4
 
 ---
 
-### 🎤 Session Chair
+### Session Chair
 
 <div class="timeline">
   <time>Oct 2025</time>
