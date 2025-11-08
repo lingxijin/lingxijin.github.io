@@ -1,7 +1,8 @@
 ---
 layout: page
-title: services
+title: Services
 permalink: /services/
+description: 
 nav: true
 nav_order: 4
 ---
@@ -19,7 +20,7 @@ nav_order: 4
 
 .timeline time {
   font-weight: 600;
-  color: var(--text-muted); /* 使用 al-folio 主题配色 */
+  color: var(--text-muted);
 }
 
 .timeline div {
@@ -41,9 +42,48 @@ nav_order: 4
 
 ---
 
-### Session Chair
+### 🎤 Session Chair
 
 <div class="timeline">
   <time>Oct 2025</time>
   <div><b>Session Chair</b>, <i>World Conference on EdTech (AACE E-Learn 2025)</i>, Bangkok, Thailand</div>
+</div>
+
+---
+
+### Academic Society Membership
+
+<div class="timeline">
+  <time>2025–</time>
+  <div>The Association for the Advancement of Computing in Education (<b>AACE</b>)</div>
+
+  <time>2024–</time>
+  <div>British Educational Research Association (<b>BERA</b>)</div>
+
+  <time>2025–</time>
+  <div>The ACM Conference on Human Factors in Computing Systems (<b>CHI</b>)</div>
+
+  <time>2024–</time>
+  <div>International Conference on Learning Analytics & Knowledge (<b>LAK</b>)</div>
+
+  <time>2024–</time>
+  <div>International Conference on Artificial Intelligence in Education (<b>AIED</b>)</div>
+</div>
+
+---
+
+### Peer-Reviewed Journal Reviewer 
+
+<div class="timeline">
+  <time>2024–</time>
+  <div><b>Peer Reviewer</b>, <i>Behaviour & Information Technology</i> (Taylor & Francis)</div>
+</div>
+
+---
+
+### International Conference Reviewer 
+
+<div class="timeline">
+  <time>2025</time>
+  <div><b>Conference Reviewer</b>, Society for Information Technology & Teacher Education (<b>SITE 2025</b>)</div>
 </div>
