@@ -34,10 +34,10 @@ nav_order: 4
 
 <div class="timeline">
   <time>Oct 2025</time>
-  <div><b>Student Volunteer</b>, Association for the Advancement of Computing in Education <i>E-Learn 2025</i>, Bangkok, Thailand</div>
+  <div><b>Student Volunteer</b>, Association for the Advancement of Computing in Education (E-Learn 2025), Bangkok, Thailand</div>
 
   <time>Jul 2025</time>
-  <div><b>Technical Support Volunteer</b>, <i>International Conference on Artificial Intelligence in Education (AIED 2025)</i>, Palermo, Italy</div>
+  <div><b>Technical Support Volunteer</b>, International Conference on Artificial Intelligence in Education (AIED 2025), Palermo, Italy</div>
 </div>
 
 ---
@@ -46,7 +46,7 @@ nav_order: 4
 
 <div class="timeline">
   <time>Oct 2025</time>
-  <div><b>Session Chair</b>, <i>World Conference on EdTech (AACE E-Learn 2025)</i>, Bangkok, Thailand</div>
+  <div><b>Session Chair</b>, World Conference on EdTech (AACE E-Learn 2025), Bangkok, Thailand</div>
 </div>
 
 ---
