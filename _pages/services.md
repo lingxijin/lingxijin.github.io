@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Services
+title: services
 permalink: /services/
-description: 
+description:
 nav: true
 nav_order: 4
 ---
