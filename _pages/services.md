@@ -42,7 +42,7 @@ nav_order: 4
 
 ---
 
-### 🎤 Session Chair
+### Session Chair
 
 <div class="timeline">
   <time>Oct 2025</time>
