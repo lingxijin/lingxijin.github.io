@@ -72,20 +72,18 @@ nav_order: 4
 
 ---
 
-### Peer-Reviewed Journal Reviewer 
+### Peer-Reviewed Journal Reviewer
 
 <div class="timeline">
   <time>2025–</time>
-  <div><b>Behaviour & Information Technology</i> (Taylor & Francis)</div>
+  <div>Behaviour & Information Technology (Taylor & Francis) — SSCI</div>
 </div>
 
 ---
 
-### International Conference Reviewer 
+### International Conference Reviewer
 
 <div class="timeline">
   <time>2025</time>
-  <div><b>Society for Information Technology & Teacher Education (<b>SITE 2025</b>)</div>
+  <div>Society for Information Technology & Teacher Education (<b>SITE 2025</b>)</div>
 </div>
-
----
