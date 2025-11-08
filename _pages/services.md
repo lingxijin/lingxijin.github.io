@@ -75,8 +75,8 @@ nav_order: 4
 ### Peer-Reviewed Journal Reviewer 
 
 <div class="timeline">
-  <time>2024–</time>
-  <div><b>Peer Reviewer</b>, <i>Behaviour & Information Technology</i> (Taylor & Francis)</div>
+  <time>2025–</time>
+  <div><b>Behaviour & Information Technology</i> (Taylor & Francis)</div>
 </div>
 
 ---
@@ -85,5 +85,7 @@ nav_order: 4
 
 <div class="timeline">
   <time>2025</time>
-  <div><b>Conference Reviewer</b>, Society for Information Technology & Teacher Education (<b>SITE 2025</b>)</div>
+  <div><b>Society for Information Technology & Teacher Education (<b>SITE 2025</b>)</div>
 </div>
+
+---
