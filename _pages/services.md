@@ -84,6 +84,8 @@ nav_order: 4
 ### International Conference Reviewer
 
 <div class="timeline">
+   <time>2026</time>
+  <div>The ACM SIGCHI Conversational User Interfaces conference (<b>CUI 2026</b>)</div>
   <time>2025</time>
   <div>Society for Information Technology & Teacher Education (<b>SITE 2025</b>)</div>
 </div>
