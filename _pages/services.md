@@ -54,19 +54,19 @@ nav_order: 4
 ### Academic Society Membership
 
 <div class="timeline">
-  <time>2025–</time>
+  <time>2025</time>
   <div>The Association for the Advancement of Computing in Education (<b>AACE</b>)</div>
 
-  <time>2024–</time>
-  <div>British Educational Research Association (<b>BERA</b>)</div>
-
-  <time>2025–</time>
+  <time>2025</time>
   <div>The ACM Conference on Human Factors in Computing Systems (<b>CHI</b>)</div>
 
-  <time>2024–</time>
+  <time>2024</time>
+  <div>British Educational Research Association (<b>BERA</b>)</div>
+
+  <time>2024</time>
   <div>International Conference on Learning Analytics & Knowledge (<b>LAK</b>)</div>
 
-  <time>2024–</time>
+  <time>2024</time>
   <div>International Conference on Artificial Intelligence in Education (<b>AIED</b>)</div>
 </div>
 
@@ -75,7 +75,7 @@ nav_order: 4
 ### Peer-Reviewed Journal Reviewer
 
 <div class="timeline">
-  <time>2025–</time>
+  <time>2025</time>
   <div>Behaviour & Information Technology (Taylor & Francis) — SSCI</div>
 </div>
 
@@ -84,7 +84,7 @@ nav_order: 4
 ### International Conference Reviewer
 
 <div class="timeline">
-   <time>2026</time>
+  <time>2026</time>
   <div>The ACM SIGCHI Conversational User Interfaces conference (<b>CUI 2026</b>)</div>
   <time>2025</time>
   <div>Society for Information Technology & Teacher Education (<b>SITE 2025</b>)</div>
