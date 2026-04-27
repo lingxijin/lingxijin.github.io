@@ -26,7 +26,7 @@ latest_posts:
 
 Hi! I’m **Lingxi Jin (金玲僖)**, a Ph.D. candidate in [Educational Technology](https://my.ewha.ac.kr/et/) at [Ewha Womans University](https://www.ewha.ac.kr/ewha/index.do), working with [Prof. Hyo-Jeong So](https://scholar.google.com/citations?user=dI0biU8AAAAJ&hl=ko) as part of the [Interaction Design for Learning Lab (IDL Lab)](https://www.idlearning.org/).
 
-My research interest include **Artificial Intelligence in Education (AIED)**, **learning analytics**, **human–computer interaction (HCI)**, and **learning experience
+My research interests include **Artificial Intelligence in Education (AIED)**, **learning analytics**, **human–computer interaction (HCI)**, and **learning experience
 design**. My recent work focuses on designing pedagogically guided, LLM-based teachable agents that scaffold tutors’ reflective knowledge-building in learning-by-teaching contexts. I earned my M.A. in Educational Technology at Ewha and contributed to national projects on [Educational Recommender Systems](https://www.idlearning.org/projects) and [Inha University’s Next-Generation Semiconductor Talent Development Project](https://icee.inha.ac.kr/icee/index.do).
 
 Outside the lab, I enjoy  camping, climbing, and scuba diving. I hold an Advanced Open Water (AOW) certification and am always happy to explore new dive sites with others.
