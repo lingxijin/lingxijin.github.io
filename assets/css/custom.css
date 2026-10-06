@@ -79,3 +79,22 @@ a:hover { text-decoration-thickness: 1px; text-underline-offset: 3px; }
   body { font-size: 15px; line-height: 1.7; }
   .post .post-header .post-title, .post-title { letter-spacing: -0.025em; }
 }
+
+/* Highlight Lingxi Jin in Publications */
+.publications .author em {
+  background-color: #F3E4FA;
+  color: #32263F;
+  font-style: normal;
+  font-weight: 500;
+  padding: 2px 4px;
+  border-radius: 2px;
+  text-decoration: none;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .publications .author em {
+  background-color: #49345C;
+  color: #F5EAFB;
+}
