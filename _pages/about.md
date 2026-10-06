@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Ph.D. Candidate in Educational Technology</a>(is on the job market!)
+subtitle: <a href='#'>Ph.D. Candidate in Educational Technology</a>(Lingxi is on the job market!)
 
 profile:
   align: right
