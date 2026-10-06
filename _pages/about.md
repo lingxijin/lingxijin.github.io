@@ -24,13 +24,13 @@ latest_posts:
   limit: 3
 ---
 
-Hi! I’m **Lingxi Jin (金玲僖)**, a Ph.D. candidate in [Educational Technology](https://my.ewha.ac.kr/et/) at [Ewha Womans University](https://www.ewha.ac.kr/ewha/index.do), working with [Prof. Hyo-Jeong So](https://scholar.google.com/citations?user=dI0biU8AAAAJ&hl=ko) as part of the [Interaction Design for Learning Lab (IDL Lab)](https://www.idlearning.org/).
 
-My research interests include **Artificial Intelligence in Education (AIED)**, **learning analytics**, **human–computer interaction (HCI)**, and **learning experience
-design**. My recent work focuses on designing pedagogically guided, LLM-based teachable agents that scaffold tutors’ reflective knowledge-building in learning-by-teaching contexts. I earned my M.A. in Educational Technology at Ewha and contributed to national projects on [Educational Recommender Systems](https://www.idlearning.org/projects) and [Inha University’s Next-Generation Semiconductor Talent Development Project](https://icee.inha.ac.kr/icee/index.do).
+Lingxi Jin (金玲僖) is a Ph.D. candidate in [Educational Technology](https://my.ewha.ac.kr/et/) at [Ewha Womans University](https://www.ewha.ac.kr/ewha/index.do), under the supervision of [Prof. Hyo-Jeong So](https://scholar.google.com/citations?user=dI0biU8AAAAJ&hl=ko). She is a member of the [Interaction Design for Learning Lab (IDL Lab)](https://www.idlearning.org/) and received her M.A. in Educational Technology from Ewha Womans University.
 
-Outside the lab, I enjoy  camping, climbing, and scuba diving. I hold an Advanced Open Water (AOW) certification and am always happy to explore new dive sites with others.
+Her research lies at the intersection of **Artificial Intelligence in Education (AIED)**, **learning analytics**, **human–computer interaction (HCI)**, and **learning experience design**, with a particular focus on designing and evaluating AI-supported learning environments. She has been involved in research projects on LLM-based pedagogical agents, learning-by-teaching, AI-supported physical computing, and [educational recommender systems](https://www.idlearning.org/projects). She has also contributed to [Inha University's Next-Generation Semiconductor Talent Development Project](https://icee.inha.ac.kr/icee/index.do).
 
-If you’re interested in academic collaboration, grant work, or community initiatives, feel free to reach out at [jinlingxi@ewha.ac.kr](mailto:jinlingxi@ewha.ac.kr).
+Lingxi also contributes as a reviewer for leading journals, including *Computers & Education Open* and *Behaviour & Information Technology*, and serves on the program committees of major conferences such as LAK 2027 and ICHEC 2026. She also served as the Local Chair of the Festival of Learning 2026.
 
-**Starting November 2025, I’ll be in Milan as a Visiting Scholar at the Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano!**  
+Outside academia, she enjoys camping, climbing, and scuba diving. She holds an Advanced Open Water (AOW) certification.
+
+She is currently seeking **postdoctoral research and tenure-track faculty opportunities** in Artificial Intelligence in Education, learning analytics, and related fields. For academic collaboration, research opportunities, or inquiries, please contact her at [jinlingxi@ewha.ac.kr](mailto:jinlingxi@ewha.ac.kr).
