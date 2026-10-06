@@ -8,8 +8,6 @@ nav_order: 4
 ---
 
 
-## Academic Service
-
 <style>
 .timeline {
   display: grid;
@@ -113,7 +111,7 @@ nav_order: 4
   <time>2026</time>
   <div class="service-items">
     <div class="service-item">
-      <i>Computers & Education Open</i>
+      <i>Computers & Education Open</i> （SSCI）
       <div class="service-role">Reviewer</div>
     </div>
   </div>
@@ -121,7 +119,7 @@ nav_order: 4
   <time>2025</time>
   <div class="service-items">
     <div class="service-item">
-      <i>Behaviour & Information Technology</i> (Taylor & Francis)
+      <i>Behaviour & Information Technology</i> (SSCI)
       <div class="service-role">Reviewer</div>
     </div>
   </div>
@@ -132,7 +130,7 @@ nav_order: 4
 ### Volunteering
 
 <div class="timeline">
-  <time>Oct 2025</time>
+  <time>2025</time>
   <div class="service-items">
     <div class="service-item">
       Association for the Advancement of Computing in Education (<b>E-Learn 2025</b>), Bangkok, Thailand
@@ -140,7 +138,7 @@ nav_order: 4
     </div>
   </div>
 
-  <time>Jul 2025</time>
+  <time>2025</time>
   <div class="service-items">
     <div class="service-item">
       International Conference on Artificial Intelligence in Education (<b>AIED 2025</b>), Palermo, Italy
