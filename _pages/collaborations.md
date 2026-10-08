@@ -2,14 +2,21 @@
 layout: page
 title: collaborations
 permalink: /collaborations/
-description: A visualization of my research collaborations across countries, regions, and institutions
+description: Research Collaboration Network
 nav: true
 nav_order: 3
 ---
 
+<div class="collab-intro">
+  <p>
+    A visualization of my research collaborations across countries, regions, and institutions.
+  </p>
+</div>
+
+
 <div class="collab-toolbar">
 
-  <div class="collab-view-switch">
+  <div class="collab-view-switch" aria-label="Collaboration network view">
 
     <button
       type="button"
@@ -90,52 +97,42 @@ nav_order: 3
 <style>
 
 /* =========================================================
-   COLOR SYSTEM — LIGHT MODE
+   COLOR SYSTEM
    ========================================================= */
 
 :root {
-
   --collab-bg: #ffffff;
-  --collab-panel: #ffffff;
+  --collab-panel: rgba(255, 255, 255, 0.96);
 
-  --collab-border: rgba(31, 35, 42, 0.14);
+  --collab-border: rgba(33, 38, 46, 0.15);
 
   --collab-text: #20242a;
   --collab-text-strong: #111418;
-  --collab-text-secondary: #414750;
-  --collab-text-muted: #5f6670;
+  --collab-text-secondary: #353b44;
 
-  --collab-link: rgba(63, 69, 78, 0.34);
-  --collab-link-active: rgba(34, 38, 44, 0.82);
+  --collab-link: rgba(66, 72, 82, 0.48);
+  --collab-link-active: rgba(28, 32, 38, 0.88);
 
-  --collab-center-fill: rgba(90, 82, 72, 0.12);
-  --collab-center-stroke: #615a52;
-
+  --collab-center-fill: rgba(89, 82, 72, 0.14);
+  --collab-center-stroke: #5f5850;
 }
 
 
-/* =========================================================
-   COLOR SYSTEM — DARK MODE
-   ========================================================= */
-
 html[data-theme="dark"] {
+  --collab-bg: rgba(255, 255, 255, 0.012);
+  --collab-panel: rgba(34, 31, 40, 0.94);
 
-  --collab-bg: rgba(255, 255, 255, 0.018);
-  --collab-panel: rgba(255, 255, 255, 0.028);
+  --collab-border: rgba(224, 219, 231, 0.18);
 
-  --collab-border: rgba(220, 216, 228, 0.18);
-
-  --collab-text: #f1eff4;
+  --collab-text: #f3f1f5;
   --collab-text-strong: #ffffff;
-  --collab-text-secondary: #ded9e2;
-  --collab-text-muted: #c5becb;
+  --collab-text-secondary: #e1dce5;
 
-  --collab-link: rgba(205, 202, 212, 0.34);
-  --collab-link-active: rgba(246, 243, 248, 0.88);
+  --collab-link: rgba(213, 209, 219, 0.46);
+  --collab-link-active: rgba(255, 255, 255, 0.92);
 
-  --collab-center-fill: rgba(239, 232, 221, 0.24);
-  --collab-center-stroke: #eee7dc;
-
+  --collab-center-fill: rgba(238, 231, 221, 0.28);
+  --collab-center-stroke: #eee8df;
 }
 
 
@@ -144,8 +141,8 @@ html[data-theme="dark"] {
    ========================================================= */
 
 .collab-intro {
-  max-width: 760px;
-  margin-bottom: 2.7rem;
+  max-width: 820px;
+  margin-bottom: 2.6rem;
 }
 
 .collab-intro p {
@@ -153,7 +150,7 @@ html[data-theme="dark"] {
 
   color: var(--global-text-color);
 
-  font-size: 0.98rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
@@ -169,7 +166,7 @@ html[data-theme="dark"] {
 
   gap: 1rem;
 
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.65rem;
 }
 
 
@@ -183,27 +180,26 @@ html[data-theme="dark"] {
   padding: 3px;
 
   border: 1px solid var(--collab-border);
-  border-radius: 8px;
+  border-radius: 9px;
 
-  background: var(--collab-panel);
+  background: transparent;
 }
-
 
 .collab-view-btn {
   appearance: none;
 
-  padding: 0.45rem 0.92rem;
+  padding: 0.52rem 1rem;
 
   border: 0;
-  border-radius: 6px;
+  border-radius: 7px;
 
   background: transparent;
 
-  color: var(--collab-text-secondary);
+  color: var(--collab-text);
 
   font-family: inherit;
-  font-size: 0.84rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 600;
 
   cursor: pointer;
 
@@ -212,16 +208,14 @@ html[data-theme="dark"] {
     color 0.18s ease;
 }
 
-
 .collab-view-btn:hover {
   color: var(--collab-text-strong);
 }
 
-
 .collab-view-btn.active {
   color: #ffffff;
 
-  background: rgba(139, 103, 188, 0.72);
+  background: rgba(132, 93, 180, 0.78);
 }
 
 
@@ -232,32 +226,33 @@ html[data-theme="dark"] {
 .collab-reset {
   appearance: none;
 
-  padding: 0.4rem 0.72rem;
+  padding: 0.48rem 0.8rem;
 
   border: 1px solid var(--collab-border);
-  border-radius: 7px;
+  border-radius: 8px;
 
-  background: var(--collab-panel);
+  background: transparent;
 
-  color: var(--collab-text-secondary);
+  color: var(--collab-text);
 
   font-family: inherit;
-  font-size: 0.78rem;
-  font-weight: 500;
+  font-size: 0.84rem;
+  font-weight: 600;
 
   cursor: pointer;
 
   transition:
     color 0.18s ease,
-    background 0.18s ease,
-    border-color 0.18s ease;
+    border-color 0.18s ease,
+    background 0.18s ease;
 }
-
 
 .collab-reset:hover {
   color: var(--collab-text-strong);
 
-  border-color: rgba(135, 104, 170, 0.38);
+  border-color: rgba(132, 93, 180, 0.45);
+
+  background: rgba(132, 93, 180, 0.06);
 }
 
 
@@ -266,12 +261,12 @@ html[data-theme="dark"] {
    ========================================================= */
 
 .collab-hint {
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.9rem;
 
   color: var(--collab-text-secondary);
 
-  font-size: 0.79rem;
-  font-weight: 450;
+  font-size: 0.84rem;
+  font-weight: 500;
 }
 
 
@@ -280,40 +275,28 @@ html[data-theme="dark"] {
    ========================================================= */
 
 .collab-stage {
-  display: grid;
-
-  grid-template-columns:
-    minmax(0, 1fr)
-    250px;
-
-  gap: 1rem;
-
-  align-items: stretch;
+  position: relative;
+  width: 100%;
 }
 
 
 /* =========================================================
-   NETWORK PANEL
+   NETWORK
    ========================================================= */
 
 .collab-network {
   position: relative;
 
   width: 100%;
-  height: 510px;
-
-  min-width: 0;
+  height: 650px;
 
   overflow: hidden;
 
   border: 1px solid var(--collab-border);
-  border-radius: 10px;
+  border-radius: 12px;
 
   background: var(--collab-bg);
 }
-
-
-/* subtle visual texture */
 
 .collab-network::before {
   content: "";
@@ -323,19 +306,18 @@ html[data-theme="dark"] {
 
   pointer-events: none;
 
-  opacity: 0.16;
+  opacity: 0.14;
 
   background-image:
     radial-gradient(
       circle,
-      rgba(90, 96, 108, 0.30) 1px,
+      rgba(90, 96, 108, 0.28) 1px,
       transparent 1.5px
     );
 
-  background-size: 92px 92px;
-  background-position: 22px 31px;
+  background-size: 96px 96px;
+  background-position: 28px 35px;
 }
-
 
 html[data-theme="dark"] .collab-network::before {
   opacity: 0.12;
@@ -343,11 +325,10 @@ html[data-theme="dark"] .collab-network::before {
   background-image:
     radial-gradient(
       circle,
-      rgba(220, 216, 230, 0.40) 1px,
+      rgba(224, 220, 231, 0.44) 1px,
       transparent 1.5px
     );
 }
-
 
 .collab-network svg {
   position: relative;
@@ -363,11 +344,9 @@ html[data-theme="dark"] .collab-network::before {
   touch-action: none;
 }
 
-
 .collab-network svg:active {
   cursor: grabbing;
 }
-
 
 .collab-background {
   fill: transparent;
@@ -383,7 +362,7 @@ html[data-theme="dark"] .collab-network::before {
 
   stroke: var(--collab-link);
 
-  stroke-width: 1.8;
+  stroke-width: 2.8;
   stroke-linecap: round;
 
   transition:
@@ -392,11 +371,10 @@ html[data-theme="dark"] .collab-network::before {
     stroke-width 0.22s ease;
 }
 
-
 .collab-link.active {
   stroke: var(--collab-link-active);
 
-  stroke-width: 2.7;
+  stroke-width: 4.2;
 }
 
 
@@ -412,11 +390,9 @@ html[data-theme="dark"] .collab-network::before {
   transition: opacity 0.22s ease;
 }
 
-
 .collab-node:active {
   cursor: grabbing;
 }
-
 
 .collab-halo {
   fill: transparent;
@@ -424,9 +400,8 @@ html[data-theme="dark"] .collab-network::before {
   transition: fill 0.2s ease;
 }
 
-
 .collab-circle {
-  stroke-width: 2;
+  stroke-width: 2.2;
 
   transition:
     fill 0.2s ease,
@@ -436,270 +411,223 @@ html[data-theme="dark"] .collab-network::before {
 
 
 /* =========================================================
-   CENTER — LINGXI JIN
+   CENTER
    ========================================================= */
 
 .collab-center-node .collab-halo {
-  fill: rgba(120, 112, 102, 0.07);
+  fill: rgba(108, 100, 90, 0.08);
 }
-
 
 html[data-theme="dark"]
 .collab-center-node .collab-halo {
-  fill: rgba(239, 232, 221, 0.10);
+  fill: rgba(238, 231, 221, 0.12);
 }
-
 
 .collab-center-node .collab-circle {
   fill: var(--collab-center-fill);
 
   stroke: var(--collab-center-stroke);
 
-  stroke-width: 2.4;
+  stroke-width: 2.8;
 }
 
-
-.collab-center-node:hover .collab-halo,
-.collab-center-node.active .collab-halo {
-  fill: rgba(130, 120, 108, 0.13);
-}
-
-
-html[data-theme="dark"]
-.collab-center-node:hover .collab-halo,
-html[data-theme="dark"]
-.collab-center-node.active .collab-halo {
-  fill: rgba(239, 232, 221, 0.16);
+.collab-center-node:hover .collab-circle,
+.collab-center-node.active .collab-circle {
+  stroke-width: 3.4;
 }
 
 
 /* =========================================================
-   SOUTH KOREA — BLUE
+   SOUTH KOREA
    ========================================================= */
 
 .tone-korea .collab-circle {
-  fill: rgba(74, 111, 148, 0.18);
+  fill: rgba(74, 111, 148, 0.20);
 
   stroke: #4a6f94;
 }
 
-
 .tone-korea:hover .collab-circle,
 .tone-korea.active .collab-circle {
-  fill: rgba(74, 111, 148, 0.34);
+  fill: rgba(74, 111, 148, 0.38);
 
-  stroke: #365d85;
+  stroke: #315d89;
 
-  stroke-width: 2.5;
+  stroke-width: 3;
 }
-
-
-.tone-korea:hover .collab-halo,
-.tone-korea.active .collab-halo {
-  fill: rgba(74, 111, 148, 0.10);
-}
-
 
 html[data-theme="dark"]
 .tone-korea .collab-circle {
-  fill: rgba(111, 143, 175, 0.27);
+  fill: rgba(111, 143, 175, 0.30);
 
-  stroke: #8fb2d3;
-}
-
-
-html[data-theme="dark"]
-.tone-korea:hover .collab-circle,
-html[data-theme="dark"]
-.tone-korea.active .collab-circle {
-  fill: rgba(111, 143, 175, 0.43);
-
-  stroke: #b0c9df;
+  stroke: #91b6d8;
 }
 
 
 /* =========================================================
-   UNITED STATES — TERRACOTTA
+   UNITED STATES
    ========================================================= */
 
 .tone-us .collab-circle {
-  fill: rgba(164, 98, 78, 0.18);
+  fill: rgba(164, 98, 78, 0.20);
 
   stroke: #a4624e;
 }
 
-
 .tone-us:hover .collab-circle,
 .tone-us.active .collab-circle {
-  fill: rgba(164, 98, 78, 0.34);
+  fill: rgba(164, 98, 78, 0.38);
 
-  stroke: #8f4d3a;
+  stroke: #914b38;
 
-  stroke-width: 2.5;
+  stroke-width: 3;
 }
-
-
-.tone-us:hover .collab-halo,
-.tone-us.active .collab-halo {
-  fill: rgba(164, 98, 78, 0.10);
-}
-
 
 html[data-theme="dark"]
 .tone-us .collab-circle {
-  fill: rgba(180, 123, 104, 0.27);
+  fill: rgba(180, 123, 104, 0.30);
 
-  stroke: #d48e78;
-}
-
-
-html[data-theme="dark"]
-.tone-us:hover .collab-circle,
-html[data-theme="dark"]
-.tone-us.active .collab-circle {
-  fill: rgba(180, 123, 104, 0.43);
-
-  stroke: #e8ab97;
+  stroke: #db947d;
 }
 
 
 /* =========================================================
-   JAPAN — SAGE
+   JAPAN
    ========================================================= */
 
 .tone-japan .collab-circle {
-  fill: rgba(94, 132, 103, 0.18);
+  fill: rgba(94, 132, 103, 0.20);
 
   stroke: #5e8467;
 }
 
-
 .tone-japan:hover .collab-circle,
 .tone-japan.active .collab-circle {
-  fill: rgba(94, 132, 103, 0.34);
+  fill: rgba(94, 132, 103, 0.38);
 
-  stroke: #477253;
+  stroke: #44724f;
 
-  stroke-width: 2.5;
+  stroke-width: 3;
 }
-
-
-.tone-japan:hover .collab-halo,
-.tone-japan.active .collab-halo {
-  fill: rgba(94, 132, 103, 0.10);
-}
-
 
 html[data-theme="dark"]
 .tone-japan .collab-circle {
-  fill: rgba(127, 155, 133, 0.27);
+  fill: rgba(127, 155, 133, 0.30);
 
-  stroke: #9dbcA3;
-}
-
-
-html[data-theme="dark"]
-.tone-japan:hover .collab-circle,
-html[data-theme="dark"]
-.tone-japan.active .collab-circle {
-  fill: rgba(127, 155, 133, 0.43);
-
-  stroke: #b9d0bd;
+  stroke: #9fc1a6;
 }
 
 
 /* =========================================================
-   HONG KONG SAR, CHINA — OCHRE
+   HONG KONG SAR, CHINA
    ========================================================= */
 
 .tone-hk .collab-circle {
-  fill: rgba(158, 126, 64, 0.19);
+  fill: rgba(158, 126, 64, 0.20);
 
   stroke: #9e7e40;
 }
 
-
 .tone-hk:hover .collab-circle,
 .tone-hk.active .collab-circle {
-  fill: rgba(158, 126, 64, 0.35);
+  fill: rgba(158, 126, 64, 0.38);
 
-  stroke: #886a2f;
+  stroke: #85682f;
 
-  stroke-width: 2.5;
+  stroke-width: 3;
 }
-
-
-.tone-hk:hover .collab-halo,
-.tone-hk.active .collab-halo {
-  fill: rgba(158, 126, 64, 0.10);
-}
-
 
 html[data-theme="dark"]
 .tone-hk .collab-circle {
-  fill: rgba(178, 154, 104, 0.27);
+  fill: rgba(178, 154, 104, 0.30);
 
-  stroke: #d0b46f;
-}
-
-
-html[data-theme="dark"]
-.tone-hk:hover .collab-circle,
-html[data-theme="dark"]
-.tone-hk.active .collab-circle {
-  fill: rgba(178, 154, 104, 0.43);
-
-  stroke: #e0c987;
+  stroke: #d7bb75;
 }
 
 
 /* =========================================================
-   ITALY — TEAL
+   ITALY
    ========================================================= */
 
 .tone-italy .collab-circle {
-  fill: rgba(70, 126, 121, 0.18);
+  fill: rgba(70, 126, 121, 0.20);
 
   stroke: #467e79;
 }
 
-
 .tone-italy:hover .collab-circle,
 .tone-italy.active .collab-circle {
-  fill: rgba(70, 126, 121, 0.34);
+  fill: rgba(70, 126, 121, 0.38);
 
-  stroke: #326a65;
+  stroke: #306c66;
 
-  stroke-width: 2.5;
+  stroke-width: 3;
 }
-
-
-.tone-italy:hover .collab-halo,
-.tone-italy.active .collab-halo {
-  fill: rgba(70, 126, 121, 0.10);
-}
-
 
 html[data-theme="dark"]
 .tone-italy .collab-circle {
-  fill: rgba(111, 150, 147, 0.27);
+  fill: rgba(111, 150, 147, 0.30);
 
-  stroke: #8bb5b2;
-}
-
-
-html[data-theme="dark"]
-.tone-italy:hover .collab-circle,
-html[data-theme="dark"]
-.tone-italy.active .collab-circle {
-  fill: rgba(111, 150, 147, 0.43);
-
-  stroke: #afd0cd;
+  stroke: #8fbab6;
 }
 
 
 /* =========================================================
-   NODE LABELS — HIGH CONTRAST
+   SINGAPORE
+   ========================================================= */
+
+.tone-singapore .collab-circle {
+  fill: rgba(189, 137, 69, 0.20);
+
+  stroke: #a87535;
+}
+
+.tone-singapore:hover .collab-circle,
+.tone-singapore.active .collab-circle {
+  fill: rgba(189, 137, 69, 0.38);
+
+  stroke: #8d5f27;
+
+  stroke-width: 3;
+}
+
+html[data-theme="dark"]
+.tone-singapore .collab-circle {
+  fill: rgba(205, 157, 92, 0.30);
+
+  stroke: #d9a968;
+}
+
+
+/* =========================================================
+   UNITED KINGDOM
+   ========================================================= */
+
+.tone-uk .collab-circle {
+  fill: rgba(103, 105, 157, 0.20);
+
+  stroke: #67699d;
+}
+
+.tone-uk:hover .collab-circle,
+.tone-uk.active .collab-circle {
+  fill: rgba(103, 105, 157, 0.38);
+
+  stroke: #505487;
+
+  stroke-width: 3;
+}
+
+html[data-theme="dark"]
+.tone-uk .collab-circle {
+  fill: rgba(135, 137, 187, 0.30);
+
+  stroke: #a7a9d7;
+}
+
+
+/* =========================================================
+   LABELS
    ========================================================= */
 
 .collab-label {
@@ -707,8 +635,8 @@ html[data-theme="dark"]
 
   font-family: inherit;
 
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 650;
 
   text-anchor: middle;
 
@@ -716,17 +644,16 @@ html[data-theme="dark"]
   user-select: none;
 }
 
-
 .collab-center-node .collab-label {
   fill: var(--collab-text-strong);
 
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 750;
 }
 
 
 /* =========================================================
-   FOCUS MODE
+   FOCUS
    ========================================================= */
 
 .collab-network.has-selection
@@ -734,80 +661,98 @@ html[data-theme="dark"]
   opacity: 0.28;
 }
 
-
 .collab-network.has-selection
 .collab-link:not(.active) {
-  opacity: 0.14;
+  opacity: 0.16;
 }
 
 
 /* =========================================================
-   DETAIL PANEL
+   FLOATING DETAIL PANEL
    ========================================================= */
 
 .collab-detail {
-  align-self: stretch;
+  position: absolute;
 
-  padding: 1.35rem 1.2rem;
+  top: 26px;
+  right: 26px;
+
+  z-index: 10;
+
+  width: 290px;
+  max-width: calc(100% - 52px);
+
+  padding: 1.35rem 1.25rem;
 
   border: 1px solid var(--collab-border);
-  border-radius: 10px;
+  border-radius: 11px;
 
   background: var(--collab-panel);
+
+  box-shadow:
+    0 10px 30px rgba(20, 24, 30, 0.08);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
+html[data-theme="dark"] .collab-detail {
+  box-shadow:
+    0 12px 34px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================================
+   DETAIL TYPOGRAPHY
+   ========================================================= */
 
 .collab-detail-eyebrow {
   margin-bottom: 0.75rem;
 
   color: #715781;
 
-  font-size: 0.72rem;
-  font-weight: 700;
+  font-size: 0.76rem;
+  font-weight: 750;
 
   letter-spacing: 0.10em;
 
   text-transform: uppercase;
 }
 
-
 html[data-theme="dark"]
 .collab-detail-eyebrow {
-  color: #c0afd0;
+  color: #c9b7da;
 }
 
-
 .collab-detail h3 {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.45rem;
 
   color: var(--collab-text-strong);
 
-  font-size: 1.28rem;
-  font-weight: 700;
+  font-size: 1.38rem;
+  font-weight: 750;
 
-  line-height: 1.4;
+  line-height: 1.35;
 }
-
 
 .collab-detail-meta {
   margin-bottom: 0.9rem;
 
   color: var(--collab-text-secondary);
 
-  font-size: 0.88rem;
-  font-weight: 500;
+  font-size: 0.96rem;
+  font-weight: 600;
 
   line-height: 1.5;
 }
 
-
 .collab-detail p {
-  margin: 0 0 1.1rem;
+  margin: 0 0 1rem;
 
   color: var(--collab-text-secondary);
 
-  font-size: 0.88rem;
-  font-weight: 450;
+  font-size: 0.93rem;
+  font-weight: 500;
 
   line-height: 1.7;
 }
@@ -823,50 +768,46 @@ html[data-theme="dark"]
   border-top: 1px solid var(--collab-border);
 }
 
-
 .collab-detail-list-title {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.7rem;
 
   color: var(--collab-text-secondary);
 
-  font-size: 0.70rem;
-  font-weight: 700;
+  font-size: 0.72rem;
+  font-weight: 750;
 
   letter-spacing: 0.09em;
 
   text-transform: uppercase;
 }
 
-
 .collab-detail-item {
   display: flex;
 
   align-items: flex-start;
 
-  gap: 0.55rem;
+  gap: 0.6rem;
 
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.65rem;
 
   color: var(--collab-text-strong);
 
-  font-size: 0.84rem;
-  font-weight: 500;
+  font-size: 0.88rem;
+  font-weight: 550;
 
   line-height: 1.5;
 }
 
-
 .collab-detail-dot {
   flex: 0 0 auto;
 
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
 
-  margin-top: 0.27rem;
+  margin-top: 0.28rem;
 
   border-radius: 50%;
 }
-
 
 .collab-detail-dot.tone-korea {
   background: #4a6f94;
@@ -888,30 +829,48 @@ html[data-theme="dark"]
   background: #467e79;
 }
 
+.collab-detail-dot.tone-singapore {
+  background: #a87535;
+}
+
+.collab-detail-dot.tone-uk {
+  background: #67699d;
+}
+
 
 html[data-theme="dark"]
 .collab-detail-dot.tone-korea {
-  background: #8fb2d3;
+  background: #91b6d8;
 }
 
 html[data-theme="dark"]
 .collab-detail-dot.tone-us {
-  background: #d48e78;
+  background: #db947d;
 }
 
 html[data-theme="dark"]
 .collab-detail-dot.tone-japan {
-  background: #9dbca3;
+  background: #9fc1a6;
 }
 
 html[data-theme="dark"]
 .collab-detail-dot.tone-hk {
-  background: #d0b46f;
+  background: #d7bb75;
 }
 
 html[data-theme="dark"]
 .collab-detail-dot.tone-italy {
-  background: #8bb5b2;
+  background: #8fbab6;
+}
+
+html[data-theme="dark"]
+.collab-detail-dot.tone-singapore {
+  background: #d9a968;
+}
+
+html[data-theme="dark"]
+.collab-detail-dot.tone-uk {
+  background: #a7a9d7;
 }
 
 
@@ -921,37 +880,34 @@ html[data-theme="dark"]
 
 @media (max-width: 760px) {
 
-  .collab-stage {
-    grid-template-columns: 1fr;
-
-    gap: 1rem;
-  }
-
-
   .collab-network {
-    height: 440px;
+    height: 540px;
   }
-
 
   .collab-detail {
-    padding: 1rem 0;
+    position: absolute;
 
-    border: 0;
-    border-top: 1px solid var(--collab-border);
+    top: auto;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
 
-    border-radius: 0;
+    width: auto;
+    max-width: none;
 
-    background: transparent;
+    padding: 1rem;
   }
-
 
   .collab-label {
-    font-size: 12px;
+    font-size: 13px;
   }
 
-
   .collab-center-node .collab-label {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .collab-toolbar {
+    align-items: flex-start;
   }
 
 }
