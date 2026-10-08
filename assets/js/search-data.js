@@ -98,12 +98,7 @@ ninja.data = [{
           section: "News",},{id: "news-my-last-day-at-politecnico-di-milano-grateful-for-this-chapter-in-milan-for-nicoletta-s-guidance-for-working-with-valentina-in-the-lab-and-for-all-the-wonderful-friends-i-met-along-the-way-chuni-liu-keyu-gong-keyu-guo-jinxi-xie-tao-wang-and-liyu-xu-i-ll-always-be-thankful-for-the-people-and-memories-that-made-this-time-so-special",
           title: '💛 My last day at Politecnico di Milano. Grateful for this chapter in...',
           description: "",
-          section: "News",},{id: "news-announcement-15",
-          title: 'Announcement_15',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_15/";
-            },},{id: "news-festival-of-learning-2026-has-successfully-wrapped-up-it-was-an-honor-to-serve-as-local-chair-and-be-part-of-organizing-aied-edm-and-l-s-grateful-to-have-worked-alongside-such-a-wonderful-organizing-team-volunteers-and-participants-see-you-next-year-in-adelaide",
+          section: "News",},{id: "news-festival-of-learning-2026-has-successfully-wrapped-up-it-was-an-honor-to-serve-as-local-chair-and-be-part-of-organizing-aied-edm-and-l-s-grateful-to-have-worked-alongside-such-a-wonderful-organizing-team-volunteers-and-participants-see-you-next-year-in-adelaide",
           title: '🎉 Festival of Learning 2026 has successfully wrapped up! It was an honor...',
           description: "",
           section: "News",},{id: "news-i-had-the-pleasure-of-visiting-the-hai-lab-at-seoul-national-university-of-science-and-technology-seoultech-many-thanks-to-prof-kyoungwon-seo-for-the-kind-invitation-and-to-the-hai-lab-members-for-the-warm-welcome",
