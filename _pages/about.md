@@ -36,7 +36,7 @@ Outside academia, she enjoys camping, climbing, and scuba diving, and holds an *
 <div class="opportunity-callout">
 
   <div class="opportunity-title">
-    ✦ Open to Opportunities
+    Open to Opportunities
   </div>
 
   <div class="opportunity-text">
