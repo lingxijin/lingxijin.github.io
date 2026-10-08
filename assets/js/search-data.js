@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-collaborations",
           title: "collaborations",
-          description: "Research Collaboration Network",
+          description: "A visualization of my research collaborations across countries, regions, and institutions.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/collaborations/";
