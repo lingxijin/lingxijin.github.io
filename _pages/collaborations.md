@@ -13,87 +13,91 @@ nav_order: 3
   </p>
 </div>
 
+<div class="collab-toolbar">
 
-<!-- =====================================================
-     GLOBAL COLLABORATION
-     ===================================================== -->
-
-<section class="collab-section">
-
-  <div class="collab-heading-row">
-
-    <div class="collab-heading">
-      <h2>Global Collaboration</h2>
-      <p>Countries and regions connected through my collaborative research.</p>
-    </div>
+  <div class="collab-view-switch">
 
     <button
-      class="collab-reset"
-      data-network="country-network"
-      type="button">
-      Reset view
+      type="button"
+      class="collab-view-btn active"
+      data-view="countries"
+      aria-pressed="true">
+      Countries
+    </button>
+
+    <button
+      type="button"
+      class="collab-view-btn"
+      data-view="institutions"
+      aria-pressed="false">
+      Institutions
     </button>
 
   </div>
 
-  <div class="collab-hint">
-    Drag nodes · Scroll to zoom · Click a node to focus
-  </div>
+  <button
+    type="button"
+    class="collab-reset"
+    id="collab-reset">
+    Reset view
+  </button>
+
+</div>
+
+<div class="collab-hint">
+  Drag nodes · Scroll to zoom · Drag the canvas to move · Click a node to explore
+</div>
+
+<div class="collab-stage">
 
   <div
-    id="country-network"
+    id="collaboration-network"
     class="collab-network"
-    aria-label="Global research collaboration network">
+    aria-label="Interactive research collaboration network">
   </div>
 
-</section>
+  <aside
+    id="collab-detail"
+    class="collab-detail"
+    aria-live="polite">
 
-
-<!-- =====================================================
-     INSTITUTIONAL COLLABORATION
-     ===================================================== -->
-
-<section class="collab-section">
-
-  <div class="collab-heading-row">
-
-    <div class="collab-heading">
-      <h2>Institutional Collaboration</h2>
-      <p>Institutions connected through joint research.</p>
+    <div class="collab-detail-eyebrow">
+      Research Network
     </div>
 
-    <button
-      class="collab-reset"
-      data-network="institution-network"
-      type="button">
-      Reset view
-    </button>
+    <h3 id="collab-detail-title">
+      Lingxi Jin
+    </h3>
 
-  </div>
+    <div
+      id="collab-detail-meta"
+      class="collab-detail-meta">
+      Global collaboration
+    </div>
 
-  <div class="collab-hint">
-    Drag nodes · Scroll to zoom · Click a node to focus
-  </div>
+    <p id="collab-detail-description">
+      Select a country, region, or institution in the network to explore the collaboration.
+    </p>
 
-  <div
-    id="institution-network"
-    class="collab-network"
-    aria-label="Institutional research collaboration network">
-  </div>
+    <div
+      id="collab-detail-list"
+      class="collab-detail-list">
+    </div>
 
-</section>
+  </aside>
 
+</div>
 
 
 <style>
 
 /* =========================================================
-   Collaboration page
+   INTRO
    ========================================================= */
 
 .collab-intro {
-  max-width: 720px;
-  margin-bottom: 3rem;
+  max-width: 760px;
+  margin-bottom: 2.7rem;
 }
 
 .collab-intro p {
@@ -104,261 +108,101 @@ nav_order: 3
 }
 
 
-/* Section */
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
 
-.collab-section {
-  margin-bottom: 5rem;
-}
-
-.collab-heading-row {
+.collab-toolbar {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: center;
+
   gap: 1rem;
-  margin-bottom: 0.5rem;
-}
 
-.collab-heading h2 {
-  margin: 0 0 0.35rem 0;
-  font-size: 1.45rem;
-  font-weight: 600;
-}
-
-.collab-heading p {
-  margin: 0;
-  color: var(--global-text-color-light);
-  font-size: 0.9rem;
-  line-height: 1.55;
-}
-
-.collab-hint {
-  margin: 0.8rem 0 1rem;
-  color: var(--global-text-color-light);
-  font-size: 0.76rem;
-  opacity: 0.65;
-}
-
-
-/* Network */
-
-/* =========================================================
-   Network canvas
-   ========================================================= */
-
-.collab-network {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-
-  margin-top: 0.5rem;
-
-  border-top: 1px solid rgba(180, 150, 220, 0.10);
-  border-bottom: 1px solid rgba(180, 150, 220, 0.10);
-}
-
-.collab-network svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-  cursor: grab;
-  touch-action: none;
-}
-
-.collab-network svg:active {
-  cursor: grabbing;
-}
-
-.collab-background {
-  fill: transparent;
+  margin-bottom: 0.55rem;
 }
 
 
 /* =========================================================
-   Links
+   SWITCH
    ========================================================= */
 
-.collab-link {
-  stroke: rgba(164, 126, 205, 0.30);
-  stroke-width: 1.5;
-  stroke-linecap: round;
+.collab-view-switch {
+  display: inline-flex;
 
-  transition:
-    stroke 0.2s ease,
-    opacity 0.2s ease,
-    stroke-width 0.2s ease;
-}
+  padding: 3px;
 
-.collab-link.active {
-  stroke: rgba(143, 97, 196, 0.78);
-  stroke-width: 2.4;
-}
+  border:
+    1px solid rgba(166, 150, 190, 0.18);
 
+  border-radius: 8px;
 
-/* =========================================================
-   Nodes
-   ========================================================= */
-
-.collab-node {
-  cursor: grab;
-  outline: none;
-  transition:
-    opacity 0.2s ease,
-    filter 0.2s ease;
-}
-
-.collab-node:active {
-  cursor: grabbing;
-}
-
-.collab-node circle {
-  fill: rgba(180, 145, 220, 0.17);
-
-  stroke: rgba(160, 115, 205, 0.60);
-  stroke-width: 1.5;
-
-  transition:
-    fill 0.2s ease,
-    stroke 0.2s ease,
-    stroke-width 0.2s ease,
-    filter 0.2s ease;
+  background:
+    rgba(255, 255, 255, 0.018);
 }
 
 
-/* Center node */
+.collab-view-btn {
+  appearance: none;
 
-.collab-center-node circle {
-  fill: rgba(172, 129, 218, 0.30);
+  padding:
+    0.4rem
+    0.85rem;
 
-  stroke: rgba(137, 88, 190, 0.82);
-  stroke-width: 2;
+  border: 0;
 
-  filter:
-    drop-shadow(
-      0 0 10px rgba(165, 120, 215, 0.18)
-    );
-}
-
-
-/* Hover */
-
-.collab-node:hover circle,
-.collab-node.active circle {
-  fill: rgba(177, 135, 223, 0.34);
-
-  stroke: rgba(132, 80, 187, 0.92);
-  stroke-width: 2;
-
-  filter:
-    drop-shadow(
-      0 0 8px rgba(160, 115, 210, 0.20)
-    );
-}
-
-
-/* =========================================================
-   Labels
-   ========================================================= */
-
-.collab-label {
-  fill: var(--global-text-color);
-
-  font-family: inherit;
-  font-size: 12.5px;
-  font-weight: 450;
-
-  text-anchor: middle;
-
-  pointer-events: none;
-  user-select: none;
-}
-
-.collab-center-node .collab-label {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-
-/* =========================================================
-   Selection
-   ========================================================= */
-
-.collab-network.has-selection
-.collab-node:not(.active):not(.collab-center-node) {
-  opacity: 0.18;
-}
-
-.collab-network.has-selection
-.collab-link:not(.active) {
-  opacity: 0.08;
-}
-
-
-/* =========================================================
-   Tooltip
-   ========================================================= */
-
-.collab-tooltip {
-  position: absolute;
-  z-index: 30;
-
-  display: none;
-
-  max-width: 280px;
-
-  padding: 0.7rem 0.85rem;
-
-  border: 1px solid rgba(178, 140, 215, 0.22);
-  border-radius: 9px;
-
-  background: rgba(30, 27, 36, 0.94);
-
-  color: #f7f2fb;
-
-  font-size: 0.8rem;
-  line-height: 1.45;
-
-  pointer-events: none;
-
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.12);
-
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.collab-tooltip.is-visible {
-  display: block;
-}
-
-.collab-tooltip strong {
-  display: block;
-  margin-bottom: 3px;
-
-  font-size: 0.84rem;
-  font-weight: 600;
-}
-
-.collab-tooltip span {
-  color: rgba(240, 232, 248, 0.72);
-}
-
-
-/* =========================================================
-   Reset button
-   ========================================================= */
-
-.collab-reset {
-  flex-shrink: 0;
-
-  padding: 0.3rem 0.62rem;
-
-  border: 1px solid rgba(175, 140, 210, 0.18);
   border-radius: 6px;
 
   background: transparent;
 
-  color: var(--global-text-color-light);
+  color:
+    var(--global-text-color-light);
+
+  font-family: inherit;
+  font-size: 0.77rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+
+.collab-view-btn.active {
+  color: #f7f5fa;
+
+  background:
+    rgba(139, 103, 188, 0.50);
+}
+
+
+.collab-view-btn:hover {
+  color:
+    var(--global-text-color);
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+.collab-reset {
+  appearance: none;
+
+  padding:
+    0.36rem
+    0.68rem;
+
+  border:
+    1px solid rgba(166, 150, 190, 0.18);
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color:
+    var(--global-text-color-light);
 
   font-family: inherit;
   font-size: 0.72rem;
@@ -368,69 +212,636 @@ nav_order: 3
   cursor: pointer;
 
   transition:
-    opacity 0.2s ease,
-    background 0.2s ease,
-    border-color 0.2s ease;
+    opacity 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease;
 }
+
 
 .collab-reset:hover {
   opacity: 1;
 
-  background: rgba(175, 140, 210, 0.07);
+  background:
+    rgba(255, 255, 255, 0.025);
 
-  border-color: rgba(175, 140, 210, 0.30);
+  border-color:
+    rgba(166, 150, 190, 0.32);
 }
 
 
 /* =========================================================
-   Light mode
+   HINT
    ========================================================= */
 
-html:not([data-theme="dark"])
-.collab-node circle {
-  fill: rgba(171, 132, 211, 0.12);
-  stroke: rgba(128, 83, 171, 0.48);
+.collab-hint {
+  margin-bottom: 0.85rem;
+
+  color:
+    var(--global-text-color-light);
+
+  font-size: 0.72rem;
+
+  opacity: 0.55;
 }
 
-html:not([data-theme="dark"])
-.collab-center-node circle {
-  fill: rgba(171, 132, 211, 0.22);
-  stroke: rgba(117, 67, 166, 0.72);
+
+/* =========================================================
+   STAGE
+   ========================================================= */
+
+.collab-stage {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    250px;
+
+  gap: 1rem;
+
+  align-items: stretch;
 }
 
-html:not([data-theme="dark"])
+
+/* =========================================================
+   NETWORK PANEL
+   ========================================================= */
+
+.collab-network {
+  position: relative;
+
+  width: 100%;
+  height: 510px;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(151, 143, 174, 0.15);
+
+  border-radius: 10px;
+
+  background:
+    radial-gradient(
+      circle at 20% 25%,
+      rgba(255, 255, 255, 0.025),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 75% 70%,
+      rgba(255, 255, 255, 0.018),
+      transparent 30%
+    ),
+    rgba(255, 255, 255, 0.008);
+}
+
+
+/* decorative background texture */
+
+.collab-network::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  opacity: 0.18;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(180, 182, 195, 0.45) 1px,
+      transparent 1.5px
+    );
+
+  background-size:
+    92px 92px;
+
+  background-position:
+    22px 31px;
+}
+
+
+.collab-network svg {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  cursor: grab;
+
+  touch-action: none;
+}
+
+
+.collab-network svg:active {
+  cursor: grabbing;
+}
+
+
+.collab-background {
+  fill: transparent;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
 .collab-link {
-  stroke: rgba(126, 87, 168, 0.25);
+  fill: none;
+
+  stroke:
+    rgba(168, 173, 185, 0.24);
+
+  stroke-width: 1.4;
+
+  stroke-linecap: round;
+
+  transition:
+    opacity 0.22s ease,
+    stroke 0.22s ease,
+    stroke-width 0.22s ease;
 }
 
-html:not([data-theme="dark"])
-.collab-tooltip {
-  background: rgba(255, 255, 255, 0.97);
-  color: #302738;
-}
 
-html:not([data-theme="dark"])
-.collab-tooltip span {
-  color: #746b7b;
+.collab-link.active {
+  stroke:
+    rgba(220, 221, 226, 0.62);
+
+  stroke-width: 2.1;
 }
 
 
 /* =========================================================
-   Mobile
+   NODE BASE
    ========================================================= */
 
-@media (max-width: 600px) {
+.collab-node {
+  cursor: grab;
+
+  outline: none;
+
+  transition:
+    opacity 0.22s ease;
+}
+
+
+.collab-node:active {
+  cursor: grabbing;
+}
+
+
+.collab-halo {
+  fill: transparent;
+
+  transition:
+    fill 0.2s ease;
+}
+
+
+.collab-circle {
+  stroke-width: 1.7;
+
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease,
+    stroke-width 0.2s ease;
+}
+
+
+/* =========================================================
+   CENTER
+   ========================================================= */
+
+.collab-center-node .collab-halo {
+  fill:
+    rgba(232, 226, 216, 0.06);
+}
+
+
+.collab-center-node .collab-circle {
+  fill:
+    rgba(232, 226, 216, 0.17);
+
+  stroke:
+    #e8e2d8;
+
+  stroke-width: 2;
+}
+
+
+.collab-center-node:hover .collab-halo,
+.collab-center-node.active .collab-halo {
+  fill:
+    rgba(232, 226, 216, 0.10);
+}
+
+
+/* =========================================================
+   SOUTH KOREA — MUTED BLUE
+   ========================================================= */
+
+.tone-korea .collab-circle {
+  fill:
+    rgba(111, 143, 175, 0.17);
+
+  stroke:
+    #6f8faf;
+}
+
+
+.tone-korea:hover .collab-circle,
+.tone-korea.active .collab-circle {
+  fill:
+    rgba(111, 143, 175, 0.30);
+
+  stroke:
+    #91b0cf;
+}
+
+
+.tone-korea:hover .collab-halo,
+.tone-korea.active .collab-halo {
+  fill:
+    rgba(111, 143, 175, 0.09);
+}
+
+
+/* =========================================================
+   UNITED STATES — TERRACOTTA
+   ========================================================= */
+
+.tone-us .collab-circle {
+  fill:
+    rgba(180, 123, 104, 0.17);
+
+  stroke:
+    #b47b68;
+}
+
+
+.tone-us:hover .collab-circle,
+.tone-us.active .collab-circle {
+  fill:
+    rgba(180, 123, 104, 0.31);
+
+  stroke:
+    #d49680;
+}
+
+
+.tone-us:hover .collab-halo,
+.tone-us.active .collab-halo {
+  fill:
+    rgba(180, 123, 104, 0.09);
+}
+
+
+/* =========================================================
+   JAPAN — SAGE
+   ========================================================= */
+
+.tone-japan .collab-circle {
+  fill:
+    rgba(127, 155, 133, 0.17);
+
+  stroke:
+    #7f9b85;
+}
+
+
+.tone-japan:hover .collab-circle,
+.tone-japan.active .collab-circle {
+  fill:
+    rgba(127, 155, 133, 0.31);
+
+  stroke:
+    #9ebaa4;
+}
+
+
+.tone-japan:hover .collab-halo,
+.tone-japan.active .collab-halo {
+  fill:
+    rgba(127, 155, 133, 0.09);
+}
+
+
+/* =========================================================
+   HONG KONG SAR, CHINA — AMBER
+   ========================================================= */
+
+.tone-hk .collab-circle {
+  fill:
+    rgba(178, 154, 104, 0.17);
+
+  stroke:
+    #b29a68;
+}
+
+
+.tone-hk:hover .collab-circle,
+.tone-hk.active .collab-circle {
+  fill:
+    rgba(178, 154, 104, 0.31);
+
+  stroke:
+    #d1b777;
+}
+
+
+.tone-hk:hover .collab-halo,
+.tone-hk.active .collab-halo {
+  fill:
+    rgba(178, 154, 104, 0.09);
+}
+
+
+/* =========================================================
+   ITALY — MUTED TEAL
+   ========================================================= */
+
+.tone-italy .collab-circle {
+  fill:
+    rgba(111, 150, 147, 0.17);
+
+  stroke:
+    #6f9693;
+}
+
+
+.tone-italy:hover .collab-circle,
+.tone-italy.active .collab-circle {
+  fill:
+    rgba(111, 150, 147, 0.31);
+
+  stroke:
+    #8eb5b1;
+}
+
+
+.tone-italy:hover .collab-halo,
+.tone-italy.active .collab-halo {
+  fill:
+    rgba(111, 150, 147, 0.09);
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.collab-label {
+  fill:
+    #e9e8ec;
+
+  font-family: inherit;
+
+  font-size: 11.5px;
+
+  font-weight: 450;
+
+  text-anchor: middle;
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+
+.collab-center-node .collab-label {
+  fill: #f6f3ef;
+
+  font-size: 13.5px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   FOCUS MODE
+   ========================================================= */
+
+.collab-network.has-selection
+.collab-node:not(.active):not(.collab-center-node) {
+  opacity: 0.16;
+}
+
+
+.collab-network.has-selection
+.collab-link:not(.active) {
+  opacity: 0.06;
+}
+
+
+/* =========================================================
+   DETAIL PANEL
+   ========================================================= */
+
+.collab-detail {
+  align-self: stretch;
+
+  padding:
+    1.35rem
+    1.2rem;
+
+  border:
+    1px solid rgba(151, 143, 174, 0.15);
+
+  border-radius: 10px;
+
+  background:
+    rgba(255, 255, 255, 0.018);
+}
+
+
+.collab-detail-eyebrow {
+  margin-bottom: 0.75rem;
+
+  color:
+    #a49ab3;
+
+  font-size: 0.66rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.11em;
+
+  text-transform: uppercase;
+}
+
+
+.collab-detail h3 {
+  margin:
+    0
+    0
+    0.4rem;
+
+  color:
+    var(--global-text-color);
+
+  font-size: 1.14rem;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+.collab-detail-meta {
+  margin-bottom: 0.9rem;
+
+  color:
+    var(--global-text-color-light);
+
+  font-size: 0.78rem;
+
+  line-height: 1.5;
+}
+
+
+.collab-detail p {
+  margin:
+    0
+    0
+    1.1rem;
+
+  color:
+    var(--global-text-color-light);
+
+  font-size: 0.79rem;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   DETAIL LIST
+   ========================================================= */
+
+.collab-detail-list {
+  padding-top: 0.9rem;
+
+  border-top:
+    1px solid rgba(151, 143, 174, 0.10);
+}
+
+
+.collab-detail-list-title {
+  margin-bottom: 0.65rem;
+
+  color:
+    #9e96aa;
+
+  font-size: 0.64rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+}
+
+
+.collab-detail-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 0.55rem;
+
+  margin-bottom: 0.55rem;
+
+  color:
+    var(--global-text-color);
+
+  font-size: 0.75rem;
+
+  line-height: 1.45;
+}
+
+
+.collab-detail-dot {
+  flex: 0 0 auto;
+
+  width: 8px;
+  height: 8px;
+
+  margin-top: 0.28rem;
+
+  border-radius: 50%;
+}
+
+
+.collab-detail-dot.tone-korea {
+  background: #6f8faf;
+}
+
+.collab-detail-dot.tone-us {
+  background: #b47b68;
+}
+
+.collab-detail-dot.tone-japan {
+  background: #7f9b85;
+}
+
+.collab-detail-dot.tone-hk {
+  background: #b29a68;
+}
+
+.collab-detail-dot.tone-italy {
+  background: #6f9693;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .collab-stage {
+    grid-template-columns: 1fr;
+  }
 
   .collab-network {
-    height: 430px;
+    height: 440px;
+  }
+
+  .collab-detail {
+    padding:
+      1rem
+      0;
+
+    border: 0;
+
+    border-top:
+      1px solid rgba(151, 143, 174, 0.12);
+
+    border-radius: 0;
+
+    background: transparent;
   }
 
   .collab-label {
-    font-size: 10px;
+    font-size: 9.5px;
   }
 
   .collab-center-node .collab-label {
-    font-size: 12px;
+    font-size: 11.5px;
   }
 
 }
+
+</style>
+
+
+<script
+  defer
+  src="{{ '/assets/js/collaborations.js' | relative_url | bust_file_cache }}">
+</script>
