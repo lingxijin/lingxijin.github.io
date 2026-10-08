@@ -1,84 +1,7 @@
 (function () {
   "use strict";
 
-
-  var SVG_NS =
-    "http://www.w3.org/2000/svg";
-
-
-  /* =========================================================
-     COUNTRY INFORMATION
-     ========================================================= */
-
-  var COUNTRY_INFO = {
-
-    "South Korea": {
-      tone: "tone-korea",
-
-      institutions: [
-        "Ewha Womans University",
-        "Sejong University"
-      ]
-    },
-
-
-    "United States": {
-      tone: "tone-us",
-
-      institutions: [
-        "Carnegie Mellon University",
-        "University of Miami",
-        "University of Utah",
-        "Auburn University"
-      ]
-    },
-
-
-    "Singapore": {
-      tone: "tone-singapore",
-
-      institutions: [
-        "Nanyang Technological University"
-      ]
-    },
-
-
-    "United Kingdom": {
-      tone: "tone-uk",
-
-      institutions: [
-        "University of Bristol"
-      ]
-    },
-
-
-    "Japan": {
-      tone: "tone-japan",
-
-      institutions: [
-        "Kyushu University"
-      ]
-    },
-
-
-    "Hong Kong SAR, China": {
-      tone: "tone-hk",
-
-      institutions: [
-        "The Hong Kong Polytechnic University"
-      ]
-    },
-
-
-    "Italy": {
-      tone: "tone-italy",
-
-      institutions: [
-        "Politecnico di Milano"
-      ]
-    }
-
-  };
+  var SVG_NS = "http://www.w3.org/2000/svg";
 
 
   /* =========================================================
@@ -87,6 +10,10 @@
 
   var NETWORK_DATA = {
 
+    /* ---------------------------------------------------------
+       COUNTRIES / REGIONS
+       --------------------------------------------------------- */
+
     countries: {
 
       nodes: [
@@ -94,77 +21,74 @@
         {
           id: "Lingxi Jin",
           type: "center",
-          x: 0.47,
+          x: 0.48,
           y: 0.51
         },
-
 
         {
           id: "South Korea",
           type: "country",
           tone: "tone-korea",
-          x: 0.18,
+          x: 0.16,
           y: 0.18
         },
-
 
         {
           id: "Singapore",
           type: "country",
           tone: "tone-singapore",
-          x: 0.43,
+          x: 0.42,
           y: 0.13
         },
-
 
         {
           id: "United Kingdom",
           type: "country",
           tone: "tone-uk",
-          x: 0.69,
+          x: 0.68,
           y: 0.17
         },
-
 
         {
           id: "United States",
           type: "country",
           tone: "tone-us",
-          x: 0.86,
-          y: 0.39
+          x: 0.88,
+          y: 0.40
         },
-
 
         {
           id: "Japan",
           type: "country",
           tone: "tone-japan",
           x: 0.78,
-          y: 0.76
+          y: 0.77
         },
-
 
         {
           id: "Hong Kong SAR, China",
           type: "country",
           tone: "tone-hk",
-          x: 0.43,
-          y: 0.84
+          x: 0.44,
+          y: 0.86
         },
-
 
         {
           id: "Italy",
           type: "country",
           tone: "tone-italy",
           x: 0.10,
-          y: 0.60
+          y: 0.62
         }
 
       ]
 
     },
 
+
+    /* ---------------------------------------------------------
+       INSTITUTIONS
+       --------------------------------------------------------- */
 
     institutions: {
 
@@ -173,7 +97,7 @@
         {
           id: "Lingxi Jin",
           type: "center",
-          x: 0.47,
+          x: 0.48,
           y: 0.51
         },
 
@@ -185,18 +109,17 @@
           type: "institution",
           country: "South Korea",
           tone: "tone-korea",
-          x: 0.10,
+          x: 0.08,
           y: 0.16
         },
-
 
         {
           id: "Sejong University",
           type: "institution",
           country: "South Korea",
           tone: "tone-korea",
-          x: 0.29,
-          y: 0.12
+          x: 0.26,
+          y: 0.11
         },
 
 
@@ -207,8 +130,8 @@
           type: "institution",
           country: "Singapore",
           tone: "tone-singapore",
-          x: 0.49,
-          y: 0.12
+          x: 0.46,
+          y: 0.10
         },
 
 
@@ -219,8 +142,8 @@
           type: "institution",
           country: "United Kingdom",
           tone: "tone-uk",
-          x: 0.68,
-          y: 0.14
+          x: 0.65,
+          y: 0.12
         },
 
 
@@ -231,37 +154,34 @@
           type: "institution",
           country: "United States",
           tone: "tone-us",
-          x: 0.85,
-          y: 0.23
+          x: 0.83,
+          y: 0.20
         },
-
 
         {
           id: "University of Miami",
           type: "institution",
           country: "United States",
           tone: "tone-us",
-          x: 0.91,
-          y: 0.47
+          x: 0.92,
+          y: 0.42
         },
-
 
         {
           id: "University of Utah",
           type: "institution",
           country: "United States",
           tone: "tone-us",
-          x: 0.86,
-          y: 0.70
+          x: 0.89,
+          y: 0.67
         },
-
 
         {
           id: "Auburn University",
           type: "institution",
           country: "United States",
           tone: "tone-us",
-          x: 0.70,
+          x: 0.72,
           y: 0.84
         },
 
@@ -273,8 +193,8 @@
           type: "institution",
           country: "Japan",
           tone: "tone-japan",
-          x: 0.51,
-          y: 0.88
+          x: 0.52,
+          y: 0.89
         },
 
 
@@ -297,8 +217,8 @@
           type: "institution",
           country: "Italy",
           tone: "tone-italy",
-          x: 0.09,
-          y: 0.61
+          x: 0.08,
+          y: 0.62
         }
 
       ]
@@ -330,57 +250,19 @@
     );
 
 
-  var detailEyebrow =
-    document.querySelector(
-      ".collab-detail-eyebrow"
-    );
-
-
-  var detailTitle =
-    document.getElementById(
-      "collab-detail-title"
-    );
-
-
-  var detailMeta =
-    document.getElementById(
-      "collab-detail-meta"
-    );
-
-
-  var detailDescription =
-    document.getElementById(
-      "collab-detail-description"
-    );
-
-
-  var detailList =
-    document.getElementById(
-      "collab-detail-list"
-    );
-
-
   if (!container) {
     return;
   }
 
 
-  var currentView =
-    "countries";
-
-
-  var currentNetwork =
-    null;
+  var currentNetwork = null;
 
 
   /* =========================================================
      SVG HELPER
      ========================================================= */
 
-  function svgElement(
-    tag,
-    attrs
-  ) {
+  function svgElement(tag, attrs) {
 
     var element =
       document.createElementNS(
@@ -412,21 +294,15 @@
      LABEL WRAPPING
      ========================================================= */
 
-  function wrapLabel(
-    text,
-    maxLength
-  ) {
+  function wrapLabel(text, maxLength) {
 
     var words =
       text.split(" ");
 
 
-    var lines =
-      [];
+    var lines = [];
 
-
-    var current =
-      "";
+    var current = "";
 
 
     words.forEach(
@@ -443,18 +319,13 @@
           current
         ) {
 
-          lines.push(
-            current
-          );
+          lines.push(current);
 
-
-          current =
-            word;
+          current = word;
 
         } else {
 
-          current =
-            candidate;
+          current = candidate;
 
         }
 
@@ -463,11 +334,7 @@
 
 
     if (current) {
-
-      lines.push(
-        current
-      );
-
+      lines.push(current);
     }
 
 
@@ -477,208 +344,30 @@
 
 
   /* =========================================================
-     DETAIL PANEL
+     NODE RADIUS
      ========================================================= */
 
-  function clearDetailList() {
-
-    detailList.innerHTML =
-      "";
-
-  }
-
-
-  function showCenterDetail() {
-
-    detailEyebrow.textContent =
-      "Research Network";
-
-
-    detailTitle.textContent =
-      "Lingxi Jin";
-
-
-    detailMeta.textContent =
-      currentView === "countries"
-        ? "Global collaboration"
-        : "Institutional collaboration";
-
-
-    detailDescription.textContent =
-      currentView === "countries"
-        ? "Select a country or region in the network to explore connected institutions."
-        : "Select an institution in the network to view its location.";
-
-
-    clearDetailList();
-
-  }
-
-
-  function showCountryDetail(
-    country
-  ) {
-
-    var info =
-      COUNTRY_INFO[
-        country.id
-      ];
-
-
-    detailEyebrow.textContent =
-      "Country / Region";
-
-
-    detailTitle.textContent =
-      country.id;
-
-
-    detailMeta.textContent =
-      "Research collaboration";
-
-
-    detailDescription.textContent =
-      "Connected through collaborative research with Lingxi Jin.";
-
-
-    clearDetailList();
-
-
-    if (
-      !info ||
-      !info.institutions.length
-    ) {
-
-      return;
-
-    }
-
-
-    var title =
-      document.createElement(
-        "div"
-      );
-
-
-    title.className =
-      "collab-detail-list-title";
-
-
-    title.textContent =
-      "Institutions";
-
-
-    detailList.appendChild(
-      title
-    );
-
-
-    info.institutions.forEach(
-      function (
-        institution
-      ) {
-
-        var item =
-          document.createElement(
-            "div"
-          );
-
-
-        item.className =
-          "collab-detail-item";
-
-
-        var dot =
-          document.createElement(
-            "span"
-          );
-
-
-        dot.className =
-          "collab-detail-dot " +
-          info.tone;
-
-
-        var label =
-          document.createElement(
-            "span"
-          );
-
-
-        label.textContent =
-          institution;
-
-
-        item.appendChild(
-          dot
-        );
-
-
-        item.appendChild(
-          label
-        );
-
-
-        detailList.appendChild(
-          item
-        );
-
-      }
-    );
-
-  }
-
-
-  function showInstitutionDetail(
-    institution
-  ) {
-
-    detailEyebrow.textContent =
-      "Institution";
-
-
-    detailTitle.textContent =
-      institution.id;
-
-
-    detailMeta.textContent =
-      institution.country;
-
-
-    detailDescription.textContent =
-      "Connected through collaborative research with Lingxi Jin.";
-
-
-    clearDetailList();
-
-  }
-
-
-  function showNodeDetail(
-    node
-  ) {
+  function getNodeRadius(node) {
 
     if (
       node.type === "center"
     ) {
 
-      showCenterDetail();
+      return 50;
 
-    } else if (
+    }
+
+
+    if (
       node.type === "country"
     ) {
 
-      showCountryDetail(
-        node
-      );
-
-    } else {
-
-      showInstitutionDetail(
-        node
-      );
+      return 30;
 
     }
+
+
+    return 23;
 
   }
 
@@ -687,22 +376,18 @@
      BUILD NETWORK
      ========================================================= */
 
-  function buildNetwork(
-    viewName
-  ) {
-
-    currentView =
-      viewName;
-
+  function buildNetwork(viewName) {
 
     var data =
-      NETWORK_DATA[
-        viewName
-      ];
+      NETWORK_DATA[viewName];
 
 
-    container.innerHTML =
-      "";
+    if (!data) {
+      return;
+    }
+
+
+    container.innerHTML = "";
 
 
     container.classList.remove(
@@ -710,17 +395,16 @@
     );
 
 
-    var width =
-      1200;
+    /*
+      Large internal canvas so the network can use
+      the collaboration page as its main visual area.
+    */
 
-
-    var height =
-      700;
-
+    var width = 1400;
+    var height = 760;
 
     var centerX =
       width / 2;
-
 
     var centerY =
       height / 2;
@@ -745,7 +429,12 @@
             "xMidYMid meet",
 
           role:
-            "img"
+            "img",
+
+          "aria-label":
+            viewName === "countries"
+              ? "Global research collaboration network"
+              : "Institutional research collaboration network"
 
         }
       );
@@ -759,11 +448,8 @@
           x: 0,
           y: 0,
 
-          width:
-            width,
-
-          height:
-            height,
+          width: width,
+          height: height,
 
           class:
             "collab-background"
@@ -776,8 +462,7 @@
       svgElement(
         "g",
         {
-          class:
-            "collab-viewport"
+          class: "collab-viewport"
         }
       );
 
@@ -786,8 +471,7 @@
       svgElement(
         "g",
         {
-          class:
-            "collab-links"
+          class: "collab-links"
         }
       );
 
@@ -796,8 +480,7 @@
       svgElement(
         "g",
         {
-          class:
-            "collab-nodes"
+          class: "collab-nodes"
         }
       );
 
@@ -836,13 +519,11 @@
         function (item) {
 
           var x =
-            item.x *
-            width;
+            item.x * width;
 
 
           var y =
-            item.y *
-            height;
+            item.y * height;
 
 
           return {
@@ -853,11 +534,11 @@
             type:
               item.type,
 
-            tone:
-              item.tone || "",
-
             country:
               item.country || "",
+
+            tone:
+              item.tone || "",
 
             x:
               x,
@@ -880,30 +561,23 @@
       );
 
 
-    var centerNode =
-      null;
+    var centerNode = null;
 
-
-    var outerNodes =
-      [];
+    var outerNodes = [];
 
 
     nodes.forEach(
       function (node) {
 
         if (
-          node.type ===
-          "center"
+          node.type === "center"
         ) {
 
-          centerNode =
-            node;
+          centerNode = node;
 
         } else {
 
-          outerNodes.push(
-            node
-          );
+          outerNodes.push(node);
 
         }
 
@@ -911,28 +585,27 @@
     );
 
 
+    if (!centerNode) {
+      return;
+    }
+
+
     /* =====================================================
        LINKS
        ===================================================== */
 
-    var links =
-      [];
+    var links = [];
 
 
     outerNodes.forEach(
-      function (
-        node,
-        index
-      ) {
+      function (node, index) {
 
         var path =
           svgElement(
             "path",
             {
-
               class:
                 "collab-link"
-
             }
           );
 
@@ -969,17 +642,14 @@
        ===================================================== */
 
     nodes.forEach(
-      function (
-        node
-      ) {
+      function (node) {
 
         var classes =
           "collab-node";
 
 
         if (
-          node.type ===
-          "center"
+          node.type === "center"
         ) {
 
           classes +=
@@ -988,9 +658,7 @@
         }
 
 
-        if (
-          node.tone
-        ) {
+        if (node.tone) {
 
           classes +=
             " " +
@@ -1011,38 +679,28 @@
                 "0",
 
               role:
-                "button"
+                "button",
+
+              "aria-label":
+                node.country
+                  ? node.id +
+                    ", " +
+                    node.country
+                  : node.id
 
             }
           );
 
 
-        var radius;
+        var radius =
+          getNodeRadius(
+            node
+          );
 
 
-        if (
-          node.type ===
-          "center"
-        ) {
-
-          radius =
-            46;
-
-        } else if (
-          node.type ===
-          "country"
-        ) {
-
-          radius =
-            27;
-
-        } else {
-
-          radius =
-            21;
-
-        }
-
+        /* -------------------------------------------------
+           HALO
+           ------------------------------------------------- */
 
         var halo =
           svgElement(
@@ -1055,15 +713,18 @@
               r:
                 radius +
                 (
-                  node.type ===
-                  "center"
-                    ? 16
-                    : 10
+                  node.type === "center"
+                    ? 18
+                    : 11
                 )
 
             }
           );
 
+
+        /* -------------------------------------------------
+           MAIN CIRCLE
+           ------------------------------------------------- */
 
         var circle =
           svgElement(
@@ -1103,18 +764,16 @@
                 "collab-label",
 
               y:
-                radius +
-                31
+                radius + 34
 
             }
           );
 
 
         var maxLength =
-          node.type ===
-          "institution"
-            ? 21
-            : 24;
+          node.type === "institution"
+            ? 22
+            : 25;
 
 
         var lines =
@@ -1135,13 +794,12 @@
                 "tspan",
                 {
 
-                  x:
-                    0,
+                  x: 0,
 
                   dy:
                     index === 0
                       ? 0
-                      : 20
+                      : 22
 
                 }
               );
@@ -1179,15 +837,13 @@
 
         group.addEventListener(
           "click",
-
           function (event) {
 
             event.stopPropagation();
 
 
             if (
-              node.type ===
-              "center"
+              node.type === "center"
             ) {
 
               clearSelection();
@@ -1210,22 +866,18 @@
 
         group.addEventListener(
           "keydown",
-
           function (event) {
 
             if (
-              event.key ===
-                "Enter" ||
-              event.key ===
-                " "
+              event.key === "Enter" ||
+              event.key === " "
             ) {
 
               event.preventDefault();
 
 
               if (
-                node.type ===
-                "center"
+                node.type === "center"
               ) {
 
                 clearSelection();
@@ -1245,25 +897,21 @@
 
 
         /* =================================================
-           DRAG
+           DRAG NODE
            ================================================= */
 
         if (
-          node.type !==
-          "center"
+          node.type !== "center"
         ) {
 
-          var dragging =
-            false;
+          var dragging = false;
 
 
           group.addEventListener(
             "pointerdown",
-
             function (event) {
 
-              dragging =
-                true;
+              dragging = true;
 
 
               group.setPointerCapture(
@@ -1279,13 +927,10 @@
 
           group.addEventListener(
             "pointermove",
-
             function (event) {
 
               if (!dragging) {
-
                 return;
-
               }
 
 
@@ -1312,11 +957,9 @@
 
           group.addEventListener(
             "pointerup",
-
             function (event) {
 
-              dragging =
-                false;
+              dragging = false;
 
 
               if (
@@ -1335,6 +978,16 @@
             }
           );
 
+
+          group.addEventListener(
+            "pointercancel",
+            function () {
+
+              dragging = false;
+
+            }
+          );
+
         }
 
       }
@@ -1345,16 +998,10 @@
        VIEWPORT
        ===================================================== */
 
-    var zoom =
-      1;
+    var zoom = 1;
 
-
-    var panX =
-      0;
-
-
-    var panY =
-      0;
+    var panX = 0;
+    var panY = 0;
 
 
     function updateViewport() {
@@ -1432,109 +1079,263 @@
 
 
     /* =====================================================
-       CURVED LINKS
+       LINK PATH
+       Lines begin OUTSIDE the source circle and stop
+       OUTSIDE the target circle.
+
+       Cubic Bézier control points maintain an outward
+       tangent so curved links do not bend back through
+       the node.
        ===================================================== */
 
-    function linkPath(
-      link
-    ) {
+    function linkPath(link) {
+
+      var source =
+        link.source;
+
+
+      var target =
+        link.target;
+
 
       var x1 =
-        link.source.x;
+        source.x;
 
 
       var y1 =
-        link.source.y;
+        source.y;
 
 
       var x2 =
-        link.target.x;
+        target.x;
 
 
       var y2 =
-        link.target.y;
+        target.y;
 
 
-      var mx =
-        (
-          x1 +
-          x2
-        ) /
-        2;
-
-
-      var my =
-        (
-          y1 +
-          y2
-        ) /
-        2;
-
+      /* -----------------------------------------
+         VECTOR
+         ----------------------------------------- */
 
       var dx =
-        x2 -
-        x1;
+        x2 - x1;
 
 
       var dy =
-        y2 -
-        y1;
+        y2 - y1;
 
 
-      var length =
+      var distance =
         Math.sqrt(
           dx * dx +
           dy * dy
         ) || 1;
 
 
+      var unitX =
+        dx / distance;
+
+
+      var unitY =
+        dy / distance;
+
+
+      /* -----------------------------------------
+         NODE RADII
+
+         Extra gap keeps the line visually
+         separated from the circle stroke.
+         ----------------------------------------- */
+
+      var edgeGap = 3;
+
+
+      var sourceRadius =
+        getNodeRadius(
+          source
+        ) +
+        edgeGap;
+
+
+      var targetRadius =
+        getNodeRadius(
+          target
+        ) +
+        edgeGap;
+
+
+      /*
+        If nodes are dragged very close together,
+        prevent invalid / reversed paths.
+      */
+
+      if (
+        distance <=
+        sourceRadius +
+        targetRadius +
+        8
+      ) {
+
+        return "";
+
+      }
+
+
+      /* -----------------------------------------
+         START / END POINTS
+         ----------------------------------------- */
+
+      var startX =
+        x1 +
+        unitX *
+        sourceRadius;
+
+
+      var startY =
+        y1 +
+        unitY *
+        sourceRadius;
+
+
+      var endX =
+        x2 -
+        unitX *
+        targetRadius;
+
+
+      var endY =
+        y2 -
+        unitY *
+        targetRadius;
+
+
+      /* -----------------------------------------
+         CURVE
+         ----------------------------------------- */
+
+      var pathDx =
+        endX - startX;
+
+
+      var pathDy =
+        endY - startY;
+
+
+      var pathLength =
+        Math.sqrt(
+          pathDx * pathDx +
+          pathDy * pathDy
+        ) || 1;
+
+
+      var pathUnitX =
+        pathDx /
+        pathLength;
+
+
+      var pathUnitY =
+        pathDy /
+        pathLength;
+
+
+      /*
+        Perpendicular vector.
+      */
+
+      var perpX =
+        -pathUnitY;
+
+
+      var perpY =
+        pathUnitX;
+
+
+      /*
+        Alternate bend direction so the network
+        feels more organic.
+      */
+
       var direction =
-        link.index %
-        2 === 0
+        link.index % 2 === 0
           ? 1
           : -1;
 
 
       var bend =
         Math.min(
-          34,
-          length *
-          0.07
+          42,
+          pathLength *
+          0.055
         ) *
         direction;
 
 
-      var cx =
-        mx -
-        (
-          dy /
-          length
-        ) *
+      /*
+        Control-point distance along the link.
+        Because both control points extend forward
+        from the circle edges, the curve cannot
+        immediately turn back into either circle.
+      */
+
+      var controlDistance =
+        pathLength *
+        0.34;
+
+
+      var control1X =
+        startX +
+        pathUnitX *
+        controlDistance +
+        perpX *
         bend;
 
 
-      var cy =
-        my +
-        (
-          dx /
-          length
-        ) *
+      var control1Y =
+        startY +
+        pathUnitY *
+        controlDistance +
+        perpY *
+        bend;
+
+
+      var control2X =
+        endX -
+        pathUnitX *
+        controlDistance +
+        perpX *
+        bend;
+
+
+      var control2Y =
+        endY -
+        pathUnitY *
+        controlDistance +
+        perpY *
         bend;
 
 
       return (
         "M " +
-        x1 +
+        startX +
         " " +
-        y1 +
-        " Q " +
-        cx +
+        startY +
+
+        " C " +
+
+        control1X +
         " " +
-        cy +
+        control1Y +
+        ", " +
+
+        control2X +
         " " +
-        x2 +
+        control2Y +
+        ", " +
+
+        endX +
         " " +
-        y2
+        endY
       );
 
     }
@@ -1582,7 +1383,7 @@
 
 
     /* =====================================================
-       SELECT
+       SELECTION
        ===================================================== */
 
     function selectNode(
@@ -1599,8 +1400,7 @@
 
           var active =
             node === selected ||
-            node.type ===
-              "center";
+            node.type === "center";
 
 
           node.element.classList.toggle(
@@ -1616,20 +1416,11 @@
         function (link) {
 
           link.element.classList.toggle(
-
             "active",
-
-            link.target ===
-              selected
-
+            link.target === selected
           );
 
         }
-      );
-
-
-      showNodeDetail(
-        selected
       );
 
     }
@@ -1663,15 +1454,11 @@
         }
       );
 
-
-      showCenterDetail();
-
     }
 
 
     svg.addEventListener(
       "click",
-
       function () {
 
         clearSelection();
@@ -1694,8 +1481,7 @@
 
 
         if (
-          event.deltaY <
-            0
+          event.deltaY < 0
         ) {
 
           zoom *=
@@ -1711,9 +1497,9 @@
 
         zoom =
           Math.max(
-            0.68,
+            0.65,
             Math.min(
-              2.2,
+              2.3,
               zoom
             )
           );
@@ -1724,8 +1510,7 @@
       },
 
       {
-        passive:
-          false
+        passive: false
       }
 
     );
@@ -1735,34 +1520,20 @@
        PAN
        ===================================================== */
 
-    var panning =
-      false;
+    var panning = false;
 
+    var startX = 0;
+    var startY = 0;
 
-    var startX =
-      0;
-
-
-    var startY =
-      0;
-
-
-    var startPanX =
-      0;
-
-
-    var startPanY =
-      0;
+    var startPanX = 0;
+    var startPanY = 0;
 
 
     background.addEventListener(
-
       "pointerdown",
-
       function (event) {
 
-        panning =
-          true;
+        panning = true;
 
 
         startX =
@@ -1786,20 +1557,15 @@
         );
 
       }
-
     );
 
 
     background.addEventListener(
-
       "pointermove",
-
       function (event) {
 
         if (!panning) {
-
           return;
-
         }
 
 
@@ -1834,18 +1600,14 @@
         updateViewport();
 
       }
-
     );
 
 
     background.addEventListener(
-
       "pointerup",
-
       function (event) {
 
-        panning =
-          false;
+        panning = false;
 
 
         if (
@@ -1862,7 +1624,16 @@
         }
 
       }
+    );
 
+
+    background.addEventListener(
+      "pointercancel",
+      function () {
+
+        panning = false;
+
+      }
     );
 
 
@@ -1872,16 +1643,10 @@
 
     function reset() {
 
-      zoom =
-        1;
+      zoom = 1;
 
-
-      panX =
-        0;
-
-
-      panY =
-        0;
+      panX = 0;
+      panY = 0;
 
 
       nodes.forEach(
@@ -1912,17 +1677,19 @@
     };
 
 
+    /* =====================================================
+       INITIAL DRAW
+       ===================================================== */
+
     draw();
 
     updateViewport();
-
-    showCenterDetail();
 
   }
 
 
   /* =========================================================
-     VIEW SWITCH
+     SWITCH VIEW
      ========================================================= */
 
   function switchView(
@@ -1978,9 +1745,7 @@
     function (button) {
 
       button.addEventListener(
-
         "click",
-
         function () {
 
           switchView(
@@ -1990,7 +1755,6 @@
           );
 
         }
-
       );
 
     }
@@ -1998,17 +1762,13 @@
 
 
   /* =========================================================
-     RESET
+     RESET BUTTON
      ========================================================= */
 
-  if (
-    resetButton
-  ) {
+  if (resetButton) {
 
     resetButton.addEventListener(
-
       "click",
-
       function () {
 
         if (
@@ -2022,14 +1782,13 @@
         }
 
       }
-
     );
 
   }
 
 
   /* =========================================================
-     START
+     INITIAL VIEW
      ========================================================= */
 
   switchView(
