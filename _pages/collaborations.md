@@ -2,17 +2,10 @@
 layout: page
 title: collaborations
 permalink: /collaborations/
-description: Research Collaboration Network
+description:  A visualization of my research collaborations across countries, regions, and institutions.
 nav: true
 nav_order: 3
 ---
-
-<div class="collab-intro">
-  <p>
-    A visualization of my research collaborations across countries, regions, and institutions.
-  </p>
-</div>
-
 
 <div class="collab-toolbar">
 
