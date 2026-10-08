@@ -101,4 +101,54 @@ html[data-theme="dark"] .publications .author em {
   background: rgba(186, 160, 255, 0.18);
   border-color: rgba(186, 160, 255, 0.30);
 }
+/* =========================================================
+   OPEN TO OPPORTUNITIES
+   ========================================================= */
 
+.opportunity-callout {
+  margin-top: 1.8rem;
+  padding: 1.15rem 1.35rem;
+
+  border-left: 4px solid #8667a2;
+  border-radius: 8px;
+
+  background: rgba(134, 103, 162, 0.08);
+}
+
+.opportunity-title {
+  margin-bottom: 0.45rem;
+
+  color: #765890;
+
+  font-size: 0.88rem;
+  font-weight: 750;
+
+  letter-spacing: 0.03em;
+}
+
+.opportunity-text {
+  color: var(--global-text-color);
+
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.opportunity-text strong {
+  font-weight: 700;
+}
+
+.opportunity-text a {
+  font-weight: 600;
+}
+
+
+/* Dark mode */
+
+html[data-theme="dark"] .opportunity-callout {
+  background: rgba(166, 137, 192, 0.10);
+  border-left-color: #b69aca;
+}
+
+html[data-theme="dark"] .opportunity-title {
+  color: #c8add9;
+}
