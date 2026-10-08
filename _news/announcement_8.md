@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 My poster has been accepted at **CHI 2026**! This year, CHI received 2,068 poster submissions, with an acceptance rate of 38.4%. See you in Barcelona! 🇪🇸
+My poster has been accepted at **CHI 2026**! This year, CHI received 2,068 poster submissions, with an acceptance rate of 38.4%. See you in Barcelona! 
