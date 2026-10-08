@@ -152,11 +152,16 @@ nav_order: 4
 ### Academic Communities & Memberships
 
 <div class="timeline">
+
   <time>2025</time>
   <div class="service-items">
     <div class="service-item">
       Association for the Advancement of Computing in Education (<b>AACE</b>)
     </div>
+  </div>
+
+  <time>2025–2026</time>
+  <div class="service-items">
     <div class="service-item">
       ACM Conference on Human Factors in Computing Systems (<b>CHI</b>)
     </div>
@@ -167,11 +172,20 @@ nav_order: 4
     <div class="service-item">
       British Educational Research Association (<b>BERA</b>)
     </div>
+  </div>
+
+  <time>2024</time>
+  <div class="service-items">
     <div class="service-item">
       International Conference on Learning Analytics & Knowledge (<b>LAK</b>)
     </div>
+  </div>
+
+  <time>2024–2026</time>
+  <div class="service-items">
     <div class="service-item">
       International Conference on Artificial Intelligence in Education (<b>AIED</b>)
     </div>
   </div>
+
 </div>
