@@ -1,12 +1,12 @@
 ---
 layout: post
-title: I'll be giving an invited talk at the First Global East–West Forum on Teacher Education 2025 (Changchun, China), October 10–12. ✨ 😄
+title: I'll be giving an invited talk at the First Global East–West Forum on Teacher Education 2025 (Changchun, China), October 10–12. 
 date: 2025-09-01 07:59:00 -0400
 inline: false          # 列表页不展开全文
 related_posts: false
 ---
 
-I'll be giving an invited talk at the **First Global East–West Forum on Teacher Education 2025** (Changchun, China), **October 10–12**. ✨ 😄
+I'll be giving an invited talk at the **First Global East–West Forum on Teacher Education 2025** (Changchun, China), **October 10–12**. 
 
 This international forum is **co-hosted by Northeast Normal University** and the **Global Institute for Teacher Development**, exploring **“Enhancing Teacher Education Competence in the Context of Educational Digital Transformation.”**
 
