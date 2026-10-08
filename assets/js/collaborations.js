@@ -1,18 +1,161 @@
 (function () {
   "use strict";
 
-  var SVG_NS = "http://www.w3.org/2000/svg";
+  var SVG_NS =
+    "http://www.w3.org/2000/svg";
 
 
   /* =========================================================
-     NETWORK DATA
+     COLLABORATION DATA
+
+     workCount controls:
+     1. line thickness
+     2. information shown after clicking a node
+
+     The network does NOT show these numbers initially.
+     ========================================================= */
+
+  var INSTITUTIONS = {
+
+    "Ewha Womans University": {
+      country: "South Korea",
+      tone: "tone-korea",
+      workCount: 7
+    },
+
+    "Sejong University": {
+      country: "South Korea",
+      tone: "tone-korea",
+      workCount: 1
+    },
+
+    "Nanyang Technological University": {
+      country: "Singapore",
+      tone: "tone-singapore",
+      workCount: 2
+    },
+
+    "University of Bristol": {
+      country: "United Kingdom",
+      tone: "tone-uk",
+      workCount: 1
+    },
+
+    "Carnegie Mellon University": {
+      country: "United States",
+      tone: "tone-us",
+      workCount: 1
+    },
+
+    "University of Miami": {
+      country: "United States",
+      tone: "tone-us",
+      workCount: 1
+    },
+
+    "University of Utah": {
+      country: "United States",
+      tone: "tone-us",
+      workCount: 1
+    },
+
+    "Auburn University": {
+      country: "United States",
+      tone: "tone-us",
+      workCount: 1
+    },
+
+    "Kyushu University": {
+      country: "Japan",
+      tone: "tone-japan",
+      workCount: 1
+    },
+
+    "The Hong Kong Polytechnic University": {
+      country: "Hong Kong SAR, China",
+      tone: "tone-hk",
+      workCount: 1
+    },
+
+    "Politecnico di Milano": {
+      country: "Italy",
+      tone: "tone-italy",
+      workCount: 1
+    }
+
+  };
+
+
+  var COUNTRIES = {
+
+    "South Korea": {
+      tone: "tone-korea",
+      workCount: 8,
+      institutions: [
+        "Ewha Womans University",
+        "Sejong University"
+      ]
+    },
+
+    "Singapore": {
+      tone: "tone-singapore",
+      workCount: 2,
+      institutions: [
+        "Nanyang Technological University"
+      ]
+    },
+
+    "United Kingdom": {
+      tone: "tone-uk",
+      workCount: 1,
+      institutions: [
+        "University of Bristol"
+      ]
+    },
+
+    "United States": {
+      tone: "tone-us",
+      workCount: 4,
+      institutions: [
+        "Carnegie Mellon University",
+        "University of Miami",
+        "University of Utah",
+        "Auburn University"
+      ]
+    },
+
+    "Japan": {
+      tone: "tone-japan",
+      workCount: 1,
+      institutions: [
+        "Kyushu University"
+      ]
+    },
+
+    "Hong Kong SAR, China": {
+      tone: "tone-hk",
+      workCount: 1,
+      institutions: [
+        "The Hong Kong Polytechnic University"
+      ]
+    },
+
+    "Italy": {
+      tone: "tone-italy",
+      workCount: 1,
+      institutions: [
+        "Politecnico di Milano"
+      ]
+    }
+
+  };
+
+
+  /* =========================================================
+     NETWORK POSITIONS
      ========================================================= */
 
   var NETWORK_DATA = {
-
-    /* ---------------------------------------------------------
-       COUNTRIES / REGIONS
-       --------------------------------------------------------- */
 
     countries: {
 
@@ -29,15 +172,15 @@
           id: "South Korea",
           type: "country",
           tone: "tone-korea",
-          x: 0.16,
-          y: 0.18
+          x: 0.15,
+          y: 0.19
         },
 
         {
           id: "Singapore",
           type: "country",
           tone: "tone-singapore",
-          x: 0.42,
+          x: 0.43,
           y: 0.13
         },
 
@@ -45,8 +188,8 @@
           id: "United Kingdom",
           type: "country",
           tone: "tone-uk",
-          x: 0.68,
-          y: 0.17
+          x: 0.69,
+          y: 0.18
         },
 
         {
@@ -54,15 +197,15 @@
           type: "country",
           tone: "tone-us",
           x: 0.88,
-          y: 0.40
+          y: 0.42
         },
 
         {
           id: "Japan",
           type: "country",
           tone: "tone-japan",
-          x: 0.78,
-          y: 0.77
+          x: 0.79,
+          y: 0.78
         },
 
         {
@@ -77,18 +220,14 @@
           id: "Italy",
           type: "country",
           tone: "tone-italy",
-          x: 0.10,
-          y: 0.62
+          x: 0.11,
+          y: 0.63
         }
 
       ]
 
     },
 
-
-    /* ---------------------------------------------------------
-       INSTITUTIONS
-       --------------------------------------------------------- */
 
     institutions: {
 
@@ -101,8 +240,6 @@
           y: 0.51
         },
 
-
-        /* South Korea */
 
         {
           id: "Ewha Womans University",
@@ -123,8 +260,6 @@
         },
 
 
-        /* Singapore */
-
         {
           id: "Nanyang Technological University",
           type: "institution",
@@ -135,8 +270,6 @@
         },
 
 
-        /* United Kingdom */
-
         {
           id: "University of Bristol",
           type: "institution",
@@ -146,8 +279,6 @@
           y: 0.12
         },
 
-
-        /* United States */
 
         {
           id: "Carnegie Mellon University",
@@ -186,8 +317,6 @@
         },
 
 
-        /* Japan */
-
         {
           id: "Kyushu University",
           type: "institution",
@@ -198,8 +327,6 @@
         },
 
 
-        /* Hong Kong SAR, China */
-
         {
           id: "The Hong Kong Polytechnic University",
           type: "institution",
@@ -209,8 +336,6 @@
           y: 0.84
         },
 
-
-        /* Italy */
 
         {
           id: "Politecnico di Milano",
@@ -262,7 +387,10 @@
      SVG HELPER
      ========================================================= */
 
-  function svgElement(tag, attrs) {
+  function svgElement(
+    tag,
+    attrs
+  ) {
 
     var element =
       document.createElementNS(
@@ -294,7 +422,10 @@
      LABEL WRAPPING
      ========================================================= */
 
-  function wrapLabel(text, maxLength) {
+  function wrapLabel(
+    text,
+    maxLength
+  ) {
 
     var words =
       text.split(" ");
@@ -302,7 +433,8 @@
 
     var lines = [];
 
-    var current = "";
+    var current =
+      "";
 
 
     words.forEach(
@@ -315,17 +447,22 @@
 
 
         if (
-          candidate.length > maxLength &&
+          candidate.length >
+            maxLength &&
           current
         ) {
 
-          lines.push(current);
+          lines.push(
+            current
+          );
 
-          current = word;
+          current =
+            word;
 
         } else {
 
-          current = candidate;
+          current =
+            candidate;
 
         }
 
@@ -334,7 +471,11 @@
 
 
     if (current) {
-      lines.push(current);
+
+      lines.push(
+        current
+      );
+
     }
 
 
@@ -347,19 +488,23 @@
      NODE RADIUS
      ========================================================= */
 
-  function getNodeRadius(node) {
+  function getNodeRadius(
+    node
+  ) {
 
     if (
-      node.type === "center"
+      node.type ===
+      "center"
     ) {
 
-      return 50;
+      return 48;
 
     }
 
 
     if (
-      node.type === "country"
+      node.type ===
+      "country"
     ) {
 
       return 30;
@@ -373,13 +518,94 @@
 
 
   /* =========================================================
+     COLLABORATION STRENGTH
+     ========================================================= */
+
+  function getWorkCount(
+    node
+  ) {
+
+    if (
+      node.type ===
+      "country"
+    ) {
+
+      return (
+        COUNTRIES[
+          node.id
+        ] || {}
+      ).workCount || 1;
+
+    }
+
+
+    if (
+      node.type ===
+      "institution"
+    ) {
+
+      return (
+        INSTITUTIONS[
+          node.id
+        ] || {}
+      ).workCount || 1;
+
+    }
+
+
+    return 1;
+
+  }
+
+
+  function strengthToWidth(
+    count
+  ) {
+
+    if (
+      count >= 7
+    ) {
+
+      return 7;
+
+    }
+
+
+    if (
+      count >= 4
+    ) {
+
+      return 5.3;
+
+    }
+
+
+    if (
+      count >= 2
+    ) {
+
+      return 3.7;
+
+    }
+
+
+    return 2.2;
+
+  }
+
+
+  /* =========================================================
      BUILD NETWORK
      ========================================================= */
 
-  function buildNetwork(viewName) {
+  function buildNetwork(
+    viewName
+  ) {
 
     var data =
-      NETWORK_DATA[viewName];
+      NETWORK_DATA[
+        viewName
+      ];
 
 
     if (!data) {
@@ -387,7 +613,24 @@
     }
 
 
-    container.innerHTML = "";
+    /*
+      Remove SVG and previous popover,
+      but preserve the HTML strength legend.
+    */
+
+    Array.prototype.slice
+      .call(
+        container.querySelectorAll(
+          "svg, .collab-popover"
+        )
+      )
+      .forEach(
+        function (element) {
+
+          element.remove();
+
+        }
+      );
 
 
     container.classList.remove(
@@ -395,19 +638,49 @@
     );
 
 
-    /*
-      Large internal canvas so the network can use
-      the collaboration page as its main visual area.
-    */
+    var width =
+      1400;
 
-    var width = 1400;
-    var height = 760;
+
+    var height =
+      760;
+
 
     var centerX =
       width / 2;
 
+
     var centerY =
       height / 2;
+
+
+    var selectedNode =
+      null;
+
+
+    /* =====================================================
+       POPOVER
+       ===================================================== */
+
+    var popover =
+      document.createElement(
+        "div"
+      );
+
+
+    popover.className =
+      "collab-popover";
+
+
+    popover.setAttribute(
+      "role",
+      "dialog"
+    );
+
+
+    container.appendChild(
+      popover
+    );
 
 
     /* =====================================================
@@ -432,7 +705,8 @@
             "img",
 
           "aria-label":
-            viewName === "countries"
+            viewName ===
+              "countries"
               ? "Global research collaboration network"
               : "Institutional research collaboration network"
 
@@ -446,10 +720,14 @@
         {
 
           x: 0,
+
           y: 0,
 
-          width: width,
-          height: height,
+          width:
+            width,
+
+          height:
+            height,
 
           class:
             "collab-background"
@@ -462,7 +740,8 @@
       svgElement(
         "g",
         {
-          class: "collab-viewport"
+          class:
+            "collab-viewport"
         }
       );
 
@@ -471,7 +750,8 @@
       svgElement(
         "g",
         {
-          class: "collab-links"
+          class:
+            "collab-links"
         }
       );
 
@@ -480,7 +760,8 @@
       svgElement(
         "g",
         {
-          class: "collab-nodes"
+          class:
+            "collab-nodes"
         }
       );
 
@@ -519,11 +800,13 @@
         function (item) {
 
           var x =
-            item.x * width;
+            item.x *
+            width;
 
 
           var y =
-            item.y * height;
+            item.y *
+            height;
 
 
           return {
@@ -561,23 +844,30 @@
       );
 
 
-    var centerNode = null;
+    var centerNode =
+      null;
 
-    var outerNodes = [];
+
+    var outerNodes =
+      [];
 
 
     nodes.forEach(
       function (node) {
 
         if (
-          node.type === "center"
+          node.type ===
+          "center"
         ) {
 
-          centerNode = node;
+          centerNode =
+            node;
 
         } else {
 
-          outerNodes.push(node);
+          outerNodes.push(
+            node
+          );
 
         }
 
@@ -594,11 +884,27 @@
        LINKS
        ===================================================== */
 
-    var links = [];
+    var links =
+      [];
 
 
     outerNodes.forEach(
-      function (node, index) {
+      function (
+        node,
+        index
+      ) {
+
+        var workCount =
+          getWorkCount(
+            node
+          );
+
+
+        var widthValue =
+          strengthToWidth(
+            workCount
+          );
+
 
         var path =
           svgElement(
@@ -608,6 +914,13 @@
                 "collab-link"
             }
           );
+
+
+        path.style.setProperty(
+          "--link-width",
+          widthValue +
+          "px"
+        );
 
 
         linkLayer.appendChild(
@@ -626,6 +939,9 @@
 
             index:
               index,
+
+            workCount:
+              workCount,
 
             element:
               path
@@ -649,7 +965,8 @@
 
 
         if (
-          node.type === "center"
+          node.type ===
+          "center"
         ) {
 
           classes +=
@@ -698,34 +1015,6 @@
           );
 
 
-        /* -------------------------------------------------
-           HALO
-           ------------------------------------------------- */
-
-        var halo =
-          svgElement(
-            "circle",
-            {
-
-              class:
-                "collab-halo",
-
-              r:
-                radius +
-                (
-                  node.type === "center"
-                    ? 18
-                    : 11
-                )
-
-            }
-          );
-
-
-        /* -------------------------------------------------
-           MAIN CIRCLE
-           ------------------------------------------------- */
-
         var circle =
           svgElement(
             "circle",
@@ -739,11 +1028,6 @@
 
             }
           );
-
-
-        group.appendChild(
-          halo
-        );
 
 
         group.appendChild(
@@ -764,14 +1048,16 @@
                 "collab-label",
 
               y:
-                radius + 34
+                radius +
+                34
 
             }
           );
 
 
         var maxLength =
-          node.type === "institution"
+          node.type ===
+          "institution"
             ? 22
             : 25;
 
@@ -843,18 +1129,20 @@
 
 
             if (
-              node.type === "center"
+              node.type ===
+              "center"
             ) {
 
               clearSelection();
 
-            } else {
-
-              selectNode(
-                node
-              );
+              return;
 
             }
+
+
+            selectNode(
+              node
+            );
 
           }
         );
@@ -869,15 +1157,18 @@
           function (event) {
 
             if (
-              event.key === "Enter" ||
-              event.key === " "
+              event.key ===
+                "Enter" ||
+              event.key ===
+                " "
             ) {
 
               event.preventDefault();
 
 
               if (
-                node.type === "center"
+                node.type ===
+                "center"
               ) {
 
                 clearSelection();
@@ -901,17 +1192,20 @@
            ================================================= */
 
         if (
-          node.type !== "center"
+          node.type !==
+          "center"
         ) {
 
-          var dragging = false;
+          var dragging =
+            false;
 
 
           group.addEventListener(
             "pointerdown",
             function (event) {
 
-              dragging = true;
+              dragging =
+                true;
 
 
               group.setPointerCapture(
@@ -951,6 +1245,18 @@
 
               draw();
 
+
+              if (
+                selectedNode ===
+                node
+              ) {
+
+                positionPopover(
+                  node
+                );
+
+              }
+
             }
           );
 
@@ -959,7 +1265,8 @@
             "pointerup",
             function (event) {
 
-              dragging = false;
+              dragging =
+                false;
 
 
               if (
@@ -983,7 +1290,8 @@
             "pointercancel",
             function () {
 
-              dragging = false;
+              dragging =
+                false;
 
             }
           );
@@ -998,10 +1306,16 @@
        VIEWPORT
        ===================================================== */
 
-    var zoom = 1;
+    var zoom =
+      1;
 
-    var panX = 0;
-    var panY = 0;
+
+    var panX =
+      0;
+
+
+    var panY =
+      0;
 
 
     function updateViewport() {
@@ -1032,6 +1346,23 @@
 
       );
 
+
+      if (
+        selectedNode
+      ) {
+
+        requestAnimationFrame(
+          function () {
+
+            positionPopover(
+              selectedNode
+            );
+
+          }
+        );
+
+      }
+
     }
 
 
@@ -1059,13 +1390,8 @@
       if (!matrix) {
 
         return {
-
-          x:
-            centerX,
-
-          y:
-            centerY
-
+          x: centerX,
+          y: centerY
         };
 
       }
@@ -1079,16 +1405,15 @@
 
 
     /* =====================================================
-       LINK PATH
-       Lines begin OUTSIDE the source circle and stop
-       OUTSIDE the target circle.
+       LINKS
 
-       Cubic Bézier control points maintain an outward
-       tangent so curved links do not bend back through
-       the node.
+       Lines begin outside the center circle
+       and end outside the target circle.
        ===================================================== */
 
-    function linkPath(link) {
+    function linkPath(
+      link
+    ) {
 
       var source =
         link.source;
@@ -1114,16 +1439,14 @@
         target.y;
 
 
-      /* -----------------------------------------
-         VECTOR
-         ----------------------------------------- */
-
       var dx =
-        x2 - x1;
+        x2 -
+        x1;
 
 
       var dy =
-        y2 - y1;
+        y2 -
+        y1;
 
 
       var distance =
@@ -1134,21 +1457,17 @@
 
 
       var unitX =
-        dx / distance;
+        dx /
+        distance;
 
 
       var unitY =
-        dy / distance;
+        dy /
+        distance;
 
 
-      /* -----------------------------------------
-         NODE RADII
-
-         Extra gap keeps the line visually
-         separated from the circle stroke.
-         ----------------------------------------- */
-
-      var edgeGap = 3;
+      var edgeGap =
+        5;
 
 
       var sourceRadius =
@@ -1165,26 +1484,17 @@
         edgeGap;
 
 
-      /*
-        If nodes are dragged very close together,
-        prevent invalid / reversed paths.
-      */
-
       if (
         distance <=
         sourceRadius +
         targetRadius +
-        8
+        10
       ) {
 
         return "";
 
       }
 
-
-      /* -----------------------------------------
-         START / END POINTS
-         ----------------------------------------- */
 
       var startX =
         x1 +
@@ -1210,16 +1520,14 @@
         targetRadius;
 
 
-      /* -----------------------------------------
-         CURVE
-         ----------------------------------------- */
-
       var pathDx =
-        endX - startX;
+        endX -
+        startX;
 
 
       var pathDy =
-        endY - startY;
+        endY -
+        startY;
 
 
       var pathLength =
@@ -1239,10 +1547,6 @@
         pathLength;
 
 
-      /*
-        Perpendicular vector.
-      */
-
       var perpX =
         -pathUnitY;
 
@@ -1251,13 +1555,9 @@
         pathUnitX;
 
 
-      /*
-        Alternate bend direction so the network
-        feels more organic.
-      */
-
       var direction =
-        link.index % 2 === 0
+        link.index %
+        2 === 0
           ? 1
           : -1;
 
@@ -1270,13 +1570,6 @@
         ) *
         direction;
 
-
-      /*
-        Control-point distance along the link.
-        Because both control points extend forward
-        from the circle edges, the curve cannot
-        immediately turn back into either circle.
-      */
 
       var controlDistance =
         pathLength *
@@ -1379,6 +1672,530 @@
         }
       );
 
+
+      if (
+        selectedNode
+      ) {
+
+        requestAnimationFrame(
+          function () {
+
+            positionPopover(
+              selectedNode
+            );
+
+          }
+        );
+
+      }
+
+    }
+
+
+    /* =====================================================
+       POPOVER CONTENT
+       ===================================================== */
+
+    function pluralize(
+      value,
+      singular,
+      plural
+    ) {
+
+      return (
+        value +
+        " " +
+        (
+          value === 1
+            ? singular
+            : plural
+        )
+      );
+
+    }
+
+
+    function buildPopover(
+      node
+    ) {
+
+      popover.innerHTML =
+        "";
+
+
+      var header =
+        document.createElement(
+          "div"
+        );
+
+
+      header.className =
+        "collab-popover-header";
+
+
+      var titleWrap =
+        document.createElement(
+          "div"
+        );
+
+
+      titleWrap.className =
+        "collab-popover-title-wrap";
+
+
+      var dot =
+        document.createElement(
+          "span"
+        );
+
+
+      dot.className =
+        "collab-popover-dot " +
+        node.tone;
+
+
+      var title =
+        document.createElement(
+          "h3"
+        );
+
+
+      title.className =
+        "collab-popover-title";
+
+
+      title.textContent =
+        node.id;
+
+
+      titleWrap.appendChild(
+        dot
+      );
+
+
+      titleWrap.appendChild(
+        title
+      );
+
+
+      var close =
+        document.createElement(
+          "button"
+        );
+
+
+      close.type =
+        "button";
+
+
+      close.className =
+        "collab-popover-close";
+
+
+      close.setAttribute(
+        "aria-label",
+        "Close"
+      );
+
+
+      close.innerHTML =
+        "&times;";
+
+
+      close.addEventListener(
+        "click",
+        function (event) {
+
+          event.stopPropagation();
+
+          clearSelection();
+
+        }
+      );
+
+
+      header.appendChild(
+        titleWrap
+      );
+
+
+      header.appendChild(
+        close
+      );
+
+
+      popover.appendChild(
+        header
+      );
+
+
+      /* -------------------------------------------------
+         COUNTRY
+         ------------------------------------------------- */
+
+      if (
+        node.type ===
+        "country"
+      ) {
+
+        var countryData =
+          COUNTRIES[
+            node.id
+          ];
+
+
+        var count =
+          countryData
+            .workCount;
+
+
+        var institutions =
+          countryData
+            .institutions;
+
+
+        var meta =
+          document.createElement(
+            "div"
+          );
+
+
+        meta.className =
+          "collab-popover-count";
+
+
+        meta.textContent =
+          pluralize(
+            count,
+            "collaborative work",
+            "collaborative works"
+          );
+
+
+        popover.appendChild(
+          meta
+        );
+
+
+        var institutionMeta =
+          document.createElement(
+            "div"
+          );
+
+
+        institutionMeta.className =
+          "collab-popover-meta";
+
+
+        institutionMeta.textContent =
+          pluralize(
+            institutions.length,
+            "institution",
+            "institutions"
+          );
+
+
+        popover.appendChild(
+          institutionMeta
+        );
+
+
+        var section =
+          document.createElement(
+            "div"
+          );
+
+
+        section.className =
+          "collab-popover-section";
+
+
+        var sectionTitle =
+          document.createElement(
+            "div"
+          );
+
+
+        sectionTitle.className =
+          "collab-popover-section-title";
+
+
+        sectionTitle.textContent =
+          "Institutions";
+
+
+        section.appendChild(
+          sectionTitle
+        );
+
+
+        institutions.forEach(
+          function (
+            institutionName
+          ) {
+
+            var institutionData =
+              INSTITUTIONS[
+                institutionName
+              ];
+
+
+            var row =
+              document.createElement(
+                "div"
+              );
+
+
+            row.className =
+              "collab-popover-row";
+
+
+            var name =
+              document.createElement(
+                "span"
+              );
+
+
+            name.className =
+              "collab-popover-row-name";
+
+
+            name.textContent =
+              institutionName;
+
+
+            var value =
+              document.createElement(
+                "span"
+              );
+
+
+            value.className =
+              "collab-popover-row-count";
+
+
+            value.textContent =
+              institutionData
+                .workCount;
+
+
+            row.appendChild(
+              name
+            );
+
+
+            row.appendChild(
+              value
+            );
+
+
+            section.appendChild(
+              row
+            );
+
+          }
+        );
+
+
+        popover.appendChild(
+          section
+        );
+
+      }
+
+
+      /* -------------------------------------------------
+         INSTITUTION
+         ------------------------------------------------- */
+
+      if (
+        node.type ===
+        "institution"
+      ) {
+
+        var institutionData =
+          INSTITUTIONS[
+            node.id
+          ];
+
+
+        var location =
+          document.createElement(
+            "div"
+          );
+
+
+        location.className =
+          "collab-popover-meta";
+
+
+        location.textContent =
+          institutionData
+            .country;
+
+
+        popover.appendChild(
+          location
+        );
+
+
+        var workCount =
+          document.createElement(
+            "div"
+          );
+
+
+        workCount.className =
+          "collab-popover-count";
+
+
+        workCount.textContent =
+          pluralize(
+            institutionData
+              .workCount,
+            "collaborative work",
+            "collaborative works"
+          );
+
+
+        popover.appendChild(
+          workCount
+        );
+
+      }
+
+    }
+
+
+    /* =====================================================
+       POPOVER POSITION
+       ===================================================== */
+
+    function positionPopover(
+      node
+    ) {
+
+      if (
+        !node ||
+        !node.element ||
+        !popover.classList.contains(
+          "visible"
+        )
+      ) {
+
+        return;
+
+      }
+
+
+      var containerRect =
+        container.getBoundingClientRect();
+
+
+      var nodeRect =
+        node.element.getBoundingClientRect();
+
+
+      var popoverRect =
+        popover.getBoundingClientRect();
+
+
+      var nodeCenterX =
+        (
+          nodeRect.left +
+          nodeRect.right
+        ) / 2 -
+        containerRect.left;
+
+
+      var nodeCenterY =
+        (
+          nodeRect.top +
+          nodeRect.bottom
+        ) / 2 -
+        containerRect.top;
+
+
+      var gap =
+        24;
+
+
+      var left;
+
+
+      /*
+        Node on left half:
+        show popover to the right.
+
+        Node on right half:
+        show popover to the left.
+      */
+
+      if (
+        nodeCenterX <
+        containerRect.width /
+        2
+      ) {
+
+        left =
+          nodeRect.right -
+          containerRect.left +
+          gap;
+
+      } else {
+
+        left =
+          nodeRect.left -
+          containerRect.left -
+          popoverRect.width -
+          gap;
+
+      }
+
+
+      var top =
+        nodeCenterY -
+        popoverRect.height /
+        2;
+
+
+      var padding =
+        16;
+
+
+      left =
+        Math.max(
+          padding,
+          Math.min(
+            left,
+            containerRect.width -
+            popoverRect.width -
+            padding
+          )
+        );
+
+
+      top =
+        Math.max(
+          padding,
+          Math.min(
+            top,
+            containerRect.height -
+            popoverRect.height -
+            padding
+          )
+        );
+
+
+      popover.style.left =
+        left +
+        "px";
+
+
+      popover.style.top =
+        top +
+        "px";
+
     }
 
 
@@ -1390,6 +2207,10 @@
       selected
     ) {
 
+      selectedNode =
+        selected;
+
+
       container.classList.add(
         "has-selection"
       );
@@ -1399,8 +2220,10 @@
         function (node) {
 
           var active =
-            node === selected ||
-            node.type === "center";
+            node ===
+              selected ||
+            node.type ===
+              "center";
 
 
           node.element.classList.toggle(
@@ -1417,7 +2240,29 @@
 
           link.element.classList.toggle(
             "active",
-            link.target === selected
+            link.target ===
+              selected
+          );
+
+        }
+      );
+
+
+      buildPopover(
+        selected
+      );
+
+
+      popover.classList.add(
+        "visible"
+      );
+
+
+      requestAnimationFrame(
+        function () {
+
+          positionPopover(
+            selected
           );
 
         }
@@ -1427,6 +2272,10 @@
 
 
     function clearSelection() {
+
+      selectedNode =
+        null;
+
 
       container.classList.remove(
         "has-selection"
@@ -1454,10 +2303,15 @@
         }
       );
 
+
+      popover.classList.remove(
+        "visible"
+      );
+
     }
 
 
-    svg.addEventListener(
+    background.addEventListener(
       "click",
       function () {
 
@@ -1472,16 +2326,15 @@
        ===================================================== */
 
     svg.addEventListener(
-
       "wheel",
-
       function (event) {
 
         event.preventDefault();
 
 
         if (
-          event.deltaY < 0
+          event.deltaY <
+          0
         ) {
 
           zoom *=
@@ -1508,11 +2361,10 @@
         updateViewport();
 
       },
-
       {
-        passive: false
+        passive:
+          false
       }
-
     );
 
 
@@ -1520,20 +2372,32 @@
        PAN
        ===================================================== */
 
-    var panning = false;
+    var panning =
+      false;
 
-    var startX = 0;
-    var startY = 0;
 
-    var startPanX = 0;
-    var startPanY = 0;
+    var startX =
+      0;
+
+
+    var startY =
+      0;
+
+
+    var startPanX =
+      0;
+
+
+    var startPanY =
+      0;
 
 
     background.addEventListener(
       "pointerdown",
       function (event) {
 
-        panning = true;
+        panning =
+          true;
 
 
         startX =
@@ -1607,7 +2471,8 @@
       "pointerup",
       function (event) {
 
-        panning = false;
+        panning =
+          false;
 
 
         if (
@@ -1631,9 +2496,36 @@
       "pointercancel",
       function () {
 
-        panning = false;
+        panning =
+          false;
 
       }
+    );
+
+
+    /* =====================================================
+       ESC CLOSE
+       ===================================================== */
+
+    function escapeHandler(
+      event
+    ) {
+
+      if (
+        event.key ===
+        "Escape"
+      ) {
+
+        clearSelection();
+
+      }
+
+    }
+
+
+    document.addEventListener(
+      "keydown",
+      escapeHandler
     );
 
 
@@ -1643,10 +2535,16 @@
 
     function reset() {
 
-      zoom = 1;
+      zoom =
+        1;
 
-      panX = 0;
-      panY = 0;
+
+      panX =
+        0;
+
+
+      panY =
+        0;
 
 
       nodes.forEach(
@@ -1663,17 +2561,30 @@
       );
 
 
-      updateViewport();
-
       clearSelection();
 
       draw();
+
+      updateViewport();
 
     }
 
 
     currentNetwork = {
-      reset: reset
+
+      reset:
+        reset,
+
+      destroy:
+        function () {
+
+          document.removeEventListener(
+            "keydown",
+            escapeHandler
+          );
+
+        }
+
     };
 
 
@@ -1703,6 +2614,17 @@
     ) {
 
       return;
+
+    }
+
+
+    if (
+      currentNetwork &&
+      typeof currentNetwork.destroy ===
+      "function"
+    ) {
+
+      currentNetwork.destroy();
 
     }
 
@@ -1762,10 +2684,12 @@
 
 
   /* =========================================================
-     RESET BUTTON
+     RESET
      ========================================================= */
 
-  if (resetButton) {
+  if (
+    resetButton
+  ) {
 
     resetButton.addEventListener(
       "click",
@@ -1774,7 +2698,7 @@
         if (
           currentNetwork &&
           typeof currentNetwork.reset ===
-            "function"
+          "function"
         ) {
 
           currentNetwork.reset();
