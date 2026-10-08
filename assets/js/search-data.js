@@ -84,7 +84,7 @@ ninja.data = [{
           title: 'Happy New Year from Norway! I’m spending the holiday in the Lofoten Islands,...',
           description: "",
           section: "News",},{id: "news-my-poster-has-been-accepted-at-chi-2026-this-year-chi-received-2-068-poster-submissions-with-an-acceptance-rate-of-38-4-see-you-in-barcelona",
-          title: '🎉 My poster has been accepted at CHI 2026! This year, CHI received...',
+          title: 'My poster has been accepted at CHI 2026! This year, CHI received 2,068...',
           description: "",
           section: "News",},{id: "news-attending-chi-2026-in-barcelona-spain-excited-to-be-here-and-looking-forward-to-connecting-with-the-hci-community",
           title: 'Attending CHI 2026 in Barcelona, Spain. Excited to be here and looking forward...',
