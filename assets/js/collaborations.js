@@ -1,188 +1,227 @@
-(() => {
-  const NETWORKS = {
+(function () {
+  "use strict";
+
+  var SVG_NS = "http://www.w3.org/2000/svg";
+
+
+  /* =========================================================
+     DATA
+     ========================================================= */
+
+  var networks = {
+
     "country-network": {
       radius: 175,
 
       nodes: [
         {
           id: "Lingxi Jin",
-          type: "center",
+          type: "center"
         },
         {
           id: "South Korea",
-          type: "country",
+          type: "country"
         },
         {
           id: "United States",
-          type: "country",
+          type: "country"
         },
         {
           id: "Japan",
-          type: "country",
+          type: "country"
         },
         {
           id: "Hong Kong SAR, China",
-          type: "country",
+          type: "country"
         },
         {
           id: "Italy",
-          type: "country",
-        },
-      ],
+          type: "country"
+        }
+      ]
     },
 
+
     "institution-network": {
-      radius: 195,
+      radius: 190,
 
       nodes: [
         {
           id: "Lingxi Jin",
-          type: "center",
+          type: "center"
         },
 
         {
           id: "Ewha Womans University",
           type: "institution",
-          country: "South Korea",
+          country: "South Korea"
         },
+
         {
           id: "Chung-Ang University",
           type: "institution",
-          country: "South Korea",
+          country: "South Korea"
         },
+
         {
           id: "Sejong University",
           type: "institution",
-          country: "South Korea",
+          country: "South Korea"
         },
 
         {
           id: "Carnegie Mellon University",
           type: "institution",
-          country: "United States",
+          country: "United States"
         },
+
         {
           id: "University of Miami",
           type: "institution",
-          country: "United States",
+          country: "United States"
         },
+
         {
           id: "University of Utah",
           type: "institution",
-          country: "United States",
+          country: "United States"
         },
+
         {
           id: "Auburn University",
           type: "institution",
-          country: "United States",
+          country: "United States"
         },
 
         {
           id: "Kyushu University",
           type: "institution",
-          country: "Japan",
+          country: "Japan"
         },
 
         {
           id: "The Hong Kong Polytechnic University",
           type: "institution",
-          country: "Hong Kong SAR, China",
+          country: "Hong Kong SAR, China"
         },
 
         {
           id: "Politecnico di Milano",
           type: "institution",
-          country: "Italy",
-        },
-      ],
-    },
+          country: "Italy"
+        }
+      ]
+    }
+
   };
 
 
-  const SVG_NS = "http://www.w3.org/2000/svg";
+  /* =========================================================
+     SVG HELPER
+     ========================================================= */
 
+  function createSvgElement(tag, attrs) {
+    var element = document.createElementNS(SVG_NS, tag);
 
-  function svgElement(tag, attrs = {}) {
-    const element = document.createElementNS(SVG_NS, tag);
-
-    Object.entries(attrs).forEach(([key, value]) => {
-      element.setAttribute(key, value);
-    });
+    if (attrs) {
+      Object.keys(attrs).forEach(function (key) {
+        element.setAttribute(key, attrs[key]);
+      });
+    }
 
     return element;
   }
 
 
-  function wrapWords(text, maxChars) {
-    const words = text.split(" ");
-    const lines = [];
-    let line = "";
+  /* =========================================================
+     LABEL WRAPPING
+     ========================================================= */
 
-    words.forEach((word) => {
-      const test = line ? `${line} ${word}` : word;
+  function wrapLabel(text, maxLength) {
+    var words = text.split(" ");
+    var lines = [];
+    var current = "";
 
-      if (test.length > maxChars && line) {
-        lines.push(line);
-        line = word;
+    words.forEach(function (word) {
+      var candidate = current ? current + " " + word : word;
+
+      if (candidate.length > maxLength && current) {
+        lines.push(current);
+        current = word;
       } else {
-        line = test;
+        current = candidate;
       }
     });
 
-    if (line) {
-      lines.push(line);
+    if (current) {
+      lines.push(current);
     }
 
     return lines;
   }
 
 
-  function initialiseNetwork(containerId, config) {
-    const container = document.getElementById(containerId);
+  /* =========================================================
+     BUILD NETWORK
+     ========================================================= */
 
-    if (!container) return;
+  function buildNetwork(containerId, config) {
+
+    var container = document.getElementById(containerId);
+
+    if (!container) {
+      return;
+    }
 
 
-    const width = 900;
-    const height = 520;
+    /* Remove anything previously rendered */
 
-    const centreX = width / 2;
-    const centreY = height / 2;
+    container.innerHTML = "";
 
 
-    const svg = svgElement("svg", {
-      viewBox: `0 0 ${width} ${height}`,
-      preserveAspectRatio: "xMidYMid meet",
-      role: "img",
+    var width = 900;
+    var height = 520;
+
+    var centerX = width / 2;
+    var centerY = height / 2;
+
+
+    /* =====================================================
+       SVG
+       ===================================================== */
+
+    var svg = createSvgElement("svg", {
+      viewBox: "0 0 " + width + " " + height,
+      preserveAspectRatio: "xMidYMid meet"
     });
 
 
-    const background = svgElement("rect", {
-      x: 0,
-      y: 0,
-      width,
-      height,
-      class: "collab-background",
+    var background = createSvgElement("rect", {
+      x: "0",
+      y: "0",
+      width: width,
+      height: height,
+      class: "collab-background"
     });
 
 
-    const viewport = svgElement("g", {
-      class: "collab-viewport",
+    var viewport = createSvgElement("g", {
+      class: "collab-viewport"
     });
 
 
-    const linksLayer = svgElement("g", {
-      class: "collab-links",
+    var linkLayer = createSvgElement("g", {
+      class: "collab-links"
     });
 
 
-    const nodesLayer = svgElement("g", {
-      class: "collab-nodes",
+    var nodeLayer = createSvgElement("g", {
+      class: "collab-nodes"
     });
 
 
-    viewport.appendChild(linksLayer);
-    viewport.appendChild(nodesLayer);
+    viewport.appendChild(linkLayer);
+    viewport.appendChild(nodeLayer);
 
     svg.appendChild(background);
     svg.appendChild(viewport);
@@ -190,634 +229,856 @@
     container.appendChild(svg);
 
 
-    const tooltip = document.createElement("div");
+    /* =====================================================
+       TOOLTIP
+       ===================================================== */
+
+    var tooltip = document.createElement("div");
 
     tooltip.className = "collab-tooltip";
-    tooltip.setAttribute("aria-hidden", "true");
 
     container.appendChild(tooltip);
 
 
-    const nodes = config.nodes.map((node) => ({
-      ...node,
-      x: centreX,
-      y: centreY,
-      initialX: centreX,
-      initialY: centreY,
-    }));
+    /* =====================================================
+       COPY DATA
+       ===================================================== */
+
+    var nodes = config.nodes.map(function (item) {
+      return {
+        id: item.id,
+        type: item.type,
+        country: item.country || "",
+        x: centerX,
+        y: centerY,
+        initialX: centerX,
+        initialY: centerY,
+        element: null
+      };
+    });
 
 
-    const centreNode = nodes.find(
-      (node) => node.type === "center"
-    );
+    var centerNode = null;
+    var outerNodes = [];
 
 
-    const outerNodes = nodes.filter(
-      (node) => node.type !== "center"
-    );
+    nodes.forEach(function (node) {
+
+      if (node.type === "center") {
+        centerNode = node;
+      } else {
+        outerNodes.push(node);
+      }
+
+    });
 
 
-    outerNodes.forEach((node, index) => {
-      const angle =
+    if (!centerNode) {
+      return;
+    }
+
+
+    /* =====================================================
+       INITIAL RADIAL POSITIONS
+       ===================================================== */
+
+    outerNodes.forEach(function (node, index) {
+
+      var angle =
         -Math.PI / 2 +
-        (index / outerNodes.length) * Math.PI * 2;
+        (index / outerNodes.length) *
+        Math.PI *
+        2;
+
 
       node.x =
-        centreX +
-        Math.cos(angle) * config.radius;
+        centerX +
+        Math.cos(angle) *
+        config.radius;
+
 
       node.y =
-        centreY +
-        Math.sin(angle) * config.radius;
+        centerY +
+        Math.sin(angle) *
+        config.radius;
+
 
       node.initialX = node.x;
       node.initialY = node.y;
+
     });
 
 
-    const links = outerNodes.map((node) => ({
-      source: centreNode,
-      target: node,
-    }));
+    centerNode.x = centerX;
+    centerNode.y = centerY;
+
+    centerNode.initialX = centerX;
+    centerNode.initialY = centerY;
 
 
-    links.forEach((link) => {
-      const line = svgElement("line", {
-        class: "collab-link",
+    /* =====================================================
+       LINKS
+       ===================================================== */
+
+    var links = [];
+
+
+    outerNodes.forEach(function (node) {
+
+      var line = createSvgElement("line", {
+        class: "collab-link"
       });
 
-      link.element = line;
-      linksLayer.appendChild(line);
+
+      linkLayer.appendChild(line);
+
+
+      links.push({
+        source: centerNode,
+        target: node,
+        element: line
+      });
+
     });
 
 
-    nodes.forEach((node) => {
-      const group = svgElement("g", {
-        class:
-          node.type === "center"
-            ? "collab-node collab-center-node"
-            : "collab-node",
-        tabindex: "0",
-        role: "button",
+    /* =====================================================
+       NODE ELEMENTS
+       ===================================================== */
+
+    nodes.forEach(function (node) {
+
+      var groupClass =
+        node.type === "center"
+          ? "collab-node collab-center-node"
+          : "collab-node";
+
+
+      var group = createSvgElement("g", {
+        class: groupClass,
+        tabindex: "0"
       });
 
 
-      const circle = svgElement("circle", {
-        r: node.type === "center" ? 30 : 14,
+      var radius =
+        node.type === "center"
+          ? 30
+          : 14;
+
+
+      var circle = createSvgElement("circle", {
+        r: radius
       });
 
 
       group.appendChild(circle);
 
 
-      const label = svgElement("text", {
+      /* -------------------------------------------------
+         LABEL
+         ------------------------------------------------- */
+
+      var label = createSvgElement("text", {
         class: "collab-label",
+        y: radius + 21
       });
 
 
-      const labelLines =
+      var maxChars =
         node.type === "institution"
-          ? wrapWords(node.id, 23)
-          : wrapWords(node.id, 20);
+          ? 23
+          : 20;
 
 
-      labelLines.forEach((line, index) => {
-        const tspan = svgElement("tspan", {
-          x: 0,
-          dy: index === 0 ? 0 : 14,
+      var lines =
+        wrapLabel(
+          node.id,
+          maxChars
+        );
+
+
+      lines.forEach(function (lineText, index) {
+
+        var tspan = createSvgElement("tspan", {
+          x: "0",
+          dy: index === 0 ? "0" : "14"
         });
 
-        tspan.textContent = line;
+
+        tspan.textContent = lineText;
 
         label.appendChild(tspan);
+
       });
-
-
-      const radius =
-        node.type === "center"
-          ? 30
-          : 14;
-
-
-      label.setAttribute(
-        "y",
-        radius + 21
-      );
 
 
       group.appendChild(label);
 
-
       node.element = group;
-      node.circle = circle;
 
-      nodesLayer.appendChild(group);
+      nodeLayer.appendChild(group);
 
 
-      group.addEventListener(
-        "pointerenter",
-        (event) => {
-          showTooltip(event, node);
+      /* =================================================
+         TOOLTIP
+         ================================================= */
+
+      group.addEventListener("mouseenter", function (event) {
+
+        var html =
+          "<strong>" +
+          node.id +
+          "</strong>";
+
+
+        if (node.type === "center") {
+
+          html +=
+            "<span>Research collaboration network</span>";
+
+        } else if (node.country) {
+
+          html +=
+            "<span>" +
+            node.country +
+            "</span>";
+
+        } else {
+
+          html +=
+            "<span>Research collaboration</span>";
+
         }
-      );
 
 
-      group.addEventListener(
-        "pointermove",
-        (event) => {
-          moveTooltip(event);
+        tooltip.innerHTML = html;
+
+        tooltip.classList.add("is-visible");
+
+        positionTooltip(event);
+
+      });
+
+
+      group.addEventListener("mousemove", function (event) {
+
+        positionTooltip(event);
+
+      });
+
+
+      group.addEventListener("mouseleave", function () {
+
+        hideTooltip();
+
+      });
+
+
+      /* =================================================
+         CLICK
+         ================================================= */
+
+      group.addEventListener("click", function (event) {
+
+        event.stopPropagation();
+
+
+        if (node.type === "center") {
+
+          clearSelection();
+
+        } else {
+
+          selectNode(node);
+
         }
-      );
+
+      });
 
 
-      group.addEventListener(
-        "pointerleave",
-        () => {
-          hideTooltip();
-        }
-      );
+      /* =================================================
+         DRAG
+         ================================================= */
+
+      if (node.type !== "center") {
+
+        var dragging = false;
 
 
-      group.addEventListener(
-        "click",
-        (event) => {
+        group.addEventListener("pointerdown", function (event) {
+
+          dragging = true;
+
+          group.setPointerCapture(event.pointerId);
+
           event.stopPropagation();
 
-          if (node.type === "center") {
-            clearSelection();
-          } else {
-            selectNode(node);
+        });
+
+
+        group.addEventListener("pointermove", function (event) {
+
+          if (!dragging) {
+            return;
           }
-        }
-      );
 
 
-      group.addEventListener(
-        "keydown",
-        (event) => {
-          if (
-            event.key === "Enter" ||
-            event.key === " "
-          ) {
-            event.preventDefault();
-
-            if (node.type === "center") {
-              clearSelection();
-            } else {
-              selectNode(node);
-            }
-          }
-        }
-      );
-
-
-      let draggingNode = false;
-
-
-      group.addEventListener(
-        "pointerdown",
-        (event) => {
-          if (node.type === "center") return;
-
-          draggingNode = true;
-
-          group.setPointerCapture(
-            event.pointerId
-          );
-
-          event.stopPropagation();
-        }
-      );
-
-
-      group.addEventListener(
-        "pointermove",
-        (event) => {
-          if (!draggingNode) return;
-
-          const point =
-            clientToViewport(
+          var point =
+            screenToSvgPoint(
               event.clientX,
               event.clientY
             );
 
+
           node.x = point.x;
           node.y = point.y;
 
-          render();
-        }
-      );
+          draw();
+
+        });
 
 
-      group.addEventListener(
-        "pointerup",
-        (event) => {
-          draggingNode = false;
+        group.addEventListener("pointerup", function (event) {
+
+          dragging = false;
+
 
           if (
-            group.hasPointerCapture(
-              event.pointerId
-            )
+            group.hasPointerCapture &&
+            group.hasPointerCapture(event.pointerId)
           ) {
+
             group.releasePointerCapture(
               event.pointerId
             );
+
           }
-        }
-      );
+
+        });
+
+      }
+
     });
 
 
-    let zoom = 1;
-    let panX = 0;
-    let panY = 0;
+    /* =====================================================
+       ZOOM / PAN
+       ===================================================== */
+
+    var zoom = 1;
+
+    var panX = 0;
+    var panY = 0;
 
 
     function updateViewport() {
-      const tx =
-        centreX * (1 - zoom) +
+
+      var tx =
+        centerX *
+        (1 - zoom) +
         panX;
 
-      const ty =
-        centreY * (1 - zoom) +
+
+      var ty =
+        centerY *
+        (1 - zoom) +
         panY;
+
 
       viewport.setAttribute(
         "transform",
-        `translate(${tx} ${ty}) scale(${zoom})`
+        "translate(" +
+          tx +
+          " " +
+          ty +
+          ") scale(" +
+          zoom +
+          ")"
       );
+
     }
 
 
-    function clientToViewport(clientX, clientY) {
-      const point =
+    function screenToSvgPoint(clientX, clientY) {
+
+      var point =
         svg.createSVGPoint();
+
 
       point.x = clientX;
       point.y = clientY;
 
-      const matrix =
+
+      var matrix =
         viewport.getScreenCTM();
 
+
       if (!matrix) {
+
         return {
-          x: centreX,
-          y: centreY,
+          x: centerX,
+          y: centerY
         };
+
       }
+
 
       return point.matrixTransform(
         matrix.inverse()
       );
+
     }
 
 
-    function render() {
-      links.forEach((link) => {
-        link.element.setAttribute(
-          "x1",
-          link.source.x
-        );
+    /* Mouse wheel zoom */
 
-        link.element.setAttribute(
-          "y1",
-          link.source.y
-        );
+    svg.addEventListener(
+      "wheel",
 
-        link.element.setAttribute(
-          "x2",
-          link.target.x
-        );
+      function (event) {
 
-        link.element.setAttribute(
-          "y2",
-          link.target.y
-        );
-      });
+        event.preventDefault();
 
 
-      nodes.forEach((node) => {
-        node.element.setAttribute(
-          "transform",
-          `translate(${node.x} ${node.y})`
-        );
-      });
-    }
+        if (event.deltaY < 0) {
+
+          zoom *= 1.1;
+
+        } else {
+
+          zoom *= 0.9;
+
+        }
 
 
-    function showTooltip(event, node) {
-      let html =
-        `<strong>${node.id}</strong>`;
+        if (zoom < 0.65) {
+          zoom = 0.65;
+        }
 
 
-      if (node.type === "center") {
-        html +=
-          `<span>Research collaboration network</span>`;
-      } else if (node.country) {
-        html +=
-          `<span>${node.country}</span>`;
-      } else {
-        html +=
-          `<span>Research collaboration</span>`;
+        if (zoom > 2.5) {
+          zoom = 2.5;
+        }
+
+
+        updateViewport();
+
+      },
+
+      {
+        passive: false
+      }
+    );
+
+
+    /* -------------------------------------------------
+       PAN
+       ------------------------------------------------- */
+
+    var isPanning = false;
+
+    var startClientX = 0;
+    var startClientY = 0;
+
+    var originalPanX = 0;
+    var originalPanY = 0;
+
+
+    background.addEventListener("pointerdown", function (event) {
+
+      isPanning = true;
+
+      startClientX = event.clientX;
+      startClientY = event.clientY;
+
+      originalPanX = panX;
+      originalPanY = panY;
+
+      background.setPointerCapture(
+        event.pointerId
+      );
+
+    });
+
+
+    background.addEventListener("pointermove", function (event) {
+
+      if (!isPanning) {
+        return;
       }
 
 
-      tooltip.innerHTML = html;
-
-      tooltip.classList.add(
-        "is-visible"
-      );
-
-      tooltip.setAttribute(
-        "aria-hidden",
-        "false"
-      );
-
-      moveTooltip(event);
-    }
+      var bounds =
+        svg.getBoundingClientRect();
 
 
-    function moveTooltip(event) {
-      const bounds =
+      var scaleX =
+        width /
+        bounds.width;
+
+
+      var scaleY =
+        height /
+        bounds.height;
+
+
+      panX =
+        originalPanX +
+        (
+          event.clientX -
+          startClientX
+        ) *
+        scaleX;
+
+
+      panY =
+        originalPanY +
+        (
+          event.clientY -
+          startClientY
+        ) *
+        scaleY;
+
+
+      updateViewport();
+
+    });
+
+
+    background.addEventListener("pointerup", function (event) {
+
+      isPanning = false;
+
+
+      if (
+        background.hasPointerCapture &&
+        background.hasPointerCapture(
+          event.pointerId
+        )
+      ) {
+
+        background.releasePointerCapture(
+          event.pointerId
+        );
+
+      }
+
+    });
+
+
+    /* =====================================================
+       TOOLTIP HELPERS
+       ===================================================== */
+
+    function positionTooltip(event) {
+
+      var bounds =
         container.getBoundingClientRect();
 
 
-      let left =
+      var left =
         event.clientX -
         bounds.left +
         14;
 
 
-      let top =
+      var top =
         event.clientY -
         bounds.top +
         14;
 
 
       tooltip.style.left =
-        `${left}px`;
+        left + "px";
+
 
       tooltip.style.top =
-        `${top}px`;
+        top + "px";
+
     }
 
 
     function hideTooltip() {
+
       tooltip.classList.remove(
         "is-visible"
       );
 
-      tooltip.setAttribute(
-        "aria-hidden",
-        "true"
-      );
     }
 
 
-    function selectNode(selected) {
+    /* =====================================================
+       SELECTION
+       ===================================================== */
+
+    function selectNode(selectedNode) {
+
       container.classList.add(
         "has-selection"
       );
 
 
-      nodes.forEach((node) => {
-        const active =
-          node === selected ||
+      nodes.forEach(function (node) {
+
+        var active =
+          node === selectedNode ||
           node.type === "center";
 
-        node.element.classList.toggle(
-          "active",
-          active
-        );
+
+        if (active) {
+
+          node.element.classList.add(
+            "active"
+          );
+
+        } else {
+
+          node.element.classList.remove(
+            "active"
+          );
+
+        }
+
       });
 
 
-      links.forEach((link) => {
-        link.element.classList.toggle(
-          "active",
-          link.target === selected
-        );
+      links.forEach(function (link) {
+
+        if (
+          link.target ===
+          selectedNode
+        ) {
+
+          link.element.classList.add(
+            "active"
+          );
+
+        } else {
+
+          link.element.classList.remove(
+            "active"
+          );
+
+        }
+
       });
+
     }
 
 
     function clearSelection() {
+
       container.classList.remove(
         "has-selection"
       );
 
 
-      nodes.forEach((node) => {
+      nodes.forEach(function (node) {
+
         node.element.classList.remove(
           "active"
         );
+
       });
 
 
-      links.forEach((link) => {
+      links.forEach(function (link) {
+
         link.element.classList.remove(
           "active"
         );
+
       });
 
 
       hideTooltip();
+
     }
 
 
-    svg.addEventListener(
-      "click",
-      () => {
-        clearSelection();
-      }
-    );
+    svg.addEventListener("click", function () {
+
+      clearSelection();
+
+    });
 
 
-    svg.addEventListener(
-      "wheel",
-      (event) => {
-        event.preventDefault();
+    /* =====================================================
+       DRAW
+       ===================================================== */
 
+    function draw() {
 
-        const factor =
-          event.deltaY < 0
-            ? 1.1
-            : 0.9;
+      links.forEach(function (link) {
 
-
-        zoom *= factor;
-
-        zoom = Math.max(
-          0.65,
-          Math.min(2.4, zoom)
+        link.element.setAttribute(
+          "x1",
+          link.source.x
         );
 
 
-        updateViewport();
-      },
-      {
-        passive: false,
-      }
-    );
-
-
-    let panning = false;
-    let panStartX = 0;
-    let panStartY = 0;
-    let panOriginX = 0;
-    let panOriginY = 0;
-
-
-    background.addEventListener(
-      "pointerdown",
-      (event) => {
-        panning = true;
-
-        panStartX = event.clientX;
-        panStartY = event.clientY;
-
-        panOriginX = panX;
-        panOriginY = panY;
-
-        background.setPointerCapture(
-          event.pointerId
+        link.element.setAttribute(
+          "y1",
+          link.source.y
         );
-      }
-    );
 
 
-    background.addEventListener(
-      "pointermove",
-      (event) => {
-        if (!panning) return;
+        link.element.setAttribute(
+          "x2",
+          link.target.x
+        );
 
 
-        const rect =
-          svg.getBoundingClientRect();
+        link.element.setAttribute(
+          "y2",
+          link.target.y
+        );
 
-
-        const scaleX =
-          width / rect.width;
-
-        const scaleY =
-          height / rect.height;
-
-
-        panX =
-          panOriginX +
-          (event.clientX - panStartX) *
-            scaleX;
-
-
-        panY =
-          panOriginY +
-          (event.clientY - panStartY) *
-            scaleY;
-
-
-        updateViewport();
-      }
-    );
-
-
-    background.addEventListener(
-      "pointerup",
-      (event) => {
-        panning = false;
-
-        if (
-          background.hasPointerCapture(
-            event.pointerId
-          )
-        ) {
-          background.releasePointerCapture(
-            event.pointerId
-          );
-        }
-      }
-    );
-
-
-    container.resetNetwork = () => {
-      zoom = 1;
-      panX = 0;
-      panY = 0;
-
-
-      outerNodes.forEach((node) => {
-        node.x = node.initialX;
-        node.y = node.initialY;
       });
 
 
-      centreNode.x = centreX;
-      centreNode.y = centreY;
+      nodes.forEach(function (node) {
+
+        node.element.setAttribute(
+          "transform",
+          "translate(" +
+            node.x +
+            " " +
+            node.y +
+            ")"
+        );
+
+      });
+
+    }
 
 
-      updateViewport();
-      clearSelection();
-      render();
-    };
+    /* =====================================================
+       RESET
+       ===================================================== */
 
+    container.resetNetwork =
+      function () {
+
+        zoom = 1;
+
+        panX = 0;
+        panY = 0;
+
+
+        nodes.forEach(function (node) {
+
+          node.x =
+            node.initialX;
+
+          node.y =
+            node.initialY;
+
+        });
+
+
+        updateViewport();
+
+        clearSelection();
+
+        draw();
+
+      };
+
+
+    /* =====================================================
+       INITIAL RENDER
+       ===================================================== */
 
     updateViewport();
-    render();
 
+    draw();
 
-    requestAnimationFrame(() => {
-      container.classList.add(
-        "network-ready"
-      );
-    });
   }
 
 
-  function start() {
-    Object.entries(NETWORKS).forEach(
-      ([containerId, config]) => {
-        initialiseNetwork(
-          containerId,
-          config
+  /* =========================================================
+     INITIALISE PAGE
+     ========================================================= */
+
+  function initialise() {
+
+    Object.keys(networks).forEach(
+      function (networkId) {
+
+        buildNetwork(
+          networkId,
+          networks[networkId]
         );
+
       }
     );
 
 
-    document
-      .querySelectorAll(
+    var resetButtons =
+      document.querySelectorAll(
         ".collab-reset"
-      )
-      .forEach((button) => {
+      );
+
+
+    resetButtons.forEach(
+      function (button) {
+
         button.addEventListener(
           "click",
-          () => {
-            const id =
-              button.dataset.network;
 
-            const network =
-              document.getElementById(id);
+          function () {
+
+            var networkId =
+              button.getAttribute(
+                "data-network"
+              );
+
+
+            var network =
+              document.getElementById(
+                networkId
+              );
+
 
             if (
               network &&
               typeof network.resetNetwork ===
                 "function"
             ) {
+
               network.resetNetwork();
+
             }
+
           }
+
         );
-      });
+
+      }
+    );
+
   }
 
+
+  /* =========================================================
+     START
+     ========================================================= */
 
   if (
-    document.readyState === "loading"
+    document.readyState ===
+    "loading"
   ) {
+
     document.addEventListener(
       "DOMContentLoaded",
-      start
+      initialise
     );
+
   } else {
-    start();
+
+    initialise();
+
   }
+
 })();
