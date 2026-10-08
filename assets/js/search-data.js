@@ -74,7 +74,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
-            },},{id: "projects-development-of-evaluation-tools-for-artificial-intelligence-educational-ai-platform",
+            },},{id: "news-i-ve-arrived-in-milan-and-will-soon-begin-my-visiting-period-at-politecnico-di-milano-deib-if-you-re-in-milan-or-nearby-feel-free-to-reach-out-i-d-be-very-happy-to-connect",
+          title: 'I’ve arrived in Milan and will soon begin my visiting period at Politecnico...',
+          description: "",
+          section: "News",},{id: "projects-development-of-evaluation-tools-for-artificial-intelligence-educational-ai-platform",
           title: 'Development of evaluation tools for artificial intelligence educational AI platform',
           description: "Funded by National Research Foundation of Korea (NRF)",
           section: "Projects",handler: () => {
