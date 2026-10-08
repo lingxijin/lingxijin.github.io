@@ -61,36 +61,6 @@ nav_order: 3
   </div>
 
 
-  <aside
-    id="collab-detail"
-    class="collab-detail"
-    aria-live="polite">
-
-    <div class="collab-detail-eyebrow">
-      Research Network
-    </div>
-
-    <h3 id="collab-detail-title">
-      Lingxi Jin
-    </h3>
-
-    <div
-      id="collab-detail-meta"
-      class="collab-detail-meta">
-      Global collaboration
-    </div>
-
-    <p id="collab-detail-description">
-      Select a country, region, or institution in the network to explore the collaboration.
-    </p>
-
-    <div
-      id="collab-detail-list"
-      class="collab-detail-list">
-    </div>
-
-  </aside>
-
 </div>
 
 
