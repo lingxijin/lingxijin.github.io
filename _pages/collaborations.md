@@ -512,10 +512,10 @@ const countryData = [
     type: "country"
   },
 
-  {
-    id: "Hong Kong",
-    type: "country"
-  },
+{
+  id: "Hong Kong SAR, China",
+  type: "country"
+}，
 
   {
     id: "Italy",
@@ -544,7 +544,7 @@ const countryLinks = [
 
   {
     source: "Lingxi Jin",
-    target: "Hong Kong"
+    target: "Hong Kong SAR, China"
   },
 
   {
@@ -631,7 +631,7 @@ const institutionData = [
 
   {
     id: "The Hong Kong Polytechnic University",
-    country: "Hong Kong",
+    country: "Hong Kong SAR, China",
     type: "institution"
   },
 
