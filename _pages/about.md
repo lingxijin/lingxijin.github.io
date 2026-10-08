@@ -6,7 +6,7 @@ subtitle: <a href='#'>Ph.D. Candidate in Educational Technology</a>(Lingxi is on
 
 profile:
   align: right
-  image: lingxi_pic.jpg
+  image: lingxi2_pic.jpg
   image_circular: false
   more_info: >
 
