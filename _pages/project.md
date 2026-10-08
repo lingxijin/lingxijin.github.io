@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Research projects.
-nav: true
+nav: false
 nav_order: 6
 # 注意：这里把中文逗号换成了英文逗号；同时建议把年份当作字符串更稳妥
 display_categories: ["2025", "2024", "2022", "2020"]
