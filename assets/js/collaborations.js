@@ -17,7 +17,6 @@
 
       institutions: [
         "Ewha Womans University",
-        "Chung-Ang University",
         "Sejong University"
       ]
     },
@@ -31,6 +30,24 @@
         "University of Miami",
         "University of Utah",
         "Auburn University"
+      ]
+    },
+
+
+    "Singapore": {
+      tone: "tone-singapore",
+
+      institutions: [
+        "Nanyang Technological University"
+      ]
+    },
+
+
+    "United Kingdom": {
+      tone: "tone-uk",
+
+      institutions: [
+        "University of Bristol"
       ]
     },
 
@@ -77,48 +94,71 @@
         {
           id: "Lingxi Jin",
           type: "center",
-          x: 0.50,
+          x: 0.47,
           y: 0.51
         },
+
 
         {
           id: "South Korea",
           type: "country",
           tone: "tone-korea",
-          x: 0.27,
-          y: 0.27
+          x: 0.18,
+          y: 0.18
         },
+
+
+        {
+          id: "Singapore",
+          type: "country",
+          tone: "tone-singapore",
+          x: 0.43,
+          y: 0.13
+        },
+
+
+        {
+          id: "United Kingdom",
+          type: "country",
+          tone: "tone-uk",
+          x: 0.69,
+          y: 0.17
+        },
+
 
         {
           id: "United States",
           type: "country",
           tone: "tone-us",
-          x: 0.76,
-          y: 0.29
+          x: 0.86,
+          y: 0.39
         },
+
 
         {
           id: "Japan",
           type: "country",
           tone: "tone-japan",
-          x: 0.76,
-          y: 0.72
+          x: 0.78,
+          y: 0.76
         },
+
 
         {
           id: "Hong Kong SAR, China",
           type: "country",
           tone: "tone-hk",
-          x: 0.31,
-          y: 0.78
+          x: 0.43,
+          y: 0.84
         },
+
 
         {
           id: "Italy",
           type: "country",
           tone: "tone-italy",
-          x: 0.13,
-          y: 0.52
+          x: 0.10,
+          y: 0.60
         }
 
       ]
@@ -133,103 +173,132 @@
         {
           id: "Lingxi Jin",
           type: "center",
-          x: 0.50,
-          y: 0.50
+          x: 0.47,
+          y: 0.51
         },
 
+
+        /* South Korea */
 
         {
           id: "Ewha Womans University",
           type: "institution",
           country: "South Korea",
           tone: "tone-korea",
-          x: 0.21,
-          y: 0.19
+          x: 0.10,
+          y: 0.16
         },
 
-        {
-          id: "Chung-Ang University",
-          type: "institution",
-          country: "South Korea",
-          tone: "tone-korea",
-          x: 0.40,
-          y: 0.20
-        },
 
         {
           id: "Sejong University",
           type: "institution",
           country: "South Korea",
           tone: "tone-korea",
-          x: 0.59,
-          y: 0.19
+          x: 0.29,
+          y: 0.12
         },
 
+
+        /* Singapore */
+
+        {
+          id: "Nanyang Technological University",
+          type: "institution",
+          country: "Singapore",
+          tone: "tone-singapore",
+          x: 0.49,
+          y: 0.12
+        },
+
+
+        /* United Kingdom */
+
+        {
+          id: "University of Bristol",
+          type: "institution",
+          country: "United Kingdom",
+          tone: "tone-uk",
+          x: 0.68,
+          y: 0.14
+        },
+
+
+        /* United States */
 
         {
           id: "Carnegie Mellon University",
           type: "institution",
           country: "United States",
           tone: "tone-us",
-          x: 0.80,
-          y: 0.28
+          x: 0.85,
+          y: 0.23
         },
+
 
         {
           id: "University of Miami",
           type: "institution",
           country: "United States",
           tone: "tone-us",
-          x: 0.84,
-          y: 0.52
+          x: 0.91,
+          y: 0.47
         },
+
 
         {
           id: "University of Utah",
           type: "institution",
           country: "United States",
           tone: "tone-us",
-          x: 0.73,
-          y: 0.74
+          x: 0.86,
+          y: 0.70
         },
+
 
         {
           id: "Auburn University",
           type: "institution",
           country: "United States",
           tone: "tone-us",
-          x: 0.54,
-          y: 0.82
+          x: 0.70,
+          y: 0.84
         },
 
+
+        /* Japan */
 
         {
           id: "Kyushu University",
           type: "institution",
           country: "Japan",
           tone: "tone-japan",
-          x: 0.31,
-          y: 0.76
+          x: 0.51,
+          y: 0.88
         },
 
+
+        /* Hong Kong SAR, China */
 
         {
           id: "The Hong Kong Polytechnic University",
           type: "institution",
           country: "Hong Kong SAR, China",
           tone: "tone-hk",
-          x: 0.13,
-          y: 0.61
+          x: 0.29,
+          y: 0.84
         },
 
+
+        /* Italy */
 
         {
           id: "Politecnico di Milano",
           type: "institution",
           country: "Italy",
           tone: "tone-italy",
-          x: 0.13,
-          y: 0.34
+          x: 0.09,
+          y: 0.61
         }
 
       ]
@@ -340,7 +409,7 @@
 
 
   /* =========================================================
-     LABEL WRAP
+     LABEL WRAPPING
      ========================================================= */
 
   function wrapLabel(
@@ -642,11 +711,11 @@
 
 
     var width =
-      1000;
+      1200;
 
 
     var height =
-      560;
+      700;
 
 
     var centerX =
@@ -673,7 +742,10 @@
             height,
 
           preserveAspectRatio:
-            "xMidYMid meet"
+            "xMidYMid meet",
+
+          role:
+            "img"
 
         }
       );
@@ -756,7 +828,7 @@
 
 
     /* =====================================================
-       DATA
+       NODE DATA
        ===================================================== */
 
     var nodes =
@@ -954,7 +1026,7 @@
         ) {
 
           radius =
-            38;
+            46;
 
         } else if (
           node.type ===
@@ -962,12 +1034,12 @@
         ) {
 
           radius =
-            22;
+            27;
 
         } else {
 
           radius =
-            16;
+            21;
 
         }
 
@@ -984,9 +1056,9 @@
                 radius +
                 (
                   node.type ===
-                    "center"
-                    ? 14
-                    : 9
+                  "center"
+                    ? 16
+                    : 10
                 )
 
             }
@@ -1018,7 +1090,9 @@
         );
 
 
-        /* label */
+        /* -------------------------------------------------
+           LABEL
+           ------------------------------------------------- */
 
         var label =
           svgElement(
@@ -1030,7 +1104,7 @@
 
               y:
                 radius +
-                25
+                31
 
             }
           );
@@ -1038,9 +1112,9 @@
 
         var maxLength =
           node.type ===
-            "institution"
+          "institution"
             ? 21
-            : 22;
+            : 24;
 
 
         var lines =
@@ -1061,12 +1135,13 @@
                 "tspan",
                 {
 
-                  x: 0,
+                  x:
+                    0,
 
                   dy:
                     index === 0
                       ? 0
-                      : 14
+                      : 20
 
                 }
               );
@@ -1140,9 +1215,9 @@
 
             if (
               event.key ===
-              "Enter" ||
+                "Enter" ||
               event.key ===
-              " "
+                " "
             ) {
 
               event.preventDefault();
@@ -1422,7 +1497,7 @@
 
       var bend =
         Math.min(
-          25,
+          34,
           length *
           0.07
         ) *
@@ -1524,7 +1599,8 @@
 
           var active =
             node === selected ||
-            node.type === "center";
+            node.type ===
+              "center";
 
 
           node.element.classList.toggle(
@@ -1544,7 +1620,7 @@
             "active",
 
             link.target ===
-            selected
+              selected
 
           );
 
@@ -1618,7 +1694,8 @@
 
 
         if (
-          event.deltaY < 0
+          event.deltaY <
+            0
         ) {
 
           zoom *=
@@ -1634,9 +1711,9 @@
 
         zoom =
           Math.max(
-            0.72,
+            0.68,
             Math.min(
-              2.15,
+              2.2,
               zoom
             )
           );
@@ -1795,10 +1872,16 @@
 
     function reset() {
 
-      zoom = 1;
+      zoom =
+        1;
 
-      panX = 0;
-      panY = 0;
+
+      panX =
+        0;
+
+
+      panY =
+        0;
 
 
       nodes.forEach(
@@ -1863,7 +1946,8 @@
         var active =
           button.getAttribute(
             "data-view"
-          ) === viewName;
+          ) ===
+          viewName;
 
 
         button.classList.toggle(
@@ -1914,7 +1998,7 @@
 
 
   /* =========================================================
-     RESET BUTTON
+     RESET
      ========================================================= */
 
   if (
@@ -1930,7 +2014,7 @@
         if (
           currentNetwork &&
           typeof currentNetwork.reset ===
-          "function"
+            "function"
         ) {
 
           currentNetwork.reset();
