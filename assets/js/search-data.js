@@ -114,8 +114,8 @@ ninja.data = [{
           section: "News",},{id: "news-excited-to-share-that-the-stem-research-project-i-lead-has-received-the-egep-ewha-global-excellence-program-interdisciplinary-research-group-grant",
           title: '🎉 Excited to share that the STEM research project I lead has received...',
           description: "",
-          section: "News",},{id: "outdoors-monte-barro-from-lecco-italy",
-          title: 'Monte Barro from Lecco, Italy',
+          section: "News",},{id: "outdoors-monte-barro-from-lecco",
+          title: 'Monte Barro from Lecco 🇮🇹',
           description: "",
           section: "Outdoors",handler: () => {
               window.location.href = "/outdoors/monte-barro/";
