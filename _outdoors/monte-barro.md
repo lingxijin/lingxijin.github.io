@@ -34,11 +34,12 @@ cover: /assets/img/outdoors/monte-barro-cover.jpg
   </div>
 </div>
 
-<img
-  src="/assets/img/outdoors/monte-barro-route.jpg"
+{% include figure.liquid
+  path="assets/img/outdoors/monte-barro-route.jpg"
   class="img-fluid rounded z-depth-1 mt-4"
   alt="Monte Barro hiking route from Lecco"
->
+  loading="eager"
+%}
 
 ## Monte Barro
 
