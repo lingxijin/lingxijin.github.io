@@ -52,6 +52,14 @@ A hike to Monte Barro with students from Politecnico di Milano. Long climb, fres
   loading="lazy"
 %}
 
+{% include figure.liquid
+  path="assets/img/outdoors/shanding.jpg"
+  class="img-fluid rounded z-depth-1 mt-4"
+  alt="At the summit of Monte Barro"
+  caption="At the summit of Monte Barro."
+  loading="lazy"
+%}
+
 <style>
 .outdoor-meta {
   display: flex;
