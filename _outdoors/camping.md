@@ -27,27 +27,23 @@ cover: /assets/img/outdoors/campingcover.jpg
 <div class="outdoor-photo-row outdoor-pet-row">
   <figure>
     <img src="{{ '/assets/img/outdoors/dog1.jpg' | relative_url }}" alt="Roxy enjoying camping" loading="lazy">
-    <figcaption>Roxy · 15 months</figcaption>
   </figure>
   <figure>
     <img src="{{ '/assets/img/outdoors/dog2.jpg' | relative_url }}" alt="Roxy outdoors while camping" loading="lazy">
-    <figcaption>Roxy · 15 months</figcaption>
   </figure>
 </div>
 
 <div class="outdoor-photo-row outdoor-pet-row">
   <figure>
     <img src="{{ '/assets/img/outdoors/camping_rocket.jpg' | relative_url }}" alt="Rocket at 3 months old while camping" loading="lazy">
-    <figcaption>Rocket · 3 months</figcaption>
   </figure>
   <figure>
     <img src="{{ '/assets/img/outdoors/rocket2.jpg' | relative_url }}" alt="Rocket at 3 months old on a camping trip" loading="lazy">
-    <figcaption>Rocket · 3 months</figcaption>
   </figure>
 </div>
 
 <p class="outdoor-note">
-  Roxy was already 15 months old here and seemed to fully understand the joy of camping. Rocket was only 3 months old, and his expression was basically saying, “Can we go home now?”
+  Roxy seemed to fully understand the joy of camping. Rocket, on the other hand, looked like he was basically saying, “Can we go home now?”
 </p>
 
 <style>
