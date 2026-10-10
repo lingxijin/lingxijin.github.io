@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Monte Barro from Lecco 🇮🇹
+title: Monte Barro from Lecco, Italy
 date: 2026-10-10
 location: Lecco, Lombardy, Italy
 activity: Hiking
