@@ -42,7 +42,7 @@ cover: /assets/img/outdoors/monte-barro-cover.jpg
 
 ## Monte Barro
 
-Content coming soon.
+A hike to Monte Barro with students from Politecnico di Milano. Long climb, fresh air, good company—and apparently nature is quite effective at resetting the brain.
 
 <style>
 .outdoor-meta {
