@@ -4,7 +4,7 @@ title: Ascent of Monte Barro and Botanical Trail from Lecco
 date: 2026-10-10
 location: Lecco, Lombardy, Italy
 activity: Hiking
-cover: /assets/img/outdoors/monte-barro-route.jpg
+cover: /assets/img/outdoors/monte-barro-cover.jpg
 ---
 
 <div class="outdoor-meta">
