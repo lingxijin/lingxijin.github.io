@@ -26,7 +26,22 @@ cover: /assets/img/outdoors/campingcover.jpg
 </div>
 
 <p class="outdoor-note">
-  Roxy might love camping even more than I do. He gets to spend the whole day outdoors, which is pretty much his ideal life.
+  My babies come with me on every camping trip. Roxy might love camping even more than I do—he gets to spend the whole day outdoors, which is pretty much his ideal life.
+</p>
+
+<div class="outdoor-photo-row outdoor-pet-row">
+  <figure>
+    <img src="{{ '/assets/img/outdoors/camping_rocket.jpg' | relative_url }}" alt="Roxy at 15 months old while camping" loading="lazy">
+    <figcaption>Roxy · 15 months</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/img/outdoors/rocket2.jpg' | relative_url }}" alt="Rocket at 3 months old while camping" loading="lazy">
+    <figcaption>Rocket · 3 months</figcaption>
+  </figure>
+</div>
+
+<p class="outdoor-note">
+  Roxy was already 15 months old here and seemed to fully understand the joy of camping. Rocket was only 3 months old, and his expression was basically saying, “Can we go home now?”
 </p>
 
 <style>
@@ -57,6 +72,17 @@ cover: /assets/img/outdoors/campingcover.jpg
 .outdoor-note {
   margin: 1.2rem 0 2rem;
   line-height: 1.7;
+}
+
+.outdoor-pet-row figure {
+  margin: 0;
+}
+
+.outdoor-pet-row figcaption {
+  margin-top: 7px;
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 @media (max-width: 650px) {
