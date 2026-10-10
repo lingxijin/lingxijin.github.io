@@ -285,6 +285,8 @@ filtered_bibtex_keywords:
     poster,
     preview,
     selected,
+    status,
+    selected_order,
     slides,
     supp,
     video,
