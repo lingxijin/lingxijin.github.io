@@ -114,7 +114,12 @@ ninja.data = [{
           section: "News",},{id: "news-excited-to-share-that-the-stem-research-project-i-lead-has-received-the-egep-ewha-global-excellence-program-interdisciplinary-research-group-grant",
           title: '🎉 Excited to share that the STEM research project I lead has received...',
           description: "",
-          section: "News",},{id: "outdoors-scuba-diving",
+          section: "News",},{id: "outdoors-camping",
+          title: 'Camping',
+          description: "",
+          section: "Outdoors",handler: () => {
+              window.location.href = "/outdoors/camping/";
+            },},{id: "outdoors-scuba-diving",
           title: 'Scuba Diving',
           description: "",
           section: "Outdoors",handler: () => {
