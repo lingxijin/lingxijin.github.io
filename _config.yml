@@ -126,6 +126,9 @@ collections:
     output: true
   projects:
     output: true
+  outdoors:
+    output: true
+    permalink: /outdoors/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
