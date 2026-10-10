@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Camping
+location: South Korea
 activity: Camping
 cover: /assets/img/outdoors/campingcover.jpg
 ---
