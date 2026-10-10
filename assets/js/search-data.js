@@ -44,6 +44,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
+        },{id: "nav-outdoors",
+          title: "Outdoors",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/outdoors/";
+          },
         },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
@@ -107,7 +114,12 @@ ninja.data = [{
           section: "News",},{id: "news-excited-to-share-that-the-stem-research-project-i-lead-has-received-the-egep-ewha-global-excellence-program-interdisciplinary-research-group-grant",
           title: '🎉 Excited to share that the STEM research project I lead has received...',
           description: "",
-          section: "News",},{id: "projects-development-of-evaluation-tools-for-artificial-intelligence-educational-ai-platform",
+          section: "News",},{id: "outdoors-ascent-of-monte-barro-and-botanical-trail-from-lecco",
+          title: 'Ascent of Monte Barro and Botanical Trail from Lecco',
+          description: "",
+          section: "Outdoors",handler: () => {
+              window.location.href = "/outdoors/monte-barro/";
+            },},{id: "projects-development-of-evaluation-tools-for-artificial-intelligence-educational-ai-platform",
           title: 'Development of evaluation tools for artificial intelligence educational AI platform',
           description: "Funded by National Research Foundation of Korea (NRF)",
           section: "Projects",handler: () => {
