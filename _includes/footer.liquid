@@ -1,21 +1,59 @@
 {% capture footer_contents %}
-  &copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}
+  <span>&copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}</span>
+  <span class="footer-separator">·</span>
+  <a href="mailto:jinlingxi@ewha.ac.kr">jinlingxi@ewha.ac.kr</a>
+  <span class="footer-separator">·</span>
+  <a href="mailto:lingxi.jin@mail.polimi.it">lingxi.jin@mail.polimi.it</a>
 {% endcapture %}
 
-{% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
+<footer class="custom-footer" role="contentinfo">
+  <div class="container">
+    {{ footer_contents }}
+  </div>
+</footer>
 
-    <div class="container">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% endif %}
+<style>
+.custom-footer {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 18px 0;
+  background: var(--global-bg-color);
+  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.custom-footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.custom-footer a {
+  color: var(--global-text-color-light);
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.footer-separator {
+  opacity: 0.55;
+}
+
+@media (max-width: 576px) {
+  .custom-footer {
+    font-size: 0.75rem;
+    padding: 16px 12px;
+  }
+
+  .custom-footer .container {
+    gap: 5px;
+  }
+}
+</style>
