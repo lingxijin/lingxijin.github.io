@@ -20,22 +20,28 @@ cover: /assets/img/outdoors/campingcover.jpg
   I love camping, even though it somehow takes nearly four hours to set up the tent and arrange everything. It is exhausting—but once it is all done, the rest makes it worth it.
 </p>
 
-<div class="outdoor-photo-row">
-  <img src="{{ '/assets/img/outdoors/dog1.jpg' | relative_url }}" alt="Roxy enjoying camping" loading="lazy">
-  <img src="{{ '/assets/img/outdoors/dog2.jpg' | relative_url }}" alt="Roxy outdoors while camping" loading="lazy">
-</div>
-
 <p class="outdoor-note">
   My babies come with me on every camping trip. Roxy might love camping even more than I do—he gets to spend the whole day outdoors, which is pretty much his ideal life.
 </p>
 
 <div class="outdoor-photo-row outdoor-pet-row">
   <figure>
-    <img src="{{ '/assets/img/outdoors/camping_rocket.jpg' | relative_url }}" alt="Roxy at 15 months old while camping" loading="lazy">
+    <img src="{{ '/assets/img/outdoors/dog1.jpg' | relative_url }}" alt="Roxy enjoying camping" loading="lazy">
     <figcaption>Roxy · 15 months</figcaption>
   </figure>
   <figure>
-    <img src="{{ '/assets/img/outdoors/rocket2.jpg' | relative_url }}" alt="Rocket at 3 months old while camping" loading="lazy">
+    <img src="{{ '/assets/img/outdoors/dog2.jpg' | relative_url }}" alt="Roxy outdoors while camping" loading="lazy">
+    <figcaption>Roxy · 15 months</figcaption>
+  </figure>
+</div>
+
+<div class="outdoor-photo-row outdoor-pet-row">
+  <figure>
+    <img src="{{ '/assets/img/outdoors/camping_rocket.jpg' | relative_url }}" alt="Rocket at 3 months old while camping" loading="lazy">
+    <figcaption>Rocket · 3 months</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/img/outdoors/rocket2.jpg' | relative_url }}" alt="Rocket at 3 months old on a camping trip" loading="lazy">
     <figcaption>Rocket · 3 months</figcaption>
   </figure>
 </div>
