@@ -60,6 +60,14 @@ A hike to Monte Barro with students from Politecnico di Milano. Long climb, fres
   loading="lazy"
 %}
 
+{% include figure.liquid
+  path="assets/img/outdoors/xiaogou.jpg"
+  class="img-fluid rounded z-depth-1 mt-4"
+  alt="Dog at the summit of Monte Barro"
+  caption="Met this impressive climber at the summit—apparently four legs are a hiking advantage."
+  loading="lazy"
+%}
+
 <style>
 .outdoor-meta {
   display: flex;
