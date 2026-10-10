@@ -43,7 +43,7 @@ cover: /assets/img/outdoors/campingcover.jpg
 </div>
 
 <p class="outdoor-note">
-  Roxy seemed to fully understand the joy of camping. Rocket, on the other hand, looked like he was basically saying, “Can we go home now?”
+  Roxy clearly knew how to enjoy camping. Rocket was still not quite convinced—his face pretty much said, “Can we go home now?”
 </p>
 
 <style>
