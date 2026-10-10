@@ -45,6 +45,13 @@ cover: /assets/img/outdoors/monte-barro-cover.jpg
 
 A hike to Monte Barro with students from Politecnico di Milano. Long climb, fresh air, good company—and apparently nature is quite effective at resetting the brain.
 
+{% include figure.liquid
+  path="assets/img/outdoors/view.jpg"
+  class="img-fluid rounded z-depth-1 mt-4"
+  alt="View from the Monte Barro hike"
+  loading="lazy"
+%}
+
 <style>
 .outdoor-meta {
   display: flex;
