@@ -114,6 +114,11 @@ nav_order: 4
       <i>Computers & Education Open</i> 
       <div class="service-role">Reviewer</div>
     </div>
+
+    <div class="service-item">
+      <i>Frontiers in Psychology</i> 
+      <div class="service-role">Reviewer</div>
+    </div>
   </div>
 
   <time>2025</time>
