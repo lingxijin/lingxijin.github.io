@@ -57,7 +57,7 @@ nav_order: 4
   <div class="service-items">
     <div class="service-item">
       International Conference on Learning Analytics & Knowledge (<b>LAK 2027</b>)
-      <div class="service-role">Program Committee</div>
+      <div class="service-role">Program Committee Member</div>
     </div>
   </div>
 
@@ -65,17 +65,17 @@ nav_order: 4
   <div class="service-items">
     <div class="service-item">
       International Conference on Human-Engaged Computing (<b>ICHEC 2026</b>)
-      <div class="service-role">Program Committee</div>
+      <div class="service-role">Program Committee Member</div>
     </div>
 
     <div class="service-item">
       HAI-Agency: Workshop on Orchestrating Human and AI Agency for Proactive and Reflective Learning (<b>HAI-Agency @ AIED 2026</b>)
-      <div class="service-role">Program Committee</div>
+      <div class="service-role">Program Committee Member</div>
     </div>
 
     <div class="service-item">
       Workshop on Predicting Performance from Reading and Learning Behavior and Orchestrating Human and AI Agency — Joint Edition (<b>ICCE 2026 Workshop</b>)
-      <div class="service-role">Program Committee</div>
+      <div class="service-role">Program Committee Member</div>
     </div>
 
     <div class="service-item">
