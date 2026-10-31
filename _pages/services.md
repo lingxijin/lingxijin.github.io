@@ -53,7 +53,7 @@ nav_order: 4
 ### Conference Service
 
 <div class="timeline">
-  <time>2027</time>
+  <time>2026</time>
   <div class="service-items">
     <div class="service-item">
       International Conference on Learning Analytics & Knowledge (<b>LAK 2027</b>)
