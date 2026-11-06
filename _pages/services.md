@@ -52,13 +52,16 @@ nav_order: 4
 
 ### Conference Service
 
-<time>2026</time>
+<time>2027</time>
 <div class="service-items">
   <div class="service-item">
     International Conference on Learning Analytics & Knowledge (<b>LAK 2027</b>)
     <div class="service-role">Program Committee Member</div>
   </div>
+</div>
 
+<time>2026</time>
+<div class="service-items">
   <div class="service-item">
     International Conference on Human-Engaged Computing (<b>ICHEC 2026</b>)
     <div class="service-role">Program Committee Member</div>
