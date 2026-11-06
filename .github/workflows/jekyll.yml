@@ -30,8 +30,7 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
-      - name: Install dependencies
-        run: bundle install --jobs 4 --retry 3
+      # ruby/setup-ruby with bundler-cache: true installs Gemfile.lock dependencies.
 
       - name: Build site with Jekyll
         env:
