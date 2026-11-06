@@ -52,56 +52,51 @@ nav_order: 4
 
 ### Conference Service
 
-
- 
-
-  <time>2026</time>
-     <div class="service-items">
-    <div class="service-item">
-      International Conference on Learning Analytics & Knowledge (<b>LAK 2027</b>)
-      <div class="service-role">Program Committee Member</div>
-    </div>
-
-    <div class="service-items">
-      International Conference on Human-Engaged Computing (<b>ICHEC 2026</b>)
-      <div class="service-role">Program Committee Member</div>
-    </div>
-
-    <div class="service-item">
-      HAI-Agency: Workshop on Orchestrating Human and AI Agency for Proactive and Reflective Learning (<b>HAI-Agency @ AIED 2026</b>)
-      <div class="service-role">Program Committee Member</div>
-    </div>
-
-    <div class="service-item">
-      Workshop on Predicting Performance from Reading and Learning Behavior and Orchestrating Human and AI Agency — Joint Edition (<b>ICCE 2026 Workshop</b>)
-      <div class="service-role">Program Committee Member</div>
-    </div>
-
-    <div class="service-item">
-      Festival of Learning (<b>FoL 2026</b>)
-      <div class="service-role">Local Chair</div>
-    </div>
-
-    <div class="service-item">
-      ACM SIGCHI Conference on Conversational User Interfaces (<b>CUI 2026</b>)
-      <div class="service-role">Reviewer</div>
-    </div>
+<time>2026</time>
+<div class="service-items">
+  <div class="service-item">
+    International Conference on Learning Analytics & Knowledge (<b>LAK 2027</b>)
+    <div class="service-role">Program Committee Member</div>
   </div>
 
-  <time>2025</time>
-  <div class="service-items">
-    <div class="service-item">
-      World Conference on EdTech (<b>E-Learn 2025</b>), Bangkok, Thailand
-      <div class="service-role">Session Chair</div>
-    </div>
+  <div class="service-item">
+    International Conference on Human-Engaged Computing (<b>ICHEC 2026</b>)
+    <div class="service-role">Program Committee Member</div>
+  </div>
 
-    <div class="service-item">
-      Society for Information Technology & Teacher Education International Conference (<b>SITE 2025</b>)
-      <div class="service-role">Reviewer</div>
-    </div>
+  <div class="service-item">
+    HAI-Agency: Workshop on Orchestrating Human and AI Agency for Proactive and Reflective Learning (<b>HAI-Agency @ AIED 2026</b>)
+    <div class="service-role">Program Committee Member</div>
+  </div>
+
+  <div class="service-item">
+    Workshop on Predicting Performance from Reading and Learning Behavior and Orchestrating Human and AI Agency — Joint Edition (<b>ICCE 2026 Workshop</b>)
+    <div class="service-role">Program Committee Member</div>
+  </div>
+
+  <div class="service-item">
+    Festival of Learning (<b>FoL 2026</b>)
+    <div class="service-role">Local Chair</div>
+  </div>
+
+  <div class="service-item">
+    ACM SIGCHI Conference on Conversational User Interfaces (<b>CUI 2026</b>)
+    <div class="service-role">Reviewer</div>
   </div>
 </div>
 
+<time>2025</time>
+<div class="service-items">
+  <div class="service-item">
+    World Conference on EdTech (<b>E-Learn 2025</b>), Bangkok, Thailand
+    <div class="service-role">Session Chair</div>
+  </div>
+
+  <div class="service-item">
+    Society for Information Technology & Teacher Education International Conference (<b>SITE 2025</b>)
+    <div class="service-role">Reviewer</div>
+  </div>
+</div>
 ---
 
 ### Journal Reviewing
