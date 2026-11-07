@@ -161,3 +161,23 @@ html[data-theme="dark"] .opportunity-title {
   object-fit: contain;
   object-position: center;
 }
+
+/* Publication metadata sits with the citation text, never over its image. */
+.publications ol.bibliography li .publication-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.6rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.15rem;
+}
+.publications ol.bibliography li .publication-status {
+  color: var(--global-text-color-light);
+  font-size: 0.87rem;
+  font-style: italic;
+}
+.publications ol.bibliography li .publication-venue {
+  color: var(--global-theme-color);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
