@@ -157,7 +157,7 @@ html[data-theme="dark"] .opportunity-title {
 .publications ol.bibliography li img.preview {
   display: block;
   width: 100%;
-  height: 110px;
+  height: 130px;
   object-fit: contain;
   object-position: center;
 }
