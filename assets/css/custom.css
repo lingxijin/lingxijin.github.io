@@ -152,3 +152,12 @@ html[data-theme="dark"] .opportunity-callout {
 html[data-theme="dark"] .opportunity-title {
   color: #c8add9;
 }
+
+/* Publication thumbnails: a consistent frame without cropping figures. */
+.publications ol.bibliography li img.preview {
+  display: block;
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+  object-position: center;
+}
