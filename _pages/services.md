@@ -110,6 +110,14 @@ nav_order: 4
   <time>2026</time>
   <div class="service-items">
     <div class="service-item">
+      <i>International Journal of Human-Computer Interaction</i> 
+      <div class="service-role">Reviewer</div>
+    </div>
+
+<div class="timeline">
+  <time>2026</time>
+  <div class="service-items">
+    <div class="service-item">
       <i>Computers & Education Open</i> 
       <div class="service-role">Reviewer</div>
     </div>
