@@ -105,21 +105,27 @@ nav_order: 4
 ---
 ### Journal Reviewing
 
+
+### Journal Reviewing
+
 <div class="timeline">
   <time>2026</time>
   <div class="service-items">
     <div class="service-item">
-      <i>International Journal of Human-Computer Interaction</i>
+      International Journal of Human-Computer Interaction
+      <span class="journal-index">(SSCI)</span>
       <div class="service-role">Reviewer</div>
     </div>
 
     <div class="service-item">
-      <i>Computers & Education Open</i>
+      Computers & Education Open
+      <span class="journal-index">(ESCI)</span>
       <div class="service-role">Reviewer</div>
     </div>
 
     <div class="service-item">
-      <i>Frontiers in Psychology</i>
+      Frontiers in Psychology
+      <span class="journal-index">(SSCI)</span>
       <div class="service-role">Reviewer</div>
     </div>
   </div>
@@ -127,11 +133,13 @@ nav_order: 4
   <time>2025</time>
   <div class="service-items">
     <div class="service-item">
-      <i>Behaviour & Information Technology</i>
+      Behaviour & Information Technology
+      <span class="journal-index">(SSCI)</span>
       <div class="service-role">Reviewer</div>
     </div>
   </div>
 </div>
+
 
 ---
 
