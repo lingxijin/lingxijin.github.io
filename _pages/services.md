@@ -103,8 +103,6 @@ nav_order: 4
   </div>
 </div>
 ---
-### Journal Reviewing
-
 
 ### Journal Reviewing
 
