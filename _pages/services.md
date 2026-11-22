@@ -123,22 +123,21 @@ nav_order: 4
       Behaviour & Information Technology
       <div class="service-role">Reviewer</div>
     </div>
-
-    <div class="service-item">
-      Computers & Education: Artificial Intelligence
-      <div class="service-role">Reviewer</div>
-    </div>
   </div>
 
   <time>ESCI</time>
   <div class="service-items">
+    <div class="service-item">
+      Computers & Education: Artificial Intelligence
+      <div class="service-role">Reviewer</div>
+    </div>
+
     <div class="service-item">
       Computers & Education Open
       <div class="service-role">Reviewer</div>
     </div>
   </div>
 </div>
-
 ---
 
 ### Volunteering
