@@ -6,6 +6,6 @@ inline: false
 related_posts: false
 ---
 
-Our team received the **Academic Encouragement Award (학술장려상)** at the **2026 KAIM–KSET Joint Fall Conference** for our study, *LLM-Supported Physical Computing Problem Solving: A Heterogeneous Transition Network Analysis*. We examined how learners interacted with an LLM-powered conversational agent while troubleshooting physical computing tasks and how these interactions varied by problem type and where the problem occurred.
+Our team received the **Academic Encouragement Award (학술장려상)** at the **2026 KAIM–KSET Joint Fall Conference** for our study, *LLM-Supported Physical Computing Problem Solving*. We examined how learners interacted with an LLM-powered conversational agent while troubleshooting physical computing tasks and how these interactions varied by problem type and where the problem occurred.
 
 [Read the Ewha Womans University news article](https://www.ewha.ac.kr/ewha/news/organ-news.do?mode=view&articleNo=368106)
