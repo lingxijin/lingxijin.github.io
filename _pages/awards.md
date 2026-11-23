@@ -100,7 +100,7 @@ nav_order: 5
           Nov 2026 · 2026 KAIM–KSET Joint Fall Conference
         </div>
         <div class="award-details">
-          <a href="{{ '/news/announcement_21/' | relative_url }}">LLM-Supported Physical Computing Problem Solving: A Heterogeneous Transition Network Analysis</a>
+          <a href="{{ '/news/announcement_21/' | relative_url }}">STEM+C Project</a>
         </div>
       </div>
 
