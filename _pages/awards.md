@@ -94,6 +94,18 @@ nav_order: 5
 
       <div class="award-entry">
         <div class="award-name">
+          Encouragement Award (학술장려상)
+        </div>
+        <div class="award-details">
+          Nov 2026 · 2026 KAIM–KSET Joint Fall Conference
+        </div>
+        <div class="award-details">
+          <a href="{{ '/news/announcement_21/' | relative_url }}">LLM-Supported Physical Computing Problem Solving: A Heterogeneous Transition Network Analysis</a>
+        </div>
+      </div>
+
+      <div class="award-entry">
+        <div class="award-name">
           EGEP (Ewha Global Excellence Program) Interdisciplinary Research Group Grant
         </div>
         <div class="award-details">
