@@ -94,7 +94,7 @@ nav_order: 5
 
       <div class="award-entry">
         <div class="award-name">
-          Encouragement Award (학술장려상)
+          Academic Encouragement Award (학술장려상)
         </div>
         <div class="award-details">
           Nov 2026 · 2026 KAIM–KSET Joint Fall Conference
