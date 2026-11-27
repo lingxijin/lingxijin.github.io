@@ -27,7 +27,7 @@ latest_posts:
 ---
 Lingxi Jin (金玲僖) is a Ph.D. candidate in [Educational Technology](https://my.ewha.ac.kr/et/) at [Ewha Womans University](https://www.ewha.ac.kr/ewha/index.do), under the supervision of [Prof. Hyo-Jeong So](https://scholar.google.com/citations?user=dI0biU8AAAAJ&hl=ko). Her research focuses on how AI can support learning while preserving learners' cognitive engagement and agency. Working at the intersection of **Artificial Intelligence in Education (AIED)**, **learning analytics**, **human–computer interaction (HCI)**, and **learning experience design**, she investigates how learners interact with AI-supported systems, how scaffolding shapes problem-solving and metacognitive processes, and how interaction data can be used to understand learning processes and outcomes. She expects to complete her Ph.D. in **August 2027**, following her dissertation defense in **May 2027**.
 
-Lingxi serves as a reviewer for journals including *International Journal of Human-Computer Interaction*,*Computers & Education Open* and *Behaviour & Information Technology*, and as a **program committee member** for major conferences including **LAK** and **ICHEC**. She also served as Local Chair of the Festival of Learning 2026(co-location of AIED, EDM, and L@S).
+Lingxi serves as a reviewer for journals including *International Journal of Human-Computer Interaction*,*Computers & Education: Artificial intelligence*, and as a **program committee member** for major conferences including **LAK** and **ICHEC**. She also served as Local Chair of the Festival of Learning 2026(co-location of AIED, EDM, and L@S).
 
 Outside academia, she enjoys camping, climbing, and scuba diving, and holds an **Advanced Open Water (AOW)** certification.
 
